@@ -1,0 +1,158 @@
+body {
+  background-color: #000;
+  color: red;
+  .text {
+    text-align: center;
+  }
+}
+@import "general_variables.scss";
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #000;
+  color: red;
+}
+#preloader.hide-preloader {
+  animation-name: hidePreloader;
+  animation-duration: 3s;
+}
+
+#preloader.preloader-hidden {
+  display: none;
+}
+
+@keyframes hidePreloader {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.preloader__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  height: calc(275px + (440 - 275) * ((100vw - 320px) / (1920 - 320)));
+  max-width: calc(328px + (638 - 328) * ((100vw - 320px) / (1920 - 320)));
+  margin: auto calc(16px + (641 - 16) * ((100vw - 320px) / (1920 - 320)))
+    calc(54px + (48 - 54) * ((100vw - 320px) / (1920 - 320)));
+  .preloader__title {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    p {
+      @include fontStyle("SFProDisplay", normal, 700, 19.09px, rgba(255, 255, 255, 1));
+      text-transform: uppercase;
+      font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+      width: 199px;
+      height: 19px;
+      margin: auto;
+    }
+  }
+}
+/*Progress Bar*/
+#myBar {
+  margin: auto;
+  width: 149px;
+  height: 20px;
+  position: absolute;
+  top: calc(149px + (334 - 149) * ((100vw - 320px) / (1920 - 320)));
+
+  span {
+    text-align: center;
+    position: absolute;
+  }
+}
+#myBar:before,
+#myBar:after,
+#myBar > :first-child:before,
+#myBar > :first-child:after {
+  position: absolute;
+  width: 28px;
+  height: 11px;
+  border-style: solid;
+  content: "";
+}
+#myBar:before {
+  top: -10px;
+  left: -14px;
+  border-color: rgba(255, 255, 255, 1);
+  border-width: 1px 0 0 1px;
+}
+#myBar:after {
+  top: -10px;
+  right: -14px;
+  border-color: rgba(255, 255, 255, 1);
+  border-width: 1px 1px 0 0;
+}
+#myBar > :first-child:before {
+  bottom: -10px;
+  right: -14px;
+  border-color: rgba(255, 255, 255, 1);
+  border-width: 0 1px 1px 0;
+}
+#myBar > :first-child:after {
+  bottom: -10px;
+  left: -14px;
+  border-color: rgba(255, 255, 255, 1);
+  border-width: 0 0 1px 1px;
+}
+#load {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin-top: -50px;
+  color: rgba(255, 255, 255, 1);
+  z-index: 999;
+}
+#myProgress {
+  position: relative;
+  top: 0;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/*Loader Footer*/
+.preloader__description {
+  @include fontStyle("SFProDisplay", normal, 400, 19.6px, rgba(255, 255, 255, 1));
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
+  p {
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 321px) {
+  #load {
+    display: none;
+  }
+  #myBar:before,
+  #myBar:after,
+  #myBar > :first-child:before,
+  #myBar > :first-child:after {
+    border-style: none;
+  }
+} ;

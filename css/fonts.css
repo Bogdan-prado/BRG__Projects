@@ -1,0 +1,30 @@
+/*Bold/700*/
+@font-face {
+	font-family: "SFProDisplay";
+	src: url("fonts/FontsFree-Net-SFProDisplay-Bold.eot");
+	src: local("☺"), url("fonts/FontsFree-Net-SFProDisplay-Bold.woff") format("woff"),
+		url("fonts/FontsFree-Net-SFProDisplay-Bold.ttf") format("truetype"),
+		url("fonts/FontsFree-Net-SFProDisplay-Bold.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+/*regular/400*/
+@font-face {
+	font-family: "SFProDisplay";
+	src: url("fonts/FontsFree-Net-SFProDisplay-Regular.eot");
+	src: local("☺"), url("fonts/FontsFree-Net-SFProDisplay-Regular.woff") format("woff"),
+		url("fonts/FontsFree-Net-SFProDisplay-Regular.ttf") format("truetype"),
+		url("fonts/FontsFree-Net-SFProDisplay-Regular.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+/*medium/500*/
+@font-face {
+	font-family: "SFProDisplay";
+	src: url("fonts/FontsFree-Net-SFProDisplay-Medium.eot");
+	src: local("☺"), url("fonts/FontsFree-Net-SFProDisplay-Medium.woff") format("woff"),
+		url("fonts/FontsFree-Net-SFProDisplay-Medium.ttf") format("truetype"),
+		url("fonts/FontsFree-Net-SFProDisplay-Medium.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
