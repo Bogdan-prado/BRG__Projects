@@ -76,6 +76,7 @@ body {
   margin: auto;
   width: 149px;
   height: 20px;
+  outline: 1px solid rgba(255, 255, 255, 1);
   position: absolute;
   top: calc(149px + (334 - 149) * ((100vw - 320px) / (1920 - 320)));
 
@@ -131,7 +132,7 @@ body {
 #myProgress {
   position: relative;
   top: 0;
-  height: 30px;
+  height: 20px;
   background-color: rgba(255, 255, 255, 1);
 }
 
