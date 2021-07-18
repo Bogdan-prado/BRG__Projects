@@ -1,11 +1,11 @@
-/*
+
 function hide() {
   let preloader = document.getElementById('preloader');
   preloader.classList.add('hide-preloader');
   setInterval(function () {
     preloader.classList.add('preloader-hidden');
   }, 3000);
-}*/
+}
 let i = 0;
 function move() {
   if (i == 0) {
@@ -24,5 +24,5 @@ function move() {
     }
   }
 }
-/*window.addEventListener("load", hide);*/
+window.addEventListener("load", hide);
 window.addEventListener("load", move);
