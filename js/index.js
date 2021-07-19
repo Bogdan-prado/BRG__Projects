@@ -24,5 +24,5 @@ function move() {
     }
   }
 }
-window.addEventListener("load", hide);
+/*window.addEventListener("load", hide);*/
 window.addEventListener("load", move);
