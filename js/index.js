@@ -1,4 +1,3 @@
-
 function hide() {
   let preloader = document.getElementById('preloader');
   preloader.classList.add('hide-preloader');
