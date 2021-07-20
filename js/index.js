@@ -10,7 +10,7 @@ let i = 0;
 function move() {
   if (i == 0) {
     i = 1;
-    var elem = document.getElementById("myProgress");
+    var elem = document.getElementById("preloader__progress");
     var width = 1;
     var id = setInterval(frame, 30);
     function frame() {
@@ -24,5 +24,5 @@ function move() {
     }
   }
 }
-/*window.addEventListener("load", hide);*/
+window.addEventListener("load", hide);
 window.addEventListener("load", move);
