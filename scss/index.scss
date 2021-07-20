@@ -186,5 +186,34 @@ body {
         margin: 0 0 calc(101px + (123 - 101) * ((100vw - 320px) / (1920 - 320))) 0;
       }
     }
+    .drag_drop {
+      display: flex;
+      justify-content: center;
+      border: 3px solid red;
+      width: 100%;
+      height: 111px;
+      .drag_drop_section {
+        display: flex;
+        justify-content: space-between;
+        width: 204px;
+        border: 1px solid red;
+        .div1 {
+          float: left;
+          height: 42px;
+          width: 42px;
+          border: 1px solid rgba(255, 255, 255, 1);
+          border-radius: 50%;
+          background-color: transparent;
+        }
+        .div2 {
+          @extend .div1;
+        }
+        #drag1 {
+          @extend .div2;
+          margin: -1px;
+          border-color: green;
+        }
+      }
+    }
   }
 }

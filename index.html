@@ -28,7 +28,15 @@
           </div>
         </div>
         <div class="drag_drop">
-          <h1> </h1>
+          <div class="drag_drop_section">
+            <!--First-->
+            <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <!--drag item-->
+              <div draggable="true" ondragstart="drag(event)" id="drag1"> </div>
+            </div>
+            <!--second-->
+            <div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          </div>
         </div>
       </header>
     </section>
