@@ -196,22 +196,35 @@ body {
         display: flex;
         justify-content: space-between;
         width: 204px;
-        border: 1px solid red;
         .div1 {
           float: left;
           height: 42px;
           width: 42px;
-          border: 1px solid rgba(255, 255, 255, 1);
+          cursor: pointer;
+
           border-radius: 50%;
           background-color: transparent;
+          display: block;
+          position: relative;
         }
         .div2 {
           @extend .div1;
+          border: 1px dotted rgba(255, 255, 255, 1);
         }
         #drag1 {
           @extend .div2;
-          margin: -1px;
-          border-color: green;
+          display: block;
+          border: 1px solid rgba(255, 255, 255, 1);
+          cursor: pointer;
+        }
+        .slider {
+          border-top: 1px dotted rgba(255, 255, 255, 1);
+          width: 108px;
+          margin: 21px 6px auto;
+          height: 15px;
+          position: relative;
+          top: 0;
+          left: 0;
         }
       }
     }

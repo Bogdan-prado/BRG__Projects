@@ -31,8 +31,8 @@ function allowDrop(ev) {
   ev.preventDefault();
 }
 
-function drag(zhopa) {
-  zhopa.dataTransfer.setData("text", zhopa.target.id);
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
 }
 
 function drop(ev) {
@@ -40,3 +40,39 @@ function drop(ev) {
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
 }
+
+
+let dragItem = slider.querySelector('#drag1');
+
+dragItem.onmousedown = function (event) {
+  event.preventDefault();
+
+  let shiftX = event.clientX - dragItem.getBoundingClientRect().left;
+  document.addEventListener('mousemove', onMouseMove);
+  document.addEventListener('mouseup', onMouseUp);
+
+  function onMouseMove(event) {
+    let newLeft = event.clientX - shiftX - slider.getBoundingClientRect().left;
+
+    // курсор вышел из слайдера => оставить бегунок в его границах.
+    if (newLeft < 0) {
+      newLeft = 0;
+    }
+    let rightEdge = slider.offsetWidth - dragItem.offsetWidth;
+    if (newLeft > rightEdge) {
+      newLeft = rightEdge;
+    }
+
+    dragItem.style.left = newLeft + 'px';
+  }
+
+  function onMouseUp() {
+    document.removeEventListener('mouseup', onMouseUp);
+    document.removeEventListener('mousemove', onMouseMove);
+  }
+
+};
+
+dragItem.ondragstart = function () {
+  return false;
+};
