@@ -216,6 +216,7 @@ body {
           display: block;
           border: 1px solid rgba(255, 255, 255, 1);
           cursor: pointer;
+          z-index: 1;
         }
         .slider {
           border-top: 1px dotted rgba(255, 255, 255, 1);
@@ -225,6 +226,7 @@ body {
           position: relative;
           top: 0;
           left: 0;
+          display: block;
         }
       }
     }
