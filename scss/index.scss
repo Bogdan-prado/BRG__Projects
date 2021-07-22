@@ -475,6 +475,7 @@ body {
         margin: 0 0 calc(101px + (123 - 101) * ((100vw - 320px) / (1920 - 320))) 0;
       }
     }
+    /*Drag / Drop Section*/
     .drag_drop {
       display: flex;
       justify-content: center;
@@ -490,7 +491,6 @@ body {
           height: 42px;
           width: 42px;
           cursor: pointer;
-
           border-radius: 50%;
           background-color: transparent;
           display: block;
