@@ -473,7 +473,7 @@ body {
       .title__description p {
         @include fontStyle("SFProDisplay", normal, 500, 23.87px, rgba(255, 255, 255, 1));
         font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
-        margin: 0 0 calc(101px + (123 - 101) * ((100vw - 320px) / (1920 - 320))) 0;
+        margin: 0 0 calc(69px + (123 - 69) * ((100vw - 320px) / (1920 - 320))) 0;
       }
     }
     /*Drag / Drop Section*/
