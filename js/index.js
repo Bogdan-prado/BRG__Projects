@@ -27,20 +27,6 @@ window.addEventListener("load", hide);
 window.addEventListener("load", move);
 
 /*Drag__Drop*/
-function allowDrop(ev) {
-  ev.preventDefault();
-}
-
-function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
-}
-
-function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
-}
-
 
 let dragItem = slider.querySelector('#drag1');
 
@@ -72,3 +58,4 @@ dragItem.onmousedown = function (event) {
 dragItem.ondragstart = function () {
   return false;
 };
+/*END*/
