@@ -44,12 +44,14 @@ function drop(ev) {
 
 let dragItem = slider.querySelector('#drag1');
 
-dragItem.onmousedown = function (event) {
+function onmousedown(event) {
   event.preventDefault();
 
   let shiftX = event.clientX - dragItem.getBoundingClientRect().left;
   document.addEventListener('mousemove', onMouseMove);
   document.addEventListener('mouseup', onMouseUp);
+  document.addEventListener('touchmove', onMouseMove);
+  document.addEventListener('touchend', onMouseUp);
 
   function onMouseMove(event) {
     let newLeft = event.clientX - shiftX - slider.getBoundingClientRect().left;
@@ -69,6 +71,8 @@ dragItem.onmousedown = function (event) {
   function onMouseUp() {
     document.removeEventListener('mouseup', onMouseUp);
     document.removeEventListener('mousemove', onMouseMove);
+    document.removeEventListener('touchend', onMouseUp);
+    document.removeEventListener('touchmove', onMouseMove);
   }
 
 };
@@ -76,3 +80,9 @@ dragItem.onmousedown = function (event) {
 dragItem.ondragstart = function () {
   return false;
 };
+
+
+
+
+dragItem.addEventListener("mousedown", onmousedown);
+dragItem.addEventListener("touchstart", onmousedown);
