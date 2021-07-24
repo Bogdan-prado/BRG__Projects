@@ -11,6 +11,7 @@ body {
   min-height: 100%;
   overflow: hidden;
   display: flex;
+  flex-wrap: wrap;
   flex: 1 1 auto;
   justify-content: center;
   align-items: flex-end;
@@ -334,7 +335,7 @@ body {
 /*end*/
 .preloader__content {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: flex-end;
   position: relative;
@@ -447,10 +448,12 @@ body {
 /*Loaded Section*/
 .loaded__background {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
   background: url("../img/background.png") no-repeat center;
   min-height: 100vh;
+  min-width: 100vw;
   position: relative;
   .loaded__background__container {
     display: flex;
