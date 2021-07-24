@@ -558,6 +558,42 @@ body {
       }
     }
   }
+  .diagramm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    right: calc(25px + (79 - 25) * ((100vw - 360px) / (1920 - 360)));
+    bottom: calc(19px + (59 - 19) * ((100vw - 360px) / (1920 - 360)));
+    width: 20px;
+    height: 16px;
+    background-color: transparent;
+    > div {
+      width: 2px;
+      height: 5px;
+      background-color: rgba(255, 255, 255, 1);
+      margin-bottom: 0;
+    }
+    .five {
+      height: 5px;
+    }
+    .six {
+      height: 6px;
+    }
+    .sixteen {
+      height: 16px;
+    }
+    .eight {
+      height: 8px;
+    }
+    .zero {
+      height: 0;
+    }
+    .one {
+      height: 1px;
+    }
+  }
 }
 
 @media all and (max-width: 425px) {
