@@ -27,10 +27,9 @@ window.addEventListener("load", hide);
 window.addEventListener("load", move);
 
 /*Drag__Drop*/
-
 let dragItem = slider.querySelector('#drag1');
 
-dragItem.onmousedown = function (event) {
+function onmousedown(event) {
   event.preventDefault();
 
   let shiftX = event.clientX - dragItem.getBoundingClientRect().left;
@@ -41,7 +40,9 @@ dragItem.onmousedown = function (event) {
     let newLeft = event.clientX - shiftX - slider.getBoundingClientRect().left;
 
     // курсор вышел из слайдера => оставить бегунок в его границах.
-    if (newLeft < 0) { newLeft = 0; } let rightEdge = slider.offsetWidth - dragItem.offsetWidth; if (newLeft > rightEdge) {
+    if (newLeft < 0) { newLeft = 0; }
+    let rightEdge = slider.offsetWidth - dragItem.offsetWidth;
+    if (newLeft > rightEdge) {
       newLeft = rightEdge;
     }
 
@@ -58,4 +59,5 @@ dragItem.onmousedown = function (event) {
 dragItem.ondragstart = function () {
   return false;
 };
-/*END*/
+
+dragItem.addEventListener("mousedown", onmousedown);
