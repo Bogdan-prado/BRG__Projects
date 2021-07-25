@@ -32,6 +32,7 @@ let container = slider.querySelector('.div1');
 let shiftX;
 let newLeft;
 let rightEdge;
+/*__1__*/
 function onmousedown(event) {
   event.preventDefault();
   if (event.type === "touchstart") {
@@ -43,7 +44,7 @@ function onmousedown(event) {
   document.addEventListener('mouseup', onMouseUp);
   document.addEventListener('ontouchmove', onMouseMove);
   document.addEventListener('ontouchend', onMouseUp);
-
+  /*__2__*/
   function onMouseMove(event) {
     if (event.type === "touchmove") {
       newLeft = event.touches[0].clientX - shiftX - slider.getBoundingClientRect().left;
@@ -58,7 +59,9 @@ function onmousedown(event) {
     }
 
     dragItem.style.left = newLeft + 'px';
+
   }
+  /*__3__*/
 
   function onMouseUp() {
     document.removeEventListener('mouseup', onMouseUp);
@@ -68,10 +71,12 @@ function onmousedown(event) {
   }
 
 };
-
-dragItem.ondragstart = function () {
+/*__4__*/
+function ondragstart() {
   return false;
 };
 
-container.addEventListener("mousedown", onmousedown);
-container.addEventListener("touchstart", onmousedown);
+dragItem.addEventListener("mousedown", onmousedown);
+dragItem.addEventListener("touchstart", onmousedown);
+dragItem.addEventListener("ondragstart", ondragstart);
+
