@@ -28,6 +28,7 @@ window.addEventListener("load", move);
 
 /*Drag__Drop*/
 let dragItem = slider.querySelector('#drag1');
+let container = slider.querySelector('.div1');
 let shiftX;
 let newLeft;
 let rightEdge;
@@ -72,5 +73,5 @@ dragItem.ondragstart = function () {
   return false;
 };
 
-dragItem.addEventListener("mousedown", onmousedown);
-dragItem.addEventListener("touchstart", onmousedown);
+container.addEventListener("mousedown", onmousedown);
+container.addEventListener("touchstart", onmousedown);
