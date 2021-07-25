@@ -28,20 +28,30 @@ window.addEventListener("load", move);
 
 /*Drag__Drop*/
 let dragItem = slider.querySelector('#drag1');
-
+let shiftX;
+let newLeft;
+let rightEdge;
 function onmousedown(event) {
   event.preventDefault();
-
-  let shiftX = event.clientX - dragItem.getBoundingClientRect().left;
+  if (event.type === "touchstart") {
+    shiftX = event.touches[0].clientX - dragItem.getBoundingClientRect().left;
+  } else {
+    shiftX = event.clientX - dragItem.getBoundingClientRect().left;
+  }
   document.addEventListener('mousemove', onMouseMove);
   document.addEventListener('mouseup', onMouseUp);
+  document.addEventListener('ontouchmove', onMouseMove);
+  document.addEventListener('ontouchend', onMouseUp);
 
   function onMouseMove(event) {
-    let newLeft = event.clientX - shiftX - slider.getBoundingClientRect().left;
-
+    if (event.type === "touchmove") {
+      newLeft = event.touches[0].clientX - shiftX - slider.getBoundingClientRect().left;
+    } else {
+      newLeft = event.clientX - shiftX - slider.getBoundingClientRect().left;
+    }
     // курсор вышел из слайдера => оставить бегунок в его границах.
     if (newLeft < 0) { newLeft = 0; }
-    let rightEdge = slider.offsetWidth - dragItem.offsetWidth;
+    rightEdge = slider.offsetWidth - dragItem.offsetWidth;
     if (newLeft > rightEdge) {
       newLeft = rightEdge;
     }
@@ -52,6 +62,8 @@ function onmousedown(event) {
   function onMouseUp() {
     document.removeEventListener('mouseup', onMouseUp);
     document.removeEventListener('mousemove', onMouseMove);
+    document.removeEventListener('ontouchend', onMouseUp);
+    document.removeEventListener('ontouchmove', onMouseMove);
   }
 
 };
@@ -61,3 +73,4 @@ dragItem.ondragstart = function () {
 };
 
 dragItem.addEventListener("mousedown", onmousedown);
+dragItem.addEventListener("touchstart", onmousedown);
