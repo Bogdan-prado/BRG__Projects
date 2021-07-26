@@ -26,57 +26,8 @@ function move() {
 window.addEventListener("load", hide);
 window.addEventListener("load", move);
 
-/*Drag__Drop*/
-let dragItem = slider.querySelector('#drag1');
-let container = slider.querySelector('.div1');
-let shiftX;
-let newLeft;
-let rightEdge;
-/*__1__*/
-function onmousedown(event) {
-  event.preventDefault();
-  if (event.type === "touchstart") {
-    shiftX = event.touches[0].clientX - dragItem.getBoundingClientRect().left;
-  } else {
-    shiftX = event.clientX - dragItem.getBoundingClientRect().left;
-  }
-  document.addEventListener('mousemove', onMouseMove);
-  document.addEventListener('mouseup', onMouseUp);
-  document.addEventListener('ontouchmove', onMouseMove);
-  document.addEventListener('ontouchend', onMouseUp);
-  /*__2__*/
-  function onMouseMove(event) {
-    if (event.type === "touchmove") {
-      newLeft = event.touches[0].clientX - shiftX - slider.getBoundingClientRect().left;
-    } else {
-      newLeft = event.clientX - shiftX - slider.getBoundingClientRect().left;
-    }
-    // курсор вышел из слайдера => оставить бегунок в его границах.
-    if (newLeft < 0) { newLeft = 0; }
-    rightEdge = slider.offsetWidth - dragItem.offsetWidth;
-    if (newLeft > rightEdge) {
-      newLeft = rightEdge;
-    }
 
-    dragItem.style.left = newLeft + 'px';
 
-  }
-  /*__3__*/
+/*Test*/
 
-  function onMouseUp() {
-    document.removeEventListener('mouseup', onMouseUp);
-    document.removeEventListener('mousemove', onMouseMove);
-    document.removeEventListener('ontouchend', onMouseUp);
-    document.removeEventListener('ontouchmove', onMouseMove);
-  }
-
-};
-/*__4__*/
-function ondragstart() {
-  return false;
-};
-
-dragItem.addEventListener("mousedown", onmousedown);
-dragItem.addEventListener("touchstart", onmousedown);
-dragItem.addEventListener("ondragstart", ondragstart);
-
+/*TEst */

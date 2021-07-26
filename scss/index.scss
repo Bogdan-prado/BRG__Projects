@@ -510,15 +510,33 @@ body {
             @extend .div1;
             border: 1px dotted rgba(255, 255, 255, 1);
           }
-          #drag1 {
-            @extend .div2;
-            display: block;
+
+          /*start*/
+          .slider {
+            position: relative;
+            margin-top: 21px;
+            -webkit-appearance: none;
+            width: 204px;
+            height: 0;
+            outline: none;
+            opacity: 1;
+          }
+
+          .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
             border: 1px solid rgba(255, 255, 255, 1);
             cursor: pointer;
+            display: block;
             z-index: 1;
-            position: absolute;
+            margin-right: 10px;
           }
-          .slider {
+
+          /*End*/
+          .sliderPath {
             border-top: 1px dotted rgba(255, 255, 255, 1);
             width: 108px;
             margin: 21px 6px 44px;
