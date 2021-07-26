@@ -522,6 +522,7 @@ body {
             outline: none;
             opacity: 1;
             display: block;
+            z-index: 3;
           }
 
           .slider::-webkit-slider-thumb {
@@ -533,7 +534,6 @@ body {
             border: 1px solid rgba(255, 255, 255, 1);
             cursor: pointer;
             display: block;
-            z-index: 2;
             margin-right: 10px;
           }
 
@@ -547,6 +547,7 @@ body {
             top: 0;
             left: 0;
             display: block;
+            z-index: 1;
           }
         }
         .drag_drop__title {
