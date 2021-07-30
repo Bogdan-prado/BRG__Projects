@@ -29,5 +29,28 @@ window.addEventListener("load", move);
 
 
 /*Test*/
+function showCoordsX(event) {
+  let random = Math.random();
+  let x = event.clientX;
+  let outputX = Math.floor(Math.random(x) * (-3000000000000000));
+  let coor = `${outputX} : X`;
+  document.getElementById("x").innerHTML = coor;
+}
+
+function showCoordsY(event) {
+  let random = Math.random();
+  let y = event.clientY;
+  let outputY = Math.random(x) * (2);
+  let coor = `${outputY.toFixed(17)} : Y`;
+  document.getElementById("y").innerHTML = coor;
+}
+function showCoordsZ(event) {
+  let random = Math.random();
+  let z = event.clientX;
+  let outputZ = Math.random(z) * (123123123321);
+  let coor = `${outputZ.toFixed(3)} : Z`;
+  document.getElementById("z").innerHTML = coor;
+}
+document.querySelector("x").style.fontColor = "red";
 
 /*TEst */

@@ -1,0 +1,182 @@
+@import "./general_variables.scss";
+body {
+    background-color: red;
+    background: url("../img/main.png");
+}
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: calc(10px + (40 - 10) * ((100vw - 360px) / (1920 - 360)))
+        calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360)));
+    position: relative;
+    border: 1px solid red;
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: center;
+        padding-top: 6px;
+        border: 1px solid red;
+
+        img {
+            width: calc(27.28px + (44 - 27.8) * ((100vw - 360px) / (1920 - 360)));
+            height: calc(26.35px + (43px - 26.35) * ((100vw - 360px) / (1920 - 360)));
+        }
+        h1 {
+            margin: 0;
+            @include fontStyle("SFProDisplay", normal, 500, 31.03px, rgba(255, 255, 255, 1));
+            font-size: calc(20px + (26 - 20) * ((100vw - 360px) / (1920 - 360)));
+            letter-spacing: 0.04em;
+            margin-left: 15px;
+
+            span {
+                position: relative;
+                top: -15px;
+                left: 3px;
+                text-transform: uppercase;
+                @include fontStyle("SFProDisplay", normal, 500, 11.93px, rgba(255, 255, 255, 1));
+                font-size: calc(7px + (10 - 7) * ((100vw - 360px) / (1920 - 360)));
+                letter-spacing: 0.59em;
+            }
+        }
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid red;
+        position: absolute;
+        top: calc(14px + (30 - 14) * ((100vw - 360px) / (1920 - 360)));
+        right: 0;
+        width: 295px;
+        height: 189px;
+
+        .menu__title {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            border: 1px solid green;
+            text-align: right;
+
+            span {
+                text-transform: uppercase;
+                @include fontStyle("SFProDisplay", normal, 400, 8.8px, rgba(255, 255, 255, 1));
+                font-size: calc(8px + (11 - 8) * ((100vw - 360px) / (1920 - 360)));
+                letter-spacing: 2px;
+                margin-right: 16px;
+            }
+
+            .menu__title__blocks {
+                display: flex;
+                width: 55px;
+                .block__one {
+                    height: 8px;
+                    background-color: rgba(255, 255, 255, 1);
+                    width: 3px;
+                    margin-right: 2px;
+                }
+                .block__two {
+                    height: 8px;
+                    background-color: rgba(255, 255, 255, 1);
+                    width: 2px;
+                    margin-right: 2px;
+                }
+                .block__three {
+                    height: 8px;
+                    background-color: rgba(255, 255, 255, 1);
+                    width: 4px;
+                    margin-right: 4px;
+                }
+                .block__four {
+                    height: 8px;
+                    background-color: rgba(255, 255, 255, 1);
+                    width: 1px;
+                    margin-right: 3px;
+                }
+                .block__five {
+                    height: 8px;
+                    background-color: rgba(255, 255, 255, 1);
+                    width: 4px;
+                    margin-right: 1px;
+                }
+                .block__six {
+                    height: 8px;
+                    background-color: rgba(255, 255, 255, 1);
+                    width: 1px;
+                    margin-right: 4px;
+                }
+                .block__seven {
+                    height: 8px;
+                    background-color: rgba(255, 255, 255, 1);
+                    width: 2px;
+                    margin-right: 2px;
+                }
+                .block__eight {
+                    height: 8px;
+                    background-color: rgba(255, 255, 255, 1);
+                    width: 4px;
+                }
+                .block__nine {
+                    height: 8px;
+                    background-color: rgba(255, 255, 255, 1);
+                    width: 1px;
+                    margin-right: 3px;
+                }
+                .block__ten {
+                    height: 8px;
+                    background-color: rgba(255, 255, 255, 1);
+                    width: 2px;
+                    margin-right: 3px;
+                }
+                .block__eleven {
+                    height: 8px;
+                    background-color: rgba(255, 255, 255, 1);
+                    width: 1px;
+                    margin-right: 4px;
+                }
+                .block__twelve {
+                    height: 8px;
+                    background-color: rgba(255, 255, 255, 1);
+                    width: 2px;
+                }
+            }
+        }
+        .coordinates {
+            border: 1px solid blue;
+            text-align: right;
+            @include fontStyle("SFProDisplay", normal, 400, 10.04px, rgba(255, 255, 255, 1));
+            font-size: calc(6px + (8 - 6) * ((100vw - 360px) / (1920 - 360)));
+        }
+        .social__media {
+            display: flex;
+            justify-content: flex-end;
+            border: 1px solid yellow;
+            > div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                border: 1px solid rgba(255, 255, 255, 1);
+                border-radius: 50%;
+                @include fontStyle("SFProDisplay", normal, 400, 12px, rgba(255, 255, 255, 1));
+                font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1920 - 360)));
+                text-transform: uppercase;
+            }
+            :not(:last-child) {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    aside {
+        width: 217px;
+        height: 199px;
+        border: 2px solid red;
+    }
+}
