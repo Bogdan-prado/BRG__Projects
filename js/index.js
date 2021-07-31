@@ -51,5 +51,4 @@ function showCoordsZ(event) {
   let coor = `${outputZ.toFixed(3)} : Z`;
   document.getElementById("z").innerHTML = coor;
 }
-
 /*TEst */
