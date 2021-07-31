@@ -1,3 +1,4 @@
+/*index html preloader functions*/
 function hide() {
   let preloader = document.getElementById('preloader');
   preloader.classList.add('hide-preloader');
@@ -28,7 +29,7 @@ window.addEventListener("load", move);
 
 
 
-/*Test*/
+/*Receive Coordinates based on the position of the mouse*/
 function showCoordsX(event) {
   let random = Math.random();
   let x = event.clientX;
@@ -51,8 +52,6 @@ function showCoordsZ(event) {
   let coor = `${outputZ.toFixed(3)} : Z`;
   document.getElementById("z").innerHTML = coor;
 }
-/*TEst */
-
 
 /*Full Screen Function*/
 var fullscreen = document.documentElement;
@@ -74,4 +73,13 @@ function closeFullscreen() {
   } else if (document.msExitFullscreen) { /* IE11 */
     document.msExitFullscreen();
   }
+}
+
+/*test*/
+
+function openNav() {
+  document.querySelector(".sidenav__first__block").style.width = "287px";
+}
+function closeNav() {
+  document.querySelector(".sidenav__first__block").style.width = "0";
 }

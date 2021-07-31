@@ -13,6 +13,26 @@
     margin: calc(10px + (40 - 10) * ((100vw - 360px) / (1920 - 360)))
         calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360))) 0;
     border: 1px solid red;
+    /*Hidden Menu*/
+    .sidenav__first__block {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    }    
+    } 
+    /*end*/
     .logo {
         display: flex;
         flex-direction: row;
@@ -53,6 +73,8 @@
         right: 0;
         width: 295px;
         height: 189px;
+            z-index: 1;
+
 
         .menu__title {
             display: flex;
@@ -241,6 +263,8 @@ footer {
         width: 181px;
         margin-right: calc(10px + (16 - 10) * ((100vw - 360px) / (1920 - 360)));
         margin-bottom: calc(8px + (10 - 8) * ((100vw - 360px) / (1920 - 360)));
+            z-index: 1;
+
         .footer__fullscreen__title h2 {
             @include fontStyle("SFProDisplay", normal, 400, 8.08px, rgba(255, 255, 255, 1));
             font-size: calc(9px + (11 - 9) * ((100vw - 360px) / (1920 - 360)));
