@@ -52,3 +52,26 @@ function showCoordsZ(event) {
   document.getElementById("z").innerHTML = coor;
 }
 /*TEst */
+
+
+/*Full Screen Function*/
+var fullscreen = document.documentElement;
+function openFullscreen() {
+  if (fullscreen.requestFullscreen) {
+    fullscreen.requestFullscreen();
+  } else if (fullscreen.webkitRequestFullscreen) { /* Safari */
+    fullscreen.webkitRequestFullscreen();
+  } else if (fullscreen.msRequestFullscreen) { /* IE11 */
+    fullscreen.msRequestFullscreen();
+  }
+}
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
+  }
+}
