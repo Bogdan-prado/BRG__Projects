@@ -79,7 +79,7 @@ function closeFullscreen() {
 
 /*hidden/side menu*/
   function toggleNav() {
-  let nav = document.querySelector(".sidenav__first__block");
+  let nav = document.querySelector(".sidenav__main__block");
     nav.style.width = window.getComputedStyle(nav).width === "0px" ? "calc(653px + (1632 - 653) * ((100vw - 768px) / (1920 - 768)))" : "0px";
     let close = document.querySelector(".menu__title__opener");
     close.innerHTML = window.getComputedStyle(nav).width === "0px" ? "close" : "menu";
