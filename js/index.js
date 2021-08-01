@@ -79,6 +79,7 @@ function closeFullscreen() {
 
 function openNav() {
   document.querySelector(".sidenav__first__block").style.width = "287px";
+  document.querySelector(".menu__title__opener").innerHTML = "close";
 }
 function closeNav() {
   document.querySelector(".sidenav__first__block").style.width = "0";
