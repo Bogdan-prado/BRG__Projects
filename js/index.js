@@ -77,10 +77,11 @@ function closeFullscreen() {
 
 /*test*/
 
-function openNav() {
-  document.querySelector(".sidenav__first__block").style.width = "287px";
-  document.querySelector(".menu__title__opener").innerHTML = "close";
-}
-function closeNav() {
-  document.querySelector(".sidenav__first__block").style.width = "0";
-}
+/*hidden/side menu*/
+  function toggleNav() {
+  let nav = document.querySelector(".sidenav__first__block");
+    nav.style.width = window.getComputedStyle(nav).width === "0px" ? "calc(870px + (1632 - 870) * ((100vw - 1024px) / (1920 - 1024)))" : "0px";
+    let close = document.querySelector(".menu__title__opener");
+    close.innerHTML = window.getComputedStyle(nav).width === "0px" ? "close" : "menu";
+  }
+document.querySelector('.menu__title__opener').onclick = toggleNav;

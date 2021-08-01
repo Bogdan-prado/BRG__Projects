@@ -13,26 +13,7 @@
     margin: calc(10px + (40 - 10) * ((100vw - 360px) / (1920 - 360)))
         calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360))) 0;
     border: 1px solid red;
-    /*Hidden Menu*/
-    .sidenav__first__block {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    }    
-    } 
-    /*end*/
+    /*Logo*/
     .logo {
         display: flex;
         flex-direction: row;
@@ -63,6 +44,7 @@
             }
         }
     }
+    /*Menu Block*/
     .menu {
         display: flex;
         flex-direction: column;
@@ -194,6 +176,27 @@
             }
         }
     }
+    /*Hidden Menu*/
+    .sidenav__first__block {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    > div
+    {
+        background-color: red;
+        border: 1px solid green;
+    }
+    } 
+    /*end*/
 }
 main {
     display: flex;
