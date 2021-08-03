@@ -190,18 +190,22 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    > div
+    > div, section
     {
-        background-color: red;
-        border: 1px solid green;
+        background-color: #000;
+        border-left: 1px solid rgba(255, 255, 255, 1);
     }
+    .sidenav__first__block{
+        width: 288px;
+    }
+    
     .sidenav__second__block{
         width: calc(268.8px + (673 - 268.8) * ((100vw - 768px) / (1920 - 768)));
         position: relative;
         .sidenav__second__block__nav{
             position: absolute;
-            left: 66px;
-            top: 70px;
+            left: calc(26.88px + (66 - 26.88) * ((100vw - 768px) / (1920 - 768)));;
+            top: calc(40px + (70 - 40) * ((100vw - 768px) / (1920 - 768)));;
             height: 527px;
             width: 480px;
             display: flex;
@@ -229,18 +233,29 @@
     width: 100%;
     height: 100%;
     li{
+        &:not(:last-child){
+        padding-bottom:  calc(26.65px + (47.5 - 27.65) * ((100vw - 360px) / (1920 - 360)));
+    }
     a {
     display: block;
-    color: #000;
     text-decoration: none;
+    text-transform: uppercase;
+    @include fontStyle("SFProDisplay", normal, 700,  calc(36px + (60.8 - 36) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
+    font-size: calc(45px + (76 - 45) * ((100vw - 360px) / (1920 - 360)));
+    sup{
+         @include fontStyle("SFProDisplay", normal, 700,  calc(10.74px + (19.09 - 10.74) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
+    font-size: calc(9px + (16 - 9) * ((100vw - 360px) / (1920 - 360)));
+      vertical-align: text-top;
+    }
     & .active {
     background-color: #04AA6D;
     color: white;
 }
-li a:hover:not(.active) {
+& a:hover:not(.active) {
     background-color: #555;
     color: white;
 }
+
 }
 }
 }
