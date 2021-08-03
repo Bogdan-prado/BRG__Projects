@@ -3,8 +3,7 @@
     background: url("../img/main.png");
     height: calc(640px + (956 - 640) * ((100vw - 360px) / (1920 - 360)));
     background-repeat: no-repeat;
-    border: 1px solid red;
-}
+ }
 .header {
     display: flex;
     flex-flow: row wrap;
@@ -12,16 +11,14 @@
     position: relative;
     margin: calc(10px + (40 - 10) * ((100vw - 360px) / (1920 - 360)))
         calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360))) 0;
-    border: 1px solid red;
-    /*Logo*/
+     /*Logo*/
     .logo {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         text-align: center;
         padding-top: 6px;
-        border: 1px solid red;
-
+ 
         img {
             width: calc(27.28px + (44 - 27.8) * ((100vw - 360px) / (1920 - 360)));
             height: calc(26.35px + (43px - 26.35) * ((100vw - 360px) / (1920 - 360)));
@@ -49,8 +46,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 1px solid red;
-        position: absolute;
+         position: absolute;
         top: calc(14px + (30 - 14) * ((100vw - 360px) / (1920 - 360)));
         right: 0;
         width: 185px;
@@ -62,8 +58,7 @@
             display: flex;
             flex-flow: row wrap;
             justify-content: flex-end;
-            border: 1px solid green;
-            text-align: right;
+             text-align: right;
 
             span {
                 text-transform: uppercase;
@@ -149,16 +144,14 @@
             }
         }
         .coordinates {
-            border: 1px solid blue;
-            text-align: right;
+             text-align: right;
             @include fontStyle("SFProDisplay", normal, 400, 10.04px, rgba(255, 255, 255, 1));
             font-size: calc(6px + (8 - 6) * ((100vw - 360px) / (1920 - 360)));
         }
         .social__media {
             display: flex;
             justify-content: flex-end;
-            border: 1px solid yellow;
-            > div {
+             > div {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -212,22 +205,19 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            border: 2px solid green;
-        span{
+         span{
             text-transform: uppercase;
             @include fontStyle("SFProDisplay", normal, 400, 8.8px, rgba(255, 255, 255, 1));
             font-size: calc(8px + (11 - 8) * ((100vw - 360px) / (1920 - 360)));
             letter-spacing: 2px;
-            border: 4px solid greenyellow;
-        }
+         }
         nav{
             display: flex;
             flex-direction: column;
             align-items: space-between;
             height: 402px;
             ul {
-            border: 4px solid blue;
-    list-style-type: none;
+     list-style-type: none;
     padding: 0;
     margin-top: 132px;
     width: 100%;
@@ -275,8 +265,7 @@ main {
         top: calc(12px + (265 - 12) * ((100vw - 360px) / (1920 - 360)));
         width: 217px;
         height: 189px;
-        border: 2px solid greenyellow;
-    }
+     }
 }
 footer {
     display: flex;
@@ -287,8 +276,7 @@ footer {
     width: calc(336px + (1793 - 336) * ((100vw - 360px) / (1920 - 360)));
     margin: auto calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360)))
         calc(10px + (40 - 10) * ((100vw - 360px) / (1920 - 360)));
-    border: 1px solid yellow;
-    /*footer__label*/
+     /*footer__label*/
     .footer__label {
         display: flex;
         align-items: center;
@@ -329,8 +317,7 @@ footer {
         align-items: center;
         justify-content: space-between;
         position: relative;
-        border: 2px solid red;
-        width: 181px;
+         width: 181px;
         margin-right: calc(10px + (16 - 10) * ((100vw - 360px) / (1920 - 360)));
         margin-bottom: calc(8px + (10 - 8) * ((100vw - 360px) / (1920 - 360)));
             z-index: 1;
