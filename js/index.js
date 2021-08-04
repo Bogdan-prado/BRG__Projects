@@ -85,6 +85,7 @@ function closeFullscreen() {
 document.querySelector('.menu__title__opener').onclick = toggleNav;
 
 /*TEST Notes*/
+
 /*
 let body = document.querySelector("body");
 if(window.innerWidth < 768){
