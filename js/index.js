@@ -85,4 +85,3 @@ function closeFullscreen() {
 document.querySelector('.menu__title__opener').onclick = toggleNav;
 
 /*TEST Notes*/
- 
