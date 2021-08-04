@@ -85,13 +85,4 @@ function closeFullscreen() {
 document.querySelector('.menu__title__opener').onclick = toggleNav;
 
 /*TEST Notes*/
-
-/*
-let body = document.querySelector("body");
-if(window.innerWidth < 768){
-body.style.color = "red";
-} else if(window.innerWidth > 768){
-body.style.color = "green";
-} else {
-body.style.color = "blue";
-}*/
+ 
