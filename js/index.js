@@ -75,6 +75,8 @@ function closeFullscreen() {
   }
 }
 
+/*test*/
+
 /*hidden/side menu*/
   function toggleNav() {
   let nav = document.querySelector(".sidenav__main__block");
@@ -83,5 +85,3 @@ function closeFullscreen() {
     close.innerHTML = window.getComputedStyle(nav).width === "0px" ? "close" : "menu";
   }
 document.querySelector('.menu__title__opener').onclick = toggleNav;
-
-/*TEST Notes*/
