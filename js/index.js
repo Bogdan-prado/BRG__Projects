@@ -83,7 +83,9 @@ function closeFullscreen() {
     if(window.innerWidth >= 768){
     nav.style.width = window.getComputedStyle(nav).width === "0px" ? "calc(653px + (1632 - 653) * ((100vw - 768px) / (1920 - 768)))" : "0px";
 }  else {
-    nav.style.width = window.getComputedStyle(nav).width === "0px" ? "100vw" : "0px";
+      nav.style.width = window.getComputedStyle(nav).width === "0px" ? "100vw" : "0px";
+      let social__media = document.querySelector(".social__media");
+    social__media.style.display = window.getComputedStyle(nav).width === "0px" ? "flex" : "none";
 } 
     let close = document.querySelector(".menu__title__opener");
     close.innerHTML = window.getComputedStyle(nav).width === "0px" ? "close" : "menu";
