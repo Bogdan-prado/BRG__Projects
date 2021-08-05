@@ -89,4 +89,4 @@ function closeFullscreen() {
     close.innerHTML = window.getComputedStyle(nav).width === "0px" ? "close" : "menu";
   }
 document.querySelector('.menu__title__opener').onclick = toggleNav;
-document.querySelector('.menu__title__blocks').onclick = toggleNav;
+document.querySelector('.menu__title__blocks').addEventListener("touchstart", toggleNav);
