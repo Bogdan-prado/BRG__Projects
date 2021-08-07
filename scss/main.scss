@@ -20,6 +20,11 @@
         align-items: flex-start;
         text-align: center;
         padding-top: 6px;
+        a{
+            display: flex;
+            align-items: flex-start;
+            text-decoration: none;
+        }
         img {
             width: calc(27.28px + (44 - 27.28) * ((100vw - 360px) / (1920 - 360)));
             height: calc(26.25px + (42px - 26.25) * ((100vw - 360px) / (1920 - 360)));
@@ -52,14 +57,12 @@
         right: 0;
         width: calc(184px + (295 - 184) * ((100vw - 360px) / (1920 - 360)));
         height: calc(90px + (189 - 90) * ((100vw - 360px) / (1920 - 360)));
-
         z-index: 1;
         .menu__title {
             display: flex;
             flex-flow: row wrap;
             justify-content: flex-end;
             text-align: right;
-
             span {
                 text-transform: uppercase;
                 @include fontStyle("SFProDisplay", normal, 400, 8.8px, rgba(255, 255, 255, 1));
