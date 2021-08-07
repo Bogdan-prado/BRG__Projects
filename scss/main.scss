@@ -218,13 +218,13 @@
                 position: relative;
                 margin-top: calc(10px + (40 - 10) * ((100vw - 360px) / (1920 - 360)));
                 left: calc(0px + (65 - 0) * ((100vw - 360px) / (1920 - 360)));  
-                height: calc(521px + (540 - 521) * ((100vw - 360px) / (1920 - 360)));
+                height: calc(500px + (540 - 500) * ((100vw - 360px) / (1920 - 360)));
                 width: calc(300px + (470 - 300) * ((100vw - 360px) / (1920 - 360)));
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items:space-between;
-            span {
+             span {
                     position: absolute;
                     top: calc(14px + (30 - 14) * ((100vw - 360px) / (1920 - 360)));
                     left: calc(16px + (0 - 16) * ((100vw - 360px) / (1920 - 360)));
@@ -283,12 +283,12 @@
                     align-items:center;
                     position: absolute;
                     left: calc(16px + (0 - 16) * ((100vw - 360px) / (1920 - 360)));
-                    bottom:25px;
-                    width:  282px;
+                    bottom:2.5px;
+                     width:  282px;
                     height: 22px;
                     display: none;
                     p{
-                        @include fontStyle("SFProDisplay",normal,400,11px,rgba(255, 255, 255, 0.4));
+                        @include fontStyle("SFProDisplay",normal,400,15px,rgba(255, 255, 255, 0.4));
                         font-size: 11px;
                         letter-spacing: 0.2em;
                         text-transform: uppercase;
