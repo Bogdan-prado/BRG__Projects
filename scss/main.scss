@@ -46,7 +46,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 1px solid pink;
         position: absolute;
         top: calc(14px + (30 - 14) * ((100vw - 360px) / (1920 - 360)));
         right: 0;
@@ -58,7 +57,6 @@
             display: flex;
             flex-flow: row wrap;
             justify-content: flex-end;
-            border: 1px solid green;
             text-align: right;
 
             span {
@@ -146,7 +144,6 @@
         }
         /*Coordinates*/
         .coordinates {
-            border: 1px solid blue;
             text-align: right;
             @include fontStyle("SFProDisplay", normal, 400, 10.04px, rgba(255, 255, 255, 1));
             font-size: calc(6px + (8 - 6) * ((100vw - 360px) / (1920 - 360)));
@@ -155,7 +152,6 @@
         .social__media {
             display: flex;
             justify-content: flex-end;
-            border: 1px solid yellow;
             > div {
                 display: flex;
                 justify-content: center;
@@ -214,7 +210,6 @@
                     top: calc(14px + (30 - 14) * ((100vw - 360px) / (1920 - 360)));
                     left: calc(16px + (0 - 16) * ((100vw - 360px) / (1920 - 360)));
                     text-transform: uppercase;
-                    border: 1px solid green;
                     @include fontStyle("SFProDisplay",normal,400,calc(16px + (8.8 - 16) * ((100vw - 360px) / (1920 - 360))),rgba(255, 255, 255, 1));
                     font-size: calc(8px + (11 - 8) * ((100vw - 360px) / (1920 - 360)));
                     letter-spacing: 2px;
@@ -224,7 +219,6 @@
                     width: calc(282px + (470 - 282) * ((100vw - 360px) / (1920 - 360)));
                     position: absolute;
                     top:calc(130px + (141 - 130) * ((100vw - 360px) / (1920 - 360)));
-                    border: 1px solid blue;
                     padding: 0;
                     left: calc(16px + (0 - 16) * ((100vw - 360px) / (1920 - 360)));
 
@@ -282,7 +276,6 @@ main {
         top: calc(12px + (265 - 12) * ((100vw - 360px) / (1920 - 360)));
         width: 217px;
         height: 189px;
-        border: 2px solid greenyellow;
     }
 }
 footer {
@@ -294,7 +287,6 @@ footer {
     width: calc(336px + (1793 - 336) * ((100vw - 360px) / (1920 - 360)));
     margin: auto calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360)))
         calc(10px + (40 - 10) * ((100vw - 360px) / (1920 - 360)));
-    border: 1px solid yellow;
     /*footer__label*/
     .footer__label {
         display: flex;
@@ -478,10 +470,13 @@ footer {
                 display: none;
             }
         }
-        .sidenav__main__block > .sidenav__third__block {
+        .sidenav__main__block {
+             border: none;
+            .sidenav__third__block {
             display: none;
         }
         .sidenav__second__block {
+            border: none;
             .sidenav__second__block__nav {
                 position: relative;
                 top: calc(119px + (40 - 119) * ((100vw - 360px) / (1920 - 360)));
@@ -491,7 +486,11 @@ footer {
                 }
             }
         }
+        .sidenav__first__block {
+            border: none;
+        }
     }
+}
     /*Main Section*/
     main aside {
         display: none;
