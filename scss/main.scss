@@ -232,6 +232,8 @@
                     top:calc(130px + (141 - 130) * ((100vw - 360px) / (1920 - 360)));
                     border: 1px solid blue;
                     padding: 0;
+                    left: calc(16px + (0 - 16) * ((100vw - 360px) / (1920 - 360)));
+
                     ul {
                         list-style-type: none;
                         width: 100%;
@@ -489,11 +491,7 @@ footer {
         .sidenav__second__block {
             .sidenav__second__block__nav {
                 position: relative;
-                bottom: 0;
-                /**/
-                       
                 top: calc(119px + (40 - 119) * ((100vw - 360px) / (1920 - 360)));
-                border-color: blue;
                 /**/
                 nav {
                     padding-top: 65px;
