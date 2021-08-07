@@ -186,7 +186,9 @@
         justify-content: center;
         > section {
             background-color: black;
+            &:not(:first-child) {
             border-left: 1px solid rgba(255, 255, 255, 1);
+            }
         }
         .sidenav__first__block {
             width: 288px;
@@ -471,7 +473,6 @@ footer {
             }
         }
         .sidenav__main__block {
-             border: none;
             .sidenav__third__block {
             display: none;
         }
