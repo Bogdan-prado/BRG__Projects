@@ -259,7 +259,37 @@
                             }
                         }
                     }
-                } 
+                }
+                .sidenav__second__block__copyRight {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items:flex-end;
+                    position: absolute;
+                    left: calc(16px + (0 - 16) * ((100vw - 360px) / (1920 - 360)));
+                    bottom:25px;
+                    width:  282px;
+                    height: 22px;
+                    p{
+                        @include fontStyle("SFProDisplay",normal,400,11px,rgba(255, 255, 255, 0.4));
+                        font-size: 11px;
+                        letter-spacing: 0.2em;
+                        text-transform: uppercase;
+                        margin: 0;
+                    }
+                    .sidenav__second__block__language button{
+                        @include fontStyle("SFProDisplay",normal,500,11px,rgba(255, 255, 255, 1));
+                        font-size: 16px;
+                        letter-spacing: 0.2em;
+                        text-transform: uppercase;
+                        background-color:rgba(0, 0, 0, 0);
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                        margin-right: 10px;
+                        display: block;
+                    }
+                }
             }
         }
     }
