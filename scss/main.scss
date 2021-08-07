@@ -190,13 +190,13 @@
         }
         .sidenav__first__block {
             width: 288px;
-            border-left: 1px solid rgba(255, 25, 255, 1);
+            border-left: 1px solid rgba(255, 255, 255, 1);
         }
 
         .sidenav__second__block {
             width: calc(300px + (673 - 300) * ((100vw - 360px) / (1920 - 360)));
             position: relative;
-            border-left: 1px solid rgba(255, 25, 255, 1);
+            border-left: 1px solid rgba(255, 255, 255, 1);
 
             .sidenav__second__block__nav {
                 position: relative;
