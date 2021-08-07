@@ -4,6 +4,15 @@
     background: url("../img/main.png");
     height: calc(640px + (956 - 640) * ((100vw - 360px) / (1920 - 360)));
     background-repeat: no-repeat;
+    .shadow{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0);
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+    } 
 }
 /*Header*/
 .header {
@@ -186,7 +195,7 @@
         z-index: 1;
         top: 0;
         right: 0;
-        background-color: #111;
+        background-color: black;
         overflow: hidden;
         transition: 0.5s;
         display: flex;
