@@ -153,7 +153,7 @@
         .social__media {
             display: flex;
             justify-content: flex-end;
-            > a {
+            > div {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -165,8 +165,11 @@
                 @include fontStyle("SFProDisplay", normal, 400, 12px, rgba(255, 255, 255, 1));
                 font-size: 15px;
                 text-transform: uppercase;
-                text-decoration: none;
-            }
+                a{
+                    text-decoration: none;
+                    color: rgba(255, 255, 255, 1);
+                }
+                }
             :not(:last-child) {
                 margin-right: 8px;
             }
