@@ -186,7 +186,6 @@
         justify-content: center;
         > section {
             background-color: black;
-          
         }
         .sidenav__first__block {
             width: 288px;
@@ -264,12 +263,13 @@
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
-                    align-items:flex-end;
+                    align-items:center;
                     position: absolute;
                     left: calc(16px + (0 - 16) * ((100vw - 360px) / (1920 - 360)));
                     bottom:25px;
                     width:  282px;
                     height: 22px;
+                    display: none;
                     p{
                         @include fontStyle("SFProDisplay",normal,400,11px,rgba(255, 255, 255, 0.4));
                         font-size: 11px;
@@ -513,6 +513,9 @@ footer {
                 top: calc(119px + (40 - 119) * ((100vw - 360px) / (1920 - 360)));
                 .sidenav__second__block__menu{
                     display: none;
+                }
+                .sidenav__second__block__copyRight {
+                    display: flex;
                 }          
             }
         }
