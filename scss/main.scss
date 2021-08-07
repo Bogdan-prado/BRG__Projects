@@ -208,7 +208,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 align-items:space-between;
-               span {
+            span {
                     position: absolute;
                     top: calc(14px + (30 - 14) * ((100vw - 360px) / (1920 - 360)));
                     left: calc(16px + (0 - 16) * ((100vw - 360px) / (1920 - 360)));
@@ -224,7 +224,6 @@
                     top:calc(130px + (141 - 130) * ((100vw - 360px) / (1920 - 360)));
                     padding: 0;
                     left: calc(16px + (0 - 16) * ((100vw - 360px) / (1920 - 360)));
-
                     ul {
                         list-style-type: none;
                         width: 100%;
@@ -232,7 +231,7 @@
                         padding: 0;
                         li {
                             &:not(:last-child) {
-                                padding-bottom: calc(27.65px + (47 - 27.65) * ((100vw - 360px) / (1920 - 360)));
+                            padding-bottom: calc(27.65px + (47 - 27.65) * ((100vw - 360px) / (1920 - 360)));
                             }
                             a {
                                 display: block;
