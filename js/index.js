@@ -37,7 +37,6 @@ function showCoordsX(event) {
   let coor = `${outputX} : X`;
   document.getElementById("x").innerHTML = coor;
 }
-
 function showCoordsY(event) {
   let random = Math.random();
   let y = event.clientY;
