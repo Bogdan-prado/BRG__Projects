@@ -481,7 +481,10 @@ footer {
             border: none;
             .sidenav__second__block__nav {
                 position: relative;
-                top: calc(119px + (40 - 119) * ((100vw - 360px) / (1920 - 360)));                
+                top: calc(119px + (40 - 119) * ((100vw - 360px) / (1920 - 360)));
+                .sidenav__second__block__menu{
+                    display: none;
+                }          
             }
         }
             .sidenav__third__block {
