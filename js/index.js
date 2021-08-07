@@ -79,16 +79,19 @@ function closeFullscreen() {
 
 /*hidden/side menu*/
   function toggleNav() {
-  let nav = document.querySelector(".sidenav__main__block");
+    let nav = document.querySelector(".sidenav__main__block");
+    let shadow = document.querySelector(".shadow");
+    let social__media = document.querySelector(".social__media");
+    let close = document.querySelector(".menu__title__opener");
     if(window.innerWidth >= 768){
       nav.style.width = window.getComputedStyle(nav).width === "0px" ? "calc(653px + (1632 - 653) * ((100vw - 768px) / (1920 - 768)))" : "0px";
-      document.querySelector(".shadow").style.backgroundColor = window.getComputedStyle(nav).width === "0px" ? "rgba(0,0,0,0.4)" : "rgba(0,0,0,0)";
+      shadow.style.backgroundColor = window.getComputedStyle(nav).width === "0px" ? "rgba(0,0,0,0.4)" : "rgba(0,0,0,0)";
+      shadow.style.zIndex = window.getComputedStyle(nav).width === "0px" ? "1" : "0";
+
 }  else {
       nav.style.width = window.getComputedStyle(nav).width === "0px" ? "100vw" : "0px";
-      let social__media = document.querySelector(".social__media");
-    social__media.style.display = window.getComputedStyle(nav).width === "0px" ? "flex" : "none";
+      social__media.style.display = window.getComputedStyle(nav).width === "0px" ? "flex" : "none";
 } 
-    let close = document.querySelector(".menu__title__opener");
     close.innerHTML = window.getComputedStyle(nav).width === "0px" ? "close" : "menu";
   }
 document.querySelector('.menu__title__opener').onclick = toggleNav;
