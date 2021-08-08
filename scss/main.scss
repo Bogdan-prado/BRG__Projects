@@ -204,11 +204,12 @@
         > section {
             background-color: black;
         }
+        /*Right Block*/
         .sidenav__first__block {
             width: 288px;
             border-left: 1px solid rgba(255, 255, 255, 1);
         }
-
+        /*Middle Block*/
         .sidenav__second__block {
             width: calc(300px + (673 - 300) * ((100vw - 360px) / (1920 - 360)));
             position: relative;
@@ -312,8 +313,96 @@
                 }
         }
     }
+        /*Left Block*/
     .sidenav__third__block {
+        position: relative;
         width: calc(266.8px + (671 - 266.8) * ((100vw - 768px) / (1920 - 768)));
+        .sidenav__third__block__menuContent{
+                position: absolute;
+                margin-top: calc(0px + (40 - 0) * ((100vw - 360px) / (1920 - 360)));
+                left: calc(0px + (65 - 0) * ((100vw - 360px) / (1920 - 360)));  
+                height: calc(427px + (824 - 427) * ((100vw - 360px) / (1920 - 360)));
+                width: calc(300px + (400 - 300) * ((100vw - 360px) / (1920 - 360)));
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items:space-between;
+             .menuContent__title {
+                    position: absolute;
+                    top: calc(14px + (30 - 14) * ((100vw - 360px) / (1920 - 360)));
+                    left: calc(20px + (0 - 20) * ((100vw - 360px) / (1920 - 360)));
+                    text-transform: uppercase;
+                    @include fontStyle("SFProDisplay",normal,400,calc(16px + (8.8 - 16) * ((100vw - 360px) / (1920 - 360))),rgba(255, 255, 255, 1));
+                    font-size: calc(8px + (11 - 8) * ((100vw - 360px) / (1920 - 360)));
+                    letter-spacing: 2px;
+                }
+                .menuContent__heading{
+                    position: absolute;
+                    margin: 0;
+                    text-transform: uppercase;
+                    @include fontStyle("SFProDisplay",normal,700,calc(19.09px + (60.8 - 19.09) * ((100vw - 360px) / (1920 - 360))),rgba(255, 255, 255, 1));
+                    font-size: calc(16px + (76 - 16) * ((100vw - 360px) / (1920 - 360)));
+                    top: calc(56px + (141 - 56) * ((100vw - 360px) / (1920 - 360)));
+                    left: calc(20px + (0 - 20) * ((100vw - 360px) / (1920 - 360)));
+                 }
+                .menuContent__description{
+                    position: absolute;
+                    margin: 0;
+                    top: calc(103px + (363 - 103) * ((100vw - 360px) / (1920 - 360)));
+                    left: calc(20px + (0 - 20) * ((100vw - 360px) / (1920 - 360)));
+                     p{
+                    @include fontStyle("SFProDisplay",normal,400,19.06px,rgba(255, 255, 255, 1));
+                    font-size:14px;
+                    width:calc(260px + (325 - 260) * ((100vw - 360px) / (1920 - 360)));
+                    letter-spacing: 0.06em;
+                    margin: 0;
+                    opacity: 0.9;
+                    }
+                }
+                .menuContent__list{
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    margin: 0;
+                    top: calc(103px + (569 - 103) * ((100vw - 360px) / (1920 - 360)));
+                    left: calc(20px + (0 - 20) * ((100vw - 360px) / (1920 - 360)));
+                     h4{
+                    @include fontStyle("SFProDisplay",normal,400,8.8px,rgba(255, 255, 255, 1));
+                    font-size:11px;
+                    margin-bottom: 16px;
+                    }
+                    ul{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    width: 80px;
+                    height: 140px;
+                        li{
+                    @include fontStyle("SFProDisplay",normal,400,19.6px,rgba(255, 255, 255, 1));
+                    font-size:14px;
+                    letter-spacing: 0.06em;
+                    opacity: 0.9;
+                        }
+                    }
+                    .offices{
+                        display: flex;
+                    }
+                }
+                .menuContent__copyRight{
+                    position: absolute;
+                    margin: 0;
+                    bottom:0;
+                    left: calc(20px + (0 - 20) * ((100vw - 360px) / (1920 - 360)));
+                     p{
+                        @include fontStyle("SFProDisplay",normal,400,8.8px, #FFFFFF);
+                        font-size: 11px;
+                        letter-spacing: 0.2em;
+                        text-transform: uppercase;
+                        opacity: 0.4;
+                        margin: 0;
+                    }
+                }
+        }
     }
 }
 /*Main*/
@@ -562,4 +651,21 @@ footer {
             display: none;
         }
     }
+}
+
+
+/*TEST*/
+@media all and (max-width:1677px){
+    .header{
+    .sidenav__main__block {
+    .sidenav__third__block{
+        .sidenav__third__block__menuContent{
+            height: calc(427px + (624 - 427) * ((100vw - 360px) / (1920 - 360)));
+        }
+        .menuContent__list{
+            display: none;
+        }
+    }
+}
+}
 }
