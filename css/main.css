@@ -477,7 +477,6 @@
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
           align-items: space-between;
-  border: 1px solid blue;
 }
 
 .header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__title {
@@ -865,6 +864,9 @@ footer .footer__fullscreen .footer__fullscreen__diagramm .one {
 /*Media Queries*/
 @media all and (max-width: 768px) {
   /*Header*/
+  .body .shadow {
+    display: none;
+  }
   .header .logo h1,
   .header .coordinates,
   .header .menu__title span {
@@ -900,7 +902,10 @@ footer .footer__fullscreen .footer__fullscreen__diagramm .one {
     display: -ms-flexbox;
     display: flex;
   }
-  .header .sidenav__main__block .sidenav__third__block {
+  .header .sidenav__main__block .sidenav__third__block, .header .sidenav__main__block #programs {
+    display: none;
+  }
+  .header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent, .header .sidenav__main__block #programs .sidenav__third__block__menuContent {
     display: none;
   }
   /*Main Section*/
@@ -930,7 +935,7 @@ footer .footer__fullscreen .footer__fullscreen__diagramm .one {
 /*TEST*/
 @media all and (max-width: 1677px) {
   .header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent {
-    height: calc(427px + (740 - 427) * ((100vw - 360px) / (1920 - 360)));
+    height: calc(427px + (575 - 427) * ((100vw - 360px) / (1920 - 360)));
   }
   .header .sidenav__main__block .sidenav__third__block .menuContent__list {
     display: none;

@@ -595,6 +595,11 @@ footer {
 /*Media Queries*/
 @media all and(max-width:768px) {
     /*Header*/
+    .body{
+        .shadow{
+            display: none;
+        }
+    }
     .header {
         .logo h1,
         .coordinates,
@@ -628,8 +633,11 @@ footer {
                     display: flex;
                 }     
         }
-            .sidenav__third__block {
+            .sidenav__third__block, #programs {
             display: none;
+            .sidenav__third__block__menuContent{
+                display: none;
+            }
         }
     }
 }
