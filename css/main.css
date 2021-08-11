@@ -477,6 +477,7 @@
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
           align-items: space-between;
+  border: 1px solid red;
 }
 
 .header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__title {

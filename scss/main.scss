@@ -328,6 +328,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 align-items:space-between;
+                border:1px solid red;
                 .menuContent__title {
                     position: absolute;
                     top: calc(47px + (30 - 47) * ((100vw - 360px) / (1920 - 360)));
