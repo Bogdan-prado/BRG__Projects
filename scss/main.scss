@@ -326,7 +326,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 align-items:space-between;
-                 .menuContent__title {
+                .menuContent__title {
                     position: absolute;
                     top: calc(14px + (70 - 14) * ((100vw - 360px) / (1920 - 360)));
                     left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
@@ -335,7 +335,7 @@
                     font-size: calc(8px + (11 - 8) * ((100vw - 768px) / (1920 - 768)));
                     letter-spacing: 2px;
                     margin: 0;
-                 }
+                }
                 .menuContent__heading{
                     position: absolute;
                     margin: 0;
@@ -350,11 +350,11 @@
                     margin: 0;
                     top: calc(250px + (433 - 250) * ((100vw - 768px) / (1920 - 768)));
                     left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
- 
+
                     p{
                     @include fontStyle("SFProDisplay",normal,400,19.06px,rgba(255, 255, 255, 1));
                     font-size:14px;
-                    width:calc(260px + (325 - 260) * ((100vw - 768px) / (1920 - 768)));
+                    width:calc(200px + (325 - 200) * ((100vw - 768px) / (1920 - 768)));
                     letter-spacing: 0.06em;
                     margin: 0;
                     opacity: 0.9;
@@ -366,7 +366,7 @@
                     position: absolute;
                     margin: 0;
                     /*top: calc(300px + (599 - 300) * ((100vw - 768px) / (1920 - 768)));*/
-                    bottom: calc(200px + (152 - 200) * ((100vw - 768px) / (1920 - 768)));
+                    bottom: calc(100px + (152 - 100) * ((100vw - 768px) / (1920 - 768)));
                     left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
                     h4{
                     @include fontStyle("SFProDisplay",normal,400,8.8px,rgba(255, 255, 255, 1));
@@ -666,19 +666,15 @@ footer {
 
 
 /*TEST*/
-/*@media all and (max-width:1677px)
+@media all and (max-width:1677px){
     .header{
     .sidenav__main__block {
     .sidenav__third__block{
-        .sidenav__third__block__menuContent{
-            height: calc(427px + (575 - 427) * ((100vw - 360px) / (1920 - 360)));
-        }
+        .sidenav__third__block__menuContent
+
         .menuContent__list{
             display: none;
         }
-    }
 }
 }
-}
-
-*/
+    }}

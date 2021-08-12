@@ -520,7 +520,7 @@
   line-height: 19.06px;
   color: white;
   font-size: 14px;
-  width: calc(260px + (325 - 260) * ((100vw - 768px) / (1920 - 768)));
+  width: calc(200px + (325 - 200) * ((100vw - 768px) / (1920 - 768)));
   letter-spacing: 0.06em;
   margin: 0;
   opacity: 0.9;
@@ -537,7 +537,7 @@
   position: absolute;
   margin: 0;
   /*top: calc(300px + (599 - 300) * ((100vw - 768px) / (1920 - 768)));*/
-  bottom: calc(200px + (152 - 200) * ((100vw - 768px) / (1920 - 768)));
+  bottom: calc(100px + (152 - 100) * ((100vw - 768px) / (1920 - 768)));
   left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
 }
 
@@ -933,19 +933,9 @@ footer .footer__fullscreen .footer__fullscreen__diagramm .one {
 }
 
 /*TEST*/
-/*@media all and (max-width:1677px)
-    .header{
-    .sidenav__main__block {
-    .sidenav__third__block{
-        .sidenav__third__block__menuContent{
-            height: calc(427px + (575 - 427) * ((100vw - 360px) / (1920 - 360)));
-        }
-        .menuContent__list{
-            display: none;
-        }
-    }
+@media all and (max-width: 1677px) {
+  .header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent
+.menuContent__list {
+    display: none;
+  }
 }
-}
-}
-
-*/
