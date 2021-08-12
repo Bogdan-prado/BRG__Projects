@@ -323,15 +323,11 @@
 .header .sidenav__main__block .sidenav__second__block .sidenav__second__block__nav {
   position: relative;
   margin-top: calc(0px + (40 - 0) * ((100vw - 360px) / (1920 - 360)));
-  left: calc(0px + (65 - 0) * ((100vw - 360px) / (1920 - 360)));
   height: calc(521px + (540 - 521) * ((100vw - 360px) / (1920 - 360)));
   width: calc(300px + (470 - 300) * ((100vw - 360px) / (1920 - 360)));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 521px;
-          flex: 1 0 521px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -347,7 +343,8 @@
 .header .sidenav__main__block .sidenav__second__block .sidenav__second__block__nav span {
   position: absolute;
   top: calc(14px + (30 - 14) * ((100vw - 360px) / (1920 - 360)));
-  left: calc(16px + (0 - 16) * ((100vw - 360px) / (1920 - 360)));
+  /* left: calc(16px + (0 - 16) * ((100vw - 360px) / (1920 - 360)));*/
+  left: calc(10px + (65 - 10) * ((100vw - 360px) / (1920 - 360)));
   text-transform: uppercase;
   font-family: "SFProDisplay";
   font-style: normal;
@@ -364,7 +361,7 @@
   position: absolute;
   top: calc(130px + (141 - 130) * ((100vw - 360px) / (1920 - 360)));
   padding: 0;
-  left: calc(16px + (0 - 16) * ((100vw - 360px) / (1920 - 360)));
+  left: calc(10px + (65 - 10) * ((100vw - 360px) / (1920 - 360)));
 }
 
 .header .sidenav__main__block .sidenav__second__block .sidenav__second__block__nav nav ul {
@@ -416,7 +413,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  left: calc(16px + (65 - 16) * ((100vw - 360px) / (1920 - 360)));
+  left: calc(10px + (65 - 10) * ((100vw - 360px) / (1920 - 360)));
   bottom: 2.5px;
   width: 282px;
   height: 22px;
@@ -499,7 +496,7 @@
   font-family: "SFProDisplay";
   font-style: normal;
   font-weight: 700;
-  line-height: calc(20px + (60.8 - 20) * ((100vw - 768px) / (1920 - 768)));
+  line-height: calc(25px + (60.8 - 25) * ((100vw - 768px) / (1920 - 768)));
   color: white;
   font-size: calc(25px + (76 - 25) * ((100vw - 768px) / (1920 - 768)));
   top: calc(103px + (211 - 103) * ((100vw - 768px) / (1920 - 768)));
@@ -509,7 +506,7 @@
 .header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__description {
   position: absolute;
   margin: 0;
-  top: calc(250px + (433 - 250) * ((100vw - 768px) / (1920 - 768)));
+  top: calc(210px + (433 - 210) * ((100vw - 768px) / (1920 - 768)));
   left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
 }
 
@@ -537,7 +534,7 @@
   position: absolute;
   margin: 0;
   width: calc(271 + (272 - 271) * ((100vw - 768px) / (1920 - 768)));
-  top: calc(545px + (600 - 545) * ((100vw - 768px) / (1920 - 768)));
+  top: calc(475px + (650 - 475) * ((100vw - 768px) / (1920 - 768)));
   left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
 }
 
@@ -550,7 +547,7 @@
   font-size: 11px;
   text-transform: uppercase;
   font-weight: 800;
-  margin: 0 0 calc(10px + (16 - 10) * ((100vw - 768px) / (1920 - 768))) 0;
+  margin: 0 0 calc(5px + (16 - 5) * ((100vw - 768px) / (1920 - 768))) 0;
   opacity: 0.9;
 }
 
@@ -559,7 +556,7 @@
   margin: 0;
   padding: 0;
   width: calc(70px + (90 - 70) * ((100vw - 768px) / (1920 - 768)));
-  height: calc(100px + (140 - 100) * ((100vw - 768px) / (1920 - 768)));
+  height: calc(90px + (140 - 90) * ((100vw - 768px) / (1920 - 768)));
 }
 
 .header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list ul li {
@@ -594,7 +591,7 @@
   font-family: "SFProDisplay";
   font-style: normal;
   font-weight: 400;
-  line-height: 8.8px;
+  line-height: calc(11.8px + (8.8 - 11.8) * ((100vw - 768px) / (1920 - 768)));
   color: #FFFFFF;
   font-size: 11px;
   letter-spacing: 0.2em;
@@ -937,17 +934,3 @@ footer .footer__fullscreen .footer__fullscreen__diagramm .one {
     display: none;
   }
 }
-
-/*TEST*/
-/*@media all and (max-width:1677px){
-    .header{
-    .sidenav__main__block {
-    .sidenav__third__block{
-        .sidenav__third__block__menuContent
-
-        .menuContent__list{
-            display: none;
-        }
-}
-}
-    }}*/
