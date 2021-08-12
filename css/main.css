@@ -536,8 +536,8 @@
           flex-direction: column;
   position: absolute;
   margin: 0;
-  /*top: calc(300px + (599 - 300) * ((100vw - 768px) / (1920 - 768)));*/
-  bottom: calc(100px + (152 - 100) * ((100vw - 768px) / (1920 - 768)));
+  width: calc(271 + (272 - 271) * ((100vw - 768px) / (1920 - 768)));
+  top: calc(545px + (600 - 545) * ((100vw - 768px) / (1920 - 768)));
   left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
 }
 
@@ -548,7 +548,9 @@
   line-height: 8.8px;
   color: white;
   font-size: 11px;
-  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0 0 calc(10px + (16 - 10) * ((100vw - 768px) / (1920 - 768))) 0;
   opacity: 0.9;
 }
 
@@ -556,8 +558,8 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 80px;
-  height: 140px;
+  width: calc(70px + (90 - 70) * ((100vw - 768px) / (1920 - 768)));
+  height: calc(100px + (140 - 100) * ((100vw - 768px) / (1920 - 768)));
 }
 
 .header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list ul li {
@@ -566,7 +568,7 @@
   font-weight: 400;
   line-height: 19.6px;
   color: white;
-  font-size: 14px;
+  font-size: calc(10px + (14 - 10) * ((100vw - 768px) / (1920 - 768)));
   letter-spacing: 0.06em;
   opacity: 0.9;
 }
@@ -575,6 +577,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__copyRight {
@@ -933,9 +939,15 @@ footer .footer__fullscreen .footer__fullscreen__diagramm .one {
 }
 
 /*TEST*/
-@media all and (max-width: 1677px) {
-  .header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent
-.menuContent__list {
-    display: none;
-  }
+/*@media all and (max-width:1677px){
+    .header{
+    .sidenav__main__block {
+    .sidenav__third__block{
+        .sidenav__third__block__menuContent
+
+        .menuContent__list{
+            display: none;
+        }
 }
+}
+    }}*/

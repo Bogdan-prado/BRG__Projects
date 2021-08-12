@@ -365,30 +365,34 @@
                     flex-direction: column;
                     position: absolute;
                     margin: 0;
-                    /*top: calc(300px + (599 - 300) * ((100vw - 768px) / (1920 - 768)));*/
-                    bottom: calc(100px + (152 - 100) * ((100vw - 768px) / (1920 - 768)));
-                    left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
-                    h4{
+                    width: calc(271 + (272 - 271) * ((100vw - 768px) / (1920 - 768)));;
+                    top: calc(545px + (600 - 545) * ((100vw - 768px) / (1920 - 768)));
+                     left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
+                     h4{
                     @include fontStyle("SFProDisplay",normal,400,8.8px,rgba(255, 255, 255, 1));
                     font-size:11px;
-                    margin:0 0 16px 0;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    margin:0 0 calc(10px + (16 - 10) * ((100vw - 768px) / (1920 - 768))) 0;
                     opacity: 0.9;
                     }
                     ul{
                     list-style-type: none;
                     margin: 0;
                     padding: 0;
-                    width: 80px;
-                    height: 140px;
+                    width: calc(70px + (90 - 70) * ((100vw - 768px) / (1920 - 768)));;
+                     height: calc(100px + (140 - 100) * ((100vw - 768px) / (1920 - 768)));
+                    
                         li{
                     @include fontStyle("SFProDisplay",normal,400,19.6px,rgba(255, 255, 255, 1));
-                    font-size:14px;
+                    font-size:calc(10px + (14 - 10) * ((100vw - 768px) / (1920 - 768)));;
                     letter-spacing: 0.06em;
                     opacity: 0.9;
                         }
                     }
                     .offices{
                         display: flex;
+                        flex-flow: row wrap;
                     }
                 }
                 .menuContent__copyRight{
@@ -666,7 +670,7 @@ footer {
 
 
 /*TEST*/
-@media all and (max-width:1677px){
+/*@media all and (max-width:1677px){
     .header{
     .sidenav__main__block {
     .sidenav__third__block{
@@ -677,4 +681,4 @@ footer {
         }
 }
 }
-    }}
+    }}*/
