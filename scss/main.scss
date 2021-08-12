@@ -226,7 +226,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 align-items:space-between;
-            span {
+             span {
                     position: absolute;
                     top: calc(14px + (30 - 14) * ((100vw - 360px) / (1920 - 360)));
                     left: calc(16px + (0 - 16) * ((100vw - 360px) / (1920 - 360)));
@@ -317,46 +317,44 @@
         /*Left Block*/
     .sidenav__third__block {
         position: relative;
-        width: calc(266.8px + (671 - 266.8) * ((100vw - 768px) / (1920 - 768)));
+        width: calc(320px + (671 - 320) * ((100vw - 768px) / (1920 - 768)));
                 .sidenav__third__block__menuContent{
                 position: absolute;
-                top: calc(0px + (40 - 0) * ((100vw - 360px) / (1920 - 360)));
-                left: calc(0px + (65 - 0) * ((100vw - 360px) / (1920 - 360)));  
-                height: calc(427px + (854 - 427) * ((100vw - 360px) / (1920 - 360)));
-                width: calc(300px + (400 - 300) * ((100vw - 360px) / (1920 - 360)));
+                height: 100vh;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items:space-between;
-                border:1px solid red;
-                .menuContent__title {
+                 .menuContent__title {
                     position: absolute;
-                    top: calc(47px + (30 - 47) * ((100vw - 360px) / (1920 - 360)));
-                    left: calc(20px + (0 - 20) * ((100vw - 360px) / (1920 - 360)));
+                    top: calc(14px + (70 - 14) * ((100vw - 360px) / (1920 - 360)));
+                    left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
                     text-transform: uppercase;
-                    @include fontStyle("SFProDisplay",normal,400,calc(16px + (8.8 - 16) * ((100vw - 360px) / (1920 - 360))),rgba(255, 255, 255, 1));
-                    font-size: calc(8px + (11 - 8) * ((100vw - 360px) / (1920 - 360)));
+                    @include fontStyle("SFProDisplay",normal,400,calc(16px + (8.8 - 16) * ((100vw - 768px) / (1920 - 768))),rgba(255, 255, 255, 1));
+                    font-size: calc(8px + (11 - 8) * ((100vw - 768px) / (1920 - 768)));
                     letter-spacing: 2px;
                     margin: 0;
-                }
+                 }
                 .menuContent__heading{
                     position: absolute;
                     margin: 0;
                     text-transform: uppercase;
-                    @include fontStyle("SFProDisplay",normal,700,calc(19.09px + (60.8 - 19.09) * ((100vw - 360px) / (1920 - 360))),rgba(255, 255, 255, 1));
-                    font-size: calc(16px + (76 - 16) * ((100vw - 360px) / (1920 - 360)));
-                    top: calc(103px + (171 - 103) * ((100vw - 360px) / (1920 - 360)));
-                    left: calc(20px + (0 - 20) * ((100vw - 360px) / (1920 - 360)));
+                    @include fontStyle("SFProDisplay",normal,700,calc(20px + (60.8 - 20) * ((100vw - 768px) / (1920 - 768))),rgba(255, 255, 255, 1));
+                    font-size: calc(25px + (76 - 25) * ((100vw - 768px) / (1920 - 768)));
+                    top: calc(103px + (211 - 103) * ((100vw - 768px) / (1920 - 768)));
+                    left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
                 }
                 .menuContent__description{
                     position: absolute;
                     margin: 0;
-                    top: calc(128px + (393 - 128) * ((100vw - 360px) / (1920 - 360)));
-                    left: calc(20px + (0 - 20) * ((100vw - 360px) / (1920 - 360)));
+                    top: calc(250px + (433 - 250) * ((100vw - 768px) / (1920 - 768)));
+                    left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
+ 
                     p{
                     @include fontStyle("SFProDisplay",normal,400,19.06px,rgba(255, 255, 255, 1));
                     font-size:14px;
-                    width:calc(260px + (325 - 260) * ((100vw - 360px) / (1920 - 360)));
+                    width:calc(260px + (325 - 260) * ((100vw - 768px) / (1920 - 768)));
                     letter-spacing: 0.06em;
                     margin: 0;
                     opacity: 0.9;
@@ -367,12 +365,14 @@
                     flex-direction: column;
                     position: absolute;
                     margin: 0;
-                    top: calc(103px + (599 - 103) * ((100vw - 360px) / (1920 - 360)));
-                    left: calc(20px + (0 - 20) * ((100vw - 360px) / (1920 - 360)));
+                    /*top: calc(300px + (599 - 300) * ((100vw - 768px) / (1920 - 768)));*/
+                    bottom: calc(200px + (152 - 200) * ((100vw - 768px) / (1920 - 768)));
+                    left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
                     h4{
                     @include fontStyle("SFProDisplay",normal,400,8.8px,rgba(255, 255, 255, 1));
                     font-size:11px;
                     margin:0 0 16px 0;
+                    opacity: 0.9;
                     }
                     ul{
                     list-style-type: none;
@@ -394,8 +394,8 @@
                 .menuContent__copyRight{
                     position: absolute;
                     margin: 0;
-                    bottom:0;
-                    left: calc(20px + (0 - 20) * ((100vw - 360px) / (1920 - 360)));
+                    bottom:calc(30px + (62 - 30) * ((100vw - 768px) / (1920 - 768)));;
+                    left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
                     p{
                         @include fontStyle("SFProDisplay",normal,400,8.8px, #FFFFFF);
                         font-size: 11px;
@@ -594,7 +594,7 @@ footer {
     }
 }
 /*Media Queries*/
-@media all and(max-width:768px) {
+@media all and(max-width:767px) {
     /*Header*/
     .body{
         .shadow{
@@ -666,7 +666,7 @@ footer {
 
 
 /*TEST*/
-@media all and (max-width:1677px){
+/*@media all and (max-width:1677px)
     .header{
     .sidenav__main__block {
     .sidenav__third__block{
@@ -681,3 +681,4 @@ footer {
 }
 }
 
+*/

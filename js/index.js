@@ -81,7 +81,7 @@ function closeFullscreen() {
     let social__media = document.querySelector(".social__media");
     let close = document.querySelector(".menu__title__opener");
     if(window.innerWidth >= 768){
-    nav.style.width = window.getComputedStyle(nav).width === "0px" ? "calc(653px + (1632 - 653) * ((100vw - 768px) / (1920 - 768)))" : "0px";
+    nav.style.width = window.getComputedStyle(nav).width === "0px" ? "calc(768px + (1632 - 768) * ((100vw - 768px) / (1920 - 768)))" : "0px";
     shadow.style.backgroundColor = window.getComputedStyle(nav).width === "0px" ? "rgba(0,0,0,0.4)" : "rgba(0,0,0,0)";
     shadow.style.zIndex = window.getComputedStyle(nav).width === "0px" ? "1" : "0";
 }  else {
