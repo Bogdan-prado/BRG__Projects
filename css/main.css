@@ -310,7 +310,7 @@
 }
 
 .header .sidenav__main__block .sidenav__first__block {
-  width: 288px;
+  width: calc(360px + (288 - 360) * ((100vw - 768px) / (1920 - 768)));
   border-left: 1px solid white;
 }
 
@@ -343,8 +343,7 @@
 .header .sidenav__main__block .sidenav__second__block .sidenav__second__block__nav span {
   position: absolute;
   top: calc(14px + (30 - 14) * ((100vw - 360px) / (1920 - 360)));
-  /* left: calc(16px + (0 - 16) * ((100vw - 360px) / (1920 - 360)));*/
-  left: calc(10px + (65 - 10) * ((100vw - 360px) / (1920 - 360)));
+  left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
   text-transform: uppercase;
   font-family: "SFProDisplay";
   font-style: normal;
@@ -361,7 +360,7 @@
   position: absolute;
   top: calc(130px + (141 - 130) * ((100vw - 360px) / (1920 - 360)));
   padding: 0;
-  left: calc(10px + (65 - 10) * ((100vw - 360px) / (1920 - 360)));
+  left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
 }
 
 .header .sidenav__main__block .sidenav__second__block .sidenav__second__block__nav nav ul {
