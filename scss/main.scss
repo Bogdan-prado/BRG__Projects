@@ -418,10 +418,25 @@ main {
     margin: 0 calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360))) 0;
     aside {
         position: absolute;
-        right: 0;
+        right: 0px;
         top: calc(12px + (265 - 12) * ((100vw - 360px) / (1920 - 360)));
-        width: 217px;
+        width: 223px;
         height: 189px;
+        border: 1px solid yellow;
+        .trident{
+        position: absolute;
+        top: 14px;
+        right: 0px;
+        width: 6px;
+        height: 162px;
+        border: 1px solid red;
+        .tooth1{
+            border: 1px solid green;
+            position: absolute;
+        width: 6px;
+        height: 23px;
+        }
+        }
     }
 }
 /*Footer*/
@@ -646,9 +661,9 @@ footer {
     }
 }
     /*Main Section*/
-    main aside {
+   /* main aside {
         display: none;
-    }
+    }*/
     /*Footer*/
     footer {
         justify-content: flex-end;
