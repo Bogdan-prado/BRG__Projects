@@ -534,7 +534,7 @@
   position: absolute;
   margin: 0;
   width: calc(271 + (272 - 271) * ((100vw - 768px) / (1920 - 768)));
-  top: calc(475px + (650 - 475) * ((100vw - 768px) / (1920 - 768)));
+  top: calc(475px + (639 - 475) * ((100vw - 768px) / (1920 - 768)));
   left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
 }
 
@@ -551,25 +551,6 @@
   opacity: 0.9;
 }
 
-.header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: calc(70px + (90 - 70) * ((100vw - 768px) / (1920 - 768)));
-  height: calc(90px + (140 - 90) * ((100vw - 768px) / (1920 - 768)));
-}
-
-.header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list ul li {
-  font-family: "SFProDisplay";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 19.6px;
-  color: white;
-  font-size: calc(10px + (14 - 10) * ((100vw - 768px) / (1920 - 768)));
-  letter-spacing: 0.06em;
-  opacity: 0.9;
-}
-
 .header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list .offices {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -578,6 +559,28 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+}
+
+.header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list .offices form select {
+  font-family: "SFProDisplay";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: black;
+  font-size: calc(10px + (14 - 10) * ((100vw - 768px) / (1920 - 768)));
+  letter-spacing: 0.06em;
+  opacity: 0.9;
+}
+
+.header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list .offices form .countries {
+  font-family: "SFProDisplay";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: white;
+  font-size: calc(10px + (14 - 10) * ((100vw - 768px) / (1920 - 768)));
+  letter-spacing: 0.06em;
+  opacity: 0.9;
 }
 
 .header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__copyRight {

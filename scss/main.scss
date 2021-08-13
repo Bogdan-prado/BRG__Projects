@@ -366,9 +366,9 @@
                     position: absolute;
                     margin: 0;
                     width: calc(271 + (272 - 271) * ((100vw - 768px) / (1920 - 768)));;
-                    top: calc(475px + (650 - 475) * ((100vw - 768px) / (1920 - 768)));
+                    top: calc(475px + (639 - 475) * ((100vw - 768px) / (1920 - 768)));
                      left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
-                     h4{
+                    h4{
                     @include fontStyle("SFProDisplay",normal,400,8.8px,rgba(255, 255, 255, 1));
                     font-size:11px;
                     text-transform: uppercase;
@@ -376,23 +376,24 @@
                     margin:0 0 calc(5px + (16 - 5) * ((100vw - 768px) / (1920 - 768))) 0;
                     opacity: 0.9;
                     }
-                    ul{
-                    list-style-type: none;
-                    margin: 0;
-                    padding: 0;
-                    width: calc(70px + (90 - 70) * ((100vw - 768px) / (1920 - 768)));;
-                     height: calc(90px + (140 - 90) * ((100vw - 768px) / (1920 - 768)));
-                    
-                        li{
-                    @include fontStyle("SFProDisplay",normal,400,19.6px,rgba(255, 255, 255, 1));
-                    font-size:calc(10px + (14 - 10) * ((100vw - 768px) / (1920 - 768)));;
-                    letter-spacing: 0.06em;
-                    opacity: 0.9;
-                        }
-                    }
                     .offices{
                         display: flex;
                         flex-flow: row wrap;
+                        form{
+                            select {
+                                @include fontStyle("SFProDisplay",normal,400,19.6px,rgba(0, 0, 0, 1));
+                                font-size:calc(10px + (14 - 10) * ((100vw - 768px) / (1920 - 768)));;
+                                letter-spacing: 0.06em;
+                                opacity: 0.9;
+                            }
+                            .countries{
+                                @include fontStyle("SFProDisplay",normal,400,19.6px,rgba(255, 255, 255, 1));
+                            font-size:calc(10px + (14 - 10) * ((100vw - 768px) / (1920 - 768)));;
+                                letter-spacing: 0.06em;
+                                opacity: 0.9;
+                                
+                            } 
+                        }
                     }
                 }
                 .menuContent__copyRight{
