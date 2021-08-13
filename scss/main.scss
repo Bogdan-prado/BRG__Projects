@@ -206,7 +206,7 @@
         }
         /*Right Block*/
         .sidenav__first__block {
-            width:  calc(360px + (288 - 360) * ((100vw - 768px) / (1920 - 768)));
+            width:  calc(340px + (288 - 340) * ((100vw - 768px) / (1920 - 768)));
             border-left: 1px solid rgba(255, 255, 255, 1);
         }
         /*Middle Block*/
@@ -484,6 +484,7 @@ footer {
             font-size: calc(9px + (11 - 9) * ((100vw - 360px) / (1920 - 360)));
             text-transform: uppercase;
             margin-right: 16px;
+            margin-left: calc(5px + (0 - 5) * ((100vw - 768px) / (1920 - 768)));
         }
         .footer__fullscreen__brackets {
             display: flex;
