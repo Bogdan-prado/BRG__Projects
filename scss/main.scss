@@ -490,6 +490,101 @@ main {
         height: 23px;
         }
         }
+        .main__navigation{
+        position: absolute;
+        top: 5px;
+        right: 7px;
+        width: 52px;
+        height: 180px;
+        > div{
+            &:hover{
+                background-color: #FFFFFF;
+                cursor: pointer;
+                span{
+                color: rgba(13, 25, 40, 1);
+                }
+            }
+        }
+        span{
+            @include fontStyle("SFProDisplay", normal, 700, 14.3px, rgba(255, 255, 255, 1));
+            font-size: 11px;
+            text-align: center;
+            margin: auto 9px auto 23px;
+        }
+        .main__navigation__block1{
+        position: absolute;
+        width: 52px;
+        height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        }
+        .main__navigation__block2{
+        position: absolute;
+        top: 23px;
+        width: 52px;
+        height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        }
+        .main__navigation__block3{
+        position: absolute;
+        top: 46px;
+        width: 52px;
+        height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        }
+        .main__navigation__block4{
+        position: absolute;
+        top: 69px;
+        width: 52px;
+        height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        }
+        .main__navigation__block5{
+        position: absolute;
+        top: 92px;
+        width: 52px;
+        height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        }
+        .main__navigation__block6{
+        position: absolute;
+        top: 115px;
+        width: 52px;
+        height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        }
+        .main__navigation__block7{
+        position: absolute;
+        top: 138px;
+        width: 52px;
+        height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        }
+        .main__navigation__block8{
+        position: absolute;
+        top: 161px;
+        width: 52px;
+        height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        }
+        }
     }
 }
 /*Footer*/
