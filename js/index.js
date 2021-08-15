@@ -111,3 +111,5 @@ function openMenu(evt, tabname) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+/*Main section aside__menu function*/

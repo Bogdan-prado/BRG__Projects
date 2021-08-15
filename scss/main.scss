@@ -422,7 +422,6 @@ main {
         top: calc(12px + (265 - 12) * ((100vw - 360px) / (1920 - 360)));
         width: 223px;
         height: 189px;
-        border: 1px solid red;
         .trident{
         position: absolute;
         bottom: 14px;
@@ -493,11 +492,10 @@ main {
         }
         .main__navigation{
         position: absolute;
-        top: 5px;
+        top: 0;
         right: 7px;
         width: 52px;
-        height: 180px;
-        border: 1px solid green;
+        height: 100%;
         > div{
             &:hover{
                 background-color: #FFFFFF;
@@ -587,22 +585,132 @@ main {
 
         }
         }
-     /*   .main__navigation__links{
+        .main__navigation__links{
         position: absolute;
-        top: 5px;
-        right: 63px;
-        width: 52px;
-        height: 180px;
-        border: 1px solid red;
+        top: -12px;
+        right: 76px; 
+        width: 160px;
+        height: 100%;
         ul{
-            
+            padding:0;
+            margin:0;
+            position: relative;
+            top: -20px;
+            height: 189px;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             li{
+                border-bottom: 1px solid rgba(255, 255, 255, 1);
+                &:nth-child(1){
+                    margin-bottom: 0;
+                &::after{
+                    content:"|";
+                    border: none;
+                    color: #FFFFFF;
+                    transform:rotate(120deg);
+                    font-size: 16.5px;
+                    position:absolute;
+                    right:-11.65px;
+                    top:18.75px;
+                    height: 12px;
+                }
+            }
+            &:nth-child(2){
+                    margin-top: 35px;
+                ::after{
+                    content:"";
+                    border: none;
+                    transform:rotate(120deg);
+                    position:absolute;
+                    right:-15px;
+                    top:10px;
+                }
+            }
+            &:nth-child(3){
+                    margin-top: 3px;
+                ::after{
+                    content:"";
+                    border: none;
+                    
+                    transform:rotate(120deg);
+                    position:absolute;
+                    right:-15px;
+                    top:10px;
+                }
+            }
+            &:nth-child(4){
+                    margin-top: 2.5px;
+                ::after{
+                    content:"";
+                    border: none;
+                    
+                    transform:rotate(120deg);
+                    position:absolute;
+                    right:-15px;
+                    top:10px;
+                }
+            }
+            &:nth-child(5){
+                    margin-top: 3.5px;
+                ::after{
+                    content:"";
+                    border: none;
+                    
+                    transform:rotate(120deg);
+                    position:absolute;
+                    right:-15px;
+                    top:10px;
+                }
+            }
+            &:nth-child(6){
+                    margin-top: 3px;
+                ::after{
+                    content:"";
+                    border: none;
+                    
+                    transform:rotate(120deg);
+                    position:absolute;
+                    right:-15px;
+                    top:10px;
+                }
+            }
+            &:nth-child(7){
+                    margin-top: 3px;
+                ::after{
+                    content:"";
+                    border: none;
+                    transform:rotate(120deg);
+                    position:absolute;
+                    right:-15px;
+                    top:10px;
+                }
+            }
+            &:nth-child(8){
+                    margin-top:34px;
+                &::after{
+                    content:"|";
+                    border: none;
+                    color: #FFFFFF;
+                    transform:rotate(50deg);
+                    font-size: 16.5px;
+                    position:absolute;
+                    right:-10px;
+                    top:222px;
+                    height: 12px;
+                }
+            }
                 a{
-
+                    text-decoration: none;
+                    @include fontStyle("SFProDisplay", normal, 400, 8.08px, rgba(255, 255, 255, 1));
+                    font-size: calc(8px + (11 - 8) * ((100vw - 360px) / (1920 - 360)));
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
                 }
             }
         }
-        }*/
+        } 
     }
 }
 /*Footer*/
