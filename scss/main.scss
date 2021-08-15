@@ -422,9 +422,10 @@ main {
         top: calc(12px + (265 - 12) * ((100vw - 360px) / (1920 - 360)));
         width: 223px;
         height: 189px;
+        border: 1px solid red;
         .trident{
         position: absolute;
-        top: 14px;
+        bottom: 14px;
         right: 0px;
         width: 6px;
         height: 162px;
@@ -496,6 +497,7 @@ main {
         right: 7px;
         width: 52px;
         height: 180px;
+        border: 1px solid green;
         > div{
             &:hover{
                 background-color: #FFFFFF;
@@ -585,6 +587,22 @@ main {
 
         }
         }
+     /*   .main__navigation__links{
+        position: absolute;
+        top: 5px;
+        right: 63px;
+        width: 52px;
+        height: 180px;
+        border: 1px solid red;
+        ul{
+            
+            li{
+                a{
+
+                }
+            }
+        }
+        }*/
     }
 }
 /*Footer*/
