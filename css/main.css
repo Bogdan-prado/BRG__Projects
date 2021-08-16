@@ -614,7 +614,7 @@ main {
 main aside {
   position: absolute;
   right: 0px;
-  top: calc(12px + (265 - 12) * ((100vw - 360px) / (1920 - 360)));
+  top: calc(150px + (220 - 150) * ((100vw - 768px) / (1920 - 768)));
   width: 223px;
   height: 189px;
 }
@@ -904,86 +904,74 @@ main aside .main__navigation__links ul li:nth-child(1)::after {
 
 main aside .main__navigation__links ul li:nth-child(2) {
   top: 17.85px;
-}
-
-main aside .main__navigation__links ul li:nth-child(2) ::after {
-  content: "";
-  border: none;
-  -webkit-transform: rotate(120deg);
-          transform: rotate(120deg);
-  position: absolute;
-  right: -15px;
-  top: 10px;
+  /*    ::after{
+                    content:"";
+                    border: none;
+                    transform:rotate(120deg);
+                    position:absolute;
+                    right:-15px;
+                    top:10px;
+                }*/
 }
 
 main aside .main__navigation__links ul li:nth-child(3) {
   top: 17.25px;
-}
-
-main aside .main__navigation__links ul li:nth-child(3) ::after {
-  content: "";
-  border: none;
-  -webkit-transform: rotate(120deg);
-          transform: rotate(120deg);
-  position: absolute;
-  right: -15px;
-  top: 10px;
+  /*     ::after{
+                    content:"";
+                    border: none;                    
+                    transform:rotate(120deg);
+                    position:absolute;
+                    right:-15px;
+                    top:10px;
+                }*/
 }
 
 main aside .main__navigation__links ul li:nth-child(4) {
   top: 16.5px;
-}
-
-main aside .main__navigation__links ul li:nth-child(4) ::after {
-  content: "";
-  border: none;
-  -webkit-transform: rotate(120deg);
-          transform: rotate(120deg);
-  position: absolute;
-  right: -15px;
-  top: 10px;
+  /*   ::after{
+                    content:"";
+                    border: none;
+                    transform:rotate(120deg);
+                    position:absolute;
+                    right:-15px;
+                    top:10px;
+                }*/
 }
 
 main aside .main__navigation__links ul li:nth-child(5) {
   top: 14px;
-}
-
-main aside .main__navigation__links ul li:nth-child(5) ::after {
-  content: "";
-  border: none;
-  -webkit-transform: rotate(120deg);
-          transform: rotate(120deg);
-  position: absolute;
-  right: -15px;
-  top: 10px;
+  /*    ::after{
+                    content:"";
+                    border: none;                    
+                    transform:rotate(120deg);
+                    position:absolute;
+                    right:-15px;
+                    top:10px;
+                }*/
 }
 
 main aside .main__navigation__links ul li:nth-child(6) {
   top: 13px;
-}
-
-main aside .main__navigation__links ul li:nth-child(6) ::after {
-  content: "";
-  border: none;
-  -webkit-transform: rotate(120deg);
-          transform: rotate(120deg);
-  position: absolute;
-  right: -15px;
-  top: 10px;
+  /*  ::after{
+                    content:"";
+                    border: none;
+                    transform:rotate(120deg);
+                    position:absolute;
+                    right:-15px;
+                    top:10px;
+                }*/
 }
 
 main aside .main__navigation__links ul li:nth-child(7) {
   top: 12px;
-}
-
-main aside .main__navigation__links ul li:nth-child(7) ::after {
-  content: "";
-  border: none;
-  -webkit-transform: rotate(120deg);
-          transform: rotate(120deg);
-  position: absolute;
-  right: -15px;
-  top: 10px;
+  /*    ::after{
+                    content:"";
+                    border: none;
+                    transform:rotate(120deg);
+                    position:absolute;
+                    right:-15px;
+                    top:10px;
+                }*/
 }
 
 main aside .main__navigation__links ul li:nth-child(8) {
@@ -1311,9 +1299,9 @@ footer .footer__fullscreen .footer__fullscreen__diagramm .one {
     display: none;
   }
   /*Main Section*/
-  /* main aside {
-        display: none;
-    }*/
+  main aside {
+    display: none;
+  }
   /*Footer*/
   footer {
     -webkit-box-pack: end;
