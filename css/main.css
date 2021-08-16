@@ -617,6 +617,7 @@ main aside {
   top: calc(12px + (265 - 12) * ((100vw - 360px) / (1920 - 360)));
   width: 223px;
   height: 189px;
+  border: 1px solid yellow;
 }
 
 main aside .trident {
@@ -864,9 +865,10 @@ main aside .main__navigation__links {
 main aside .main__navigation__links ul {
   padding: 0;
   margin: 0;
-  position: relative;
+  position: absolute;
   top: -20px;
   height: 189px;
+  width: 160px;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -882,6 +884,7 @@ main aside .main__navigation__links ul {
 
 main aside .main__navigation__links ul li {
   border-bottom: 1px solid white;
+  position: relative;
 }
 
 main aside .main__navigation__links ul li:nth-child(1) {
@@ -998,7 +1001,7 @@ main aside .main__navigation__links ul li:nth-child(8)::after {
   font-size: 16.5px;
   position: absolute;
   right: -10px;
-  top: 216px;
+  top: 4.25px;
   height: 12px;
 }
 

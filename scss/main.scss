@@ -422,6 +422,7 @@ main {
         top: calc(12px + (265 - 12) * ((100vw - 360px) / (1920 - 360)));
         width: 223px;
         height: 189px;
+        border: 1px solid yellow;
         .trident{
         position: absolute;
         top: 9.5px;
@@ -599,16 +600,18 @@ main {
         ul{
             padding:0;
             margin:0;
-            position: relative;
+            position: absolute;
             top: -20px;
             height: 189px;
+            width: 160px;
             list-style-type: none;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             li{
                 border-bottom: 1px solid rgba(255, 255, 255, 1);
-                 &:nth-child(1){
+                position: relative;
+                &:nth-child(1){
                     margin-bottom: 0;
                 &::after{
                     content:"|";
@@ -701,7 +704,7 @@ main {
                     font-size: 16.5px;
                     position:absolute;
                     right:-10px;
-                    top:216px;
+                    top:4.25px;
                     height: 12px;
                 }
             }
