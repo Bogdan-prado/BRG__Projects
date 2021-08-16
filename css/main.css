@@ -621,10 +621,10 @@ main aside {
 
 main aside .trident {
   position: absolute;
-  bottom: 14px;
+  top: 9.5px;
   right: 0px;
   width: 6px;
-  height: 162px;
+  height: 100%;
 }
 
 main aside .trident .tooth1 {
@@ -701,6 +701,7 @@ main aside .main__navigation {
   right: 7px;
   width: 52px;
   height: 100%;
+  border: 1px solid red;
 }
 
 main aside .main__navigation > div:hover {
@@ -853,9 +854,11 @@ main aside .main__navigation .main__navigation__block8 {
 main aside .main__navigation__links {
   position: absolute;
   top: -12px;
+  /*right: 76px; */
   right: 76px;
   width: 160px;
   height: 100%;
+  border: 2px solid green;
 }
 
 main aside .main__navigation__links ul {
@@ -893,13 +896,13 @@ main aside .main__navigation__links ul li:nth-child(1)::after {
           transform: rotate(120deg);
   font-size: 16.5px;
   position: absolute;
-  right: -11.65px;
-  top: 18.75px;
+  right: -12.5px;
+  top: 18.65px;
   height: 12px;
 }
 
 main aside .main__navigation__links ul li:nth-child(2) {
-  margin-top: 35px;
+  margin-top: 34px;
 }
 
 main aside .main__navigation__links ul li:nth-child(2) ::after {
@@ -913,7 +916,7 @@ main aside .main__navigation__links ul li:nth-child(2) ::after {
 }
 
 main aside .main__navigation__links ul li:nth-child(3) {
-  margin-top: 3px;
+  margin-top: 3.5px;
 }
 
 main aside .main__navigation__links ul li:nth-child(3) ::after {
@@ -927,7 +930,7 @@ main aside .main__navigation__links ul li:nth-child(3) ::after {
 }
 
 main aside .main__navigation__links ul li:nth-child(4) {
-  margin-top: 2.5px;
+  margin-top: 4px;
 }
 
 main aside .main__navigation__links ul li:nth-child(4) ::after {
@@ -969,7 +972,7 @@ main aside .main__navigation__links ul li:nth-child(6) ::after {
 }
 
 main aside .main__navigation__links ul li:nth-child(7) {
-  margin-top: 3px;
+  margin-top: 4px;
 }
 
 main aside .main__navigation__links ul li:nth-child(7) ::after {
@@ -983,19 +986,19 @@ main aside .main__navigation__links ul li:nth-child(7) ::after {
 }
 
 main aside .main__navigation__links ul li:nth-child(8) {
-  margin-top: 34px;
+  margin-top: 24px;
 }
 
 main aside .main__navigation__links ul li:nth-child(8)::after {
   content: "|";
   border: none;
   color: #FFFFFF;
-  -webkit-transform: rotate(50deg);
-          transform: rotate(50deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   font-size: 16.5px;
   position: absolute;
-  right: -10.9px;
-  top: 225.44px;
+  right: -10px;
+  top: 216px;
   height: 12px;
 }
 

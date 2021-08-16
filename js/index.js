@@ -113,3 +113,16 @@ function openMenu(evt, tabname) {
 document.getElementById("defaultOpen").click();
 
 /*Main section aside__menu function*/
+/*function openAsideMenu(evt,aside__link){
+  let i, aside__menu__links, aside__menu__content__blocks;
+  aside__menu__links = document.querySelectorAll(".aside__menu__links");
+  for( i = 0; i < aside__menu__links.length; i++){
+    aside__menu__links[i].style.display = "none";
+  }
+  aside__menu__content__blocks = document.querySelectorAll(".aside__menu__content__blocks");
+  for (i = 0; i < aside__menu__content__blocks.length; i++) {
+    aside__menu__content__blocks[i].className = aside__menu__content__blocks[i].className.replace(" active", "");
+  }
+  document.getElementById(aside__link).style.display = "inline-block";
+  evt.currentTarget.className += " active";
+}*/
