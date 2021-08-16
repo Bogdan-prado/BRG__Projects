@@ -617,7 +617,6 @@ main aside {
   top: calc(12px + (265 - 12) * ((100vw - 360px) / (1920 - 360)));
   width: 223px;
   height: 189px;
-  border: 1px solid yellow;
 }
 
 main aside .trident {
@@ -702,7 +701,6 @@ main aside .main__navigation {
   right: 7px;
   width: 52px;
   height: 100%;
-  border: 1px solid red;
 }
 
 main aside .main__navigation > div:hover {
@@ -854,12 +852,11 @@ main aside .main__navigation .main__navigation__block8 {
 
 main aside .main__navigation__links {
   position: absolute;
-  top: -12px;
+  top: 0;
   /*right: 76px; */
   right: 76px;
   width: 160px;
   height: 100%;
-  border: 2px solid green;
 }
 
 main aside .main__navigation__links ul {
@@ -884,11 +881,12 @@ main aside .main__navigation__links ul {
 
 main aside .main__navigation__links ul li {
   border-bottom: 1px solid white;
+  visibility: hidden;
   position: relative;
 }
 
 main aside .main__navigation__links ul li:nth-child(1) {
-  margin-bottom: 0;
+  top: -12px;
 }
 
 main aside .main__navigation__links ul li:nth-child(1)::after {
@@ -905,7 +903,7 @@ main aside .main__navigation__links ul li:nth-child(1)::after {
 }
 
 main aside .main__navigation__links ul li:nth-child(2) {
-  margin-top: 34px;
+  top: 17.85px;
 }
 
 main aside .main__navigation__links ul li:nth-child(2) ::after {
@@ -919,7 +917,7 @@ main aside .main__navigation__links ul li:nth-child(2) ::after {
 }
 
 main aside .main__navigation__links ul li:nth-child(3) {
-  margin-top: 3.5px;
+  top: 17.25px;
 }
 
 main aside .main__navigation__links ul li:nth-child(3) ::after {
@@ -933,7 +931,7 @@ main aside .main__navigation__links ul li:nth-child(3) ::after {
 }
 
 main aside .main__navigation__links ul li:nth-child(4) {
-  margin-top: 4px;
+  top: 16.5px;
 }
 
 main aside .main__navigation__links ul li:nth-child(4) ::after {
@@ -947,7 +945,7 @@ main aside .main__navigation__links ul li:nth-child(4) ::after {
 }
 
 main aside .main__navigation__links ul li:nth-child(5) {
-  margin-top: 3.5px;
+  top: 14px;
 }
 
 main aside .main__navigation__links ul li:nth-child(5) ::after {
@@ -961,7 +959,7 @@ main aside .main__navigation__links ul li:nth-child(5) ::after {
 }
 
 main aside .main__navigation__links ul li:nth-child(6) {
-  margin-top: 3px;
+  top: 13px;
 }
 
 main aside .main__navigation__links ul li:nth-child(6) ::after {
@@ -975,7 +973,7 @@ main aside .main__navigation__links ul li:nth-child(6) ::after {
 }
 
 main aside .main__navigation__links ul li:nth-child(7) {
-  margin-top: 4px;
+  top: 12px;
 }
 
 main aside .main__navigation__links ul li:nth-child(7) ::after {
@@ -989,7 +987,7 @@ main aside .main__navigation__links ul li:nth-child(7) ::after {
 }
 
 main aside .main__navigation__links ul li:nth-child(8) {
-  margin-top: 24px;
+  top: 24px;
 }
 
 main aside .main__navigation__links ul li:nth-child(8)::after {

@@ -422,8 +422,7 @@ main {
         top: calc(12px + (265 - 12) * ((100vw - 360px) / (1920 - 360)));
         width: 223px;
         height: 189px;
-        border: 1px solid yellow;
-        .trident{
+         .trident{
         position: absolute;
         top: 9.5px;
         right: 0px;
@@ -498,7 +497,6 @@ main {
         right: 7px;
         width: 52px;
         height: 100%;
-        border: 1px solid red;
 
         > div{
             &:hover{
@@ -591,12 +589,11 @@ main {
         }
         .main__navigation__links{
         position: absolute;
-        top: -12px;
+        top: 0;
         /*right: 76px; */
         right: 76px;
         width: 160px;
         height: 100%;
-        border: 2px solid green;
         ul{
             padding:0;
             margin:0;
@@ -610,9 +607,10 @@ main {
             justify-content: space-between;
             li{
                 border-bottom: 1px solid rgba(255, 255, 255, 1);
+                visibility: hidden;
                 position: relative;
                 &:nth-child(1){
-                    margin-bottom: 0;
+                    top: -12px;
                 &::after{
                     content:"|";
                     border: none;
@@ -626,7 +624,7 @@ main {
                 }
             }
             &:nth-child(2){
-                    margin-top: 34px;
+                    top: 17.85px;
                 ::after{
                     content:"";
                     border: none;
@@ -637,7 +635,7 @@ main {
                 }
             }
             &:nth-child(3){
-                    margin-top: 3.5px;
+                    top: 17.25px;
                 ::after{
                     content:"";
                     border: none;
@@ -649,7 +647,7 @@ main {
                 }
             }
             &:nth-child(4){
-                    margin-top: 4px;
+                    top: 16.5px;
                 ::after{
                     content:"";
                     border: none;
@@ -661,7 +659,7 @@ main {
                 }
             }
             &:nth-child(5){
-                    margin-top: 3.5px;
+                    top: 14px;
                 ::after{
                     content:"";
                     border: none;
@@ -673,7 +671,7 @@ main {
                 }
             }
             &:nth-child(6){
-                    margin-top: 3px;
+                    top: 13px;
                 ::after{
                     content:"";
                     border: none;
@@ -684,7 +682,7 @@ main {
                 }
             }
             &:nth-child(7){
-                    margin-top: 4px;
+                    top: 12px;
                 ::after{
                     content:"";
                     border: none;
@@ -695,7 +693,7 @@ main {
                 }
             }
             &:nth-child(8){
-                    margin-top:24px;
+                    top:24px;
                 &::after{
                     content:"|";
                     border: none;
