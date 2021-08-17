@@ -333,7 +333,6 @@
           justify-content: space-between;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  border: 1px solid red;
 }
 
 .header .sidenav__main__block .sidenav__second__block .sidenav__second__block__nav h4 {
