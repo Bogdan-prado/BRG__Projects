@@ -359,7 +359,7 @@
                     flex-direction: column;
                     position: absolute;
                     margin: 0;
-                    width: calc(271px + (272 - 271) * ((100vw - 768px) / (1920 - 768)));;
+                    width: calc(271px + (272 - 271) * ((100vw - 768px) / (1920 - 768)));
                     top: calc(475px + (639 - 475) * ((100vw - 768px) / (1920 - 768)));
                     left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
                     h4{
@@ -376,9 +376,12 @@
                         form{
                             select {
                                 @include fontStyle("SFProDisplay",normal,400,19.6px,rgba(0, 0, 0, 1));
-                                font-size:calc(10px + (14 - 10) * ((100vw - 768px) / (1920 - 768)));;
+                                font-size:calc(10px + (14 - 10) * ((100vw - 768px) / (1920 - 768)));
                                 letter-spacing: 0.06em;
                                 opacity: 0.9;
+                                width: calc(100px + (150 - 100) * ((100vw - 768px) / (1920 - 768)));
+                                margin-left: 2.5px;
+
                             }
                             .countries{
                                 @include fontStyle("SFProDisplay",normal,400,19.6px,rgba(255, 255, 255, 1));
@@ -919,6 +922,11 @@ footer {
             .sidenav__second__block__nav {
                 position: relative;
                 top: calc(119px + (40 - 119) * ((100vw - 360px) / (1920 - 360)));
+                nav{
+                    left: calc(10px + (10 - 10px) * ((100vw - 360px) / (1920 - 360)));
+                    border: 1px solid blue;
+
+                }
                 .sidenav__second__block__menu{
                     display: none;
                 }   
@@ -927,9 +935,10 @@ footer {
                     display: flex;
                 }     
         }
-            .sidenav__third__block {
+            .sidenav__third__block, .tabcontent,#about {
             display: none;
             .sidenav__third__block__menuContent{
+                border: 1px solid red;
                 display: none;
             }
         }

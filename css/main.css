@@ -563,6 +563,8 @@
   font-size: calc(10px + (14 - 10) * ((100vw - 768px) / (1920 - 768)));
   letter-spacing: 0.06em;
   opacity: 0.9;
+  width: calc(100px + (150 - 100) * ((100vw - 768px) / (1920 - 768)));
+  margin-left: 2.5px;
 }
 
 .header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list .offices form .countries {
@@ -1282,6 +1284,10 @@ footer .footer__fullscreen .footer__fullscreen__diagramm .one {
     position: relative;
     top: calc(119px + (40 - 119) * ((100vw - 360px) / (1920 - 360)));
   }
+  .header .sidenav__main__block .sidenav__second__block .sidenav__second__block__nav nav {
+    left: calc(10px + (10 - 10px) * ((100vw - 360px) / (1920 - 360)));
+    border: 1px solid blue;
+  }
   .header .sidenav__main__block .sidenav__second__block .sidenav__second__block__nav .sidenav__second__block__menu {
     display: none;
   }
@@ -1290,10 +1296,11 @@ footer .footer__fullscreen .footer__fullscreen__diagramm .one {
     display: -ms-flexbox;
     display: flex;
   }
-  .header .sidenav__main__block .sidenav__third__block {
+  .header .sidenav__main__block .sidenav__third__block, .header .sidenav__main__block .tabcontent, .header .sidenav__main__block #about {
     display: none;
   }
-  .header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent {
+  .header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent, .header .sidenav__main__block .tabcontent .sidenav__third__block__menuContent, .header .sidenav__main__block #about .sidenav__third__block__menuContent {
+    border: 1px solid red;
     display: none;
   }
   /*Main Section*/
