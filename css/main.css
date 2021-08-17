@@ -32,7 +32,6 @@
   /*Header Logo*/
   /*Header menu block*/
   /*Hidden Menu*/
-  /*Left Block*/
 }
 
 .header .logo {
@@ -62,7 +61,7 @@
 
 .header .logo img {
   width: calc(27.28px + (44 - 27.28) * ((100vw - 360px) / (1920 - 360)));
-  height: calc(26.25px + (42px - 26.25) * ((100vw - 360px) / (1920 - 360)));
+  height: calc(26.25px + (42 - 26.25) * ((100vw - 360px) / (1920 - 360)));
 }
 
 .header .logo h1 {
@@ -303,10 +302,7 @@
           justify-content: center;
   /*Right Block*/
   /*Middle Block*/
-}
-
-.header .sidenav__main__block > section {
-  background-color: black;
+  /*Left Block*/
 }
 
 .header .sidenav__main__block .sidenav__first__block {
@@ -335,12 +331,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  border: 1px solid red;
 }
 
-.header .sidenav__main__block .sidenav__second__block .sidenav__second__block__nav span {
+.header .sidenav__main__block .sidenav__second__block .sidenav__second__block__nav h4 {
   position: absolute;
   top: calc(14px + (30 - 14) * ((100vw - 360px) / (1920 - 360)));
   left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
@@ -420,7 +416,7 @@
   margin: 0 8px 10px 0;
 }
 
-.header .sidenav__main__block .sidenav__second__block .sidenav__second__block__copyRight p {
+.header .sidenav__main__block .sidenav__second__block .sidenav__second__block__copyRight span {
   font-family: "SFProDisplay";
   font-style: normal;
   font-weight: 400;
@@ -449,12 +445,12 @@
   display: block;
 }
 
-.header .sidenav__third__block {
+.header .sidenav__main__block .sidenav__third__block {
   position: relative;
   width: calc(320px + (671 - 320) * ((100vw - 768px) / (1920 - 768)));
 }
 
-.header .sidenav__third__block .sidenav__third__block__menuContent {
+.header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent {
   position: absolute;
   height: 100vh;
   width: 100%;
@@ -468,12 +464,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
 }
 
-.header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__title {
+.header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent .menuContent__title {
   position: absolute;
   top: calc(14px + (70 - 14) * ((100vw - 360px) / (1920 - 360)));
   left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
@@ -488,7 +483,7 @@
   margin: 0;
 }
 
-.header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__heading {
+.header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent .menuContent__heading {
   position: absolute;
   margin: 0;
   text-transform: uppercase;
@@ -502,14 +497,14 @@
   left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
 }
 
-.header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__description {
+.header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent .menuContent__description {
   position: absolute;
   margin: 0;
   top: calc(210px + (433 - 210) * ((100vw - 768px) / (1920 - 768)));
   left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
 }
 
-.header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__description p {
+.header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent .menuContent__description p {
   font-family: "SFProDisplay";
   font-style: normal;
   font-weight: 400;
@@ -522,7 +517,7 @@
   opacity: 0.9;
 }
 
-.header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list {
+.header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,12 +527,12 @@
           flex-direction: column;
   position: absolute;
   margin: 0;
-  width: calc(271 + (272 - 271) * ((100vw - 768px) / (1920 - 768)));
+  width: calc(271px + (272 - 271) * ((100vw - 768px) / (1920 - 768)));
   top: calc(475px + (639 - 475) * ((100vw - 768px) / (1920 - 768)));
   left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
 }
 
-.header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list h4 {
+.header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list h4 {
   font-family: "SFProDisplay";
   font-style: normal;
   font-weight: 400;
@@ -550,7 +545,7 @@
   opacity: 0.9;
 }
 
-.header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list .offices {
+.header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list .offices {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,7 +555,7 @@
           flex-flow: row wrap;
 }
 
-.header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list .offices form select {
+.header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list .offices form select {
   font-family: "SFProDisplay";
   font-style: normal;
   font-weight: 400;
@@ -571,7 +566,7 @@
   opacity: 0.9;
 }
 
-.header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list .offices form .countries {
+.header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent .menuContent__list .offices form .countries {
   font-family: "SFProDisplay";
   font-style: normal;
   font-weight: 400;
@@ -582,14 +577,14 @@
   opacity: 0.9;
 }
 
-.header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__copyRight {
+.header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent .menuContent__copyRight {
   position: absolute;
   margin: 0;
   bottom: calc(30px + (62 - 30) * ((100vw - 768px) / (1920 - 768)));
   left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
 }
 
-.header .sidenav__third__block .sidenav__third__block__menuContent .menuContent__copyRight p {
+.header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent .menuContent__copyRight span {
   font-family: "SFProDisplay";
   font-style: normal;
   font-weight: 400;
@@ -1257,6 +1252,10 @@ footer .footer__fullscreen .footer__fullscreen__diagramm .one {
   .body .shadow {
     display: none;
   }
+  .header {
+    /*Header menu section*/
+    /*hidden menu*/
+  }
   .header .logo h1,
   .header .coordinates,
   .header .menu__title span {
@@ -1292,10 +1291,10 @@ footer .footer__fullscreen .footer__fullscreen__diagramm .one {
     display: -ms-flexbox;
     display: flex;
   }
-  .header .sidenav__main__block .sidenav__third__block, .header .sidenav__main__block #programs {
+  .header .sidenav__main__block .sidenav__third__block {
     display: none;
   }
-  .header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent, .header .sidenav__main__block #programs .sidenav__third__block__menuContent {
+  .header .sidenav__main__block .sidenav__third__block .sidenav__third__block__menuContent {
     display: none;
   }
   /*Main Section*/
