@@ -282,7 +282,7 @@
                     align-items:center;
                     position: absolute;
                     left: calc(20px + (65 - 20) * ((100vw - 360px) / (1920 - 360)));
-                    bottom:calc(5px + (7.5 - 5) * ((100vw - 360px) / (768 - 360)));
+                    bottom:calc(25px + (7.5 - 25) * ((100vw - 360px) / (768 - 360)));
                     width:  282px;
                     height: 22px;
                     display: none;
@@ -921,21 +921,17 @@ footer {
             /*Second block*/
             .sidenav__second__block {
                  top: calc(119px + (40 - 119) * ((100vw - 360px) / (1920 - 360)));
-                height: 100%;
+                height:calc(521px + (540 - 521) * ((100vw - 360px) / (768 - 360)));
                 border: none;
-                border: 2px solid green;
- 
-
-
-            .sidenav__second__block__nav {
-                position: relative;
- 
+                border: 4px solid green;
+            .sidenav__second__block__nav { 
                 .sidenav__second__block__menu{
                     display: none;
                 }   
             }
             .sidenav__second__block__copyRight {
                     display: flex;
+                    position: sticky;
                     border: 1px solid red;
                 }     
         }
