@@ -215,6 +215,7 @@
             .sidenav__second__block__nav {
                 position: relative;
                 margin-top: calc(0px + (40 - 0) * ((100vw - 360px) / (1920 - 360)));
+                left: calc(16px + (65 - 16) * ((100vw - 360px) / (1920 - 360)));
                 height: calc(521px + (540 - 521) * ((100vw - 360px) / (1920 - 360)));
                 width: calc(300px + (470 - 300) * ((100vw - 360px) / (1920 - 360)));
                 display: flex;
@@ -236,7 +237,6 @@
                     position: absolute;
                     top:calc(130px + (141 - 130) * ((100vw - 360px) / (1920 - 360)));
                     padding: 0;
-                    left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));
                     ul {
                         list-style-type: none;
                         width: 100%;
@@ -281,8 +281,8 @@
                     justify-content: space-between;
                     align-items:center;
                     position: absolute;
-                    left: calc(10px + (65 - 10) * ((100vw - 360px) / (1920 - 360)));
-                    bottom:2.5px;
+                    left: calc(20px + (65 - 20) * ((100vw - 360px) / (1920 - 360)));
+                    bottom:calc(5px + (7.5 - 5) * ((100vw - 360px) / (768 - 360)));
                     width:  282px;
                     height: 22px;
                     display: none;
@@ -303,7 +303,7 @@
                         outline: none;
                         border: none;
                         cursor: pointer;
-                        margin-right: 10px;
+                        margin-right: calc(25px + (0 - 25) * ((100vw - 360px) / (768 - 360)));;
                         display: block;
                     }
                 }
@@ -888,7 +888,7 @@ footer {
     }
 }
 /*Media Queries*/
-@media all and(max-width:767px) {
+@media all and(max-width:768px) {
     /*Header*/
     .body{
         .shadow{
@@ -914,27 +914,35 @@ footer {
         }
         /*hidden menu*/
         .sidenav__main__block {
+            /*First Block*/
             .sidenav__first__block {
             border-left:none;
             }
+            /*Second block*/
             .sidenav__second__block {
-            border: none;
+                 top: calc(119px + (40 - 119) * ((100vw - 360px) / (1920 - 360)));
+                height: 100%;
+                border: none;
+                border: 2px solid green;
+ 
+
+
             .sidenav__second__block__nav {
                 position: relative;
-                top: calc(119px + (40 - 119) * ((100vw - 360px) / (1920 - 360)));
-                nav{
-                    left: calc(10px + (10 - 10px) * ((100vw - 360px) / (1920 - 360)));
-                }
+ 
                 .sidenav__second__block__menu{
                     display: none;
                 }   
             }
             .sidenav__second__block__copyRight {
                     display: flex;
+                    border: 1px solid red;
                 }     
         }
+        /*third block menu links*/
             .sidenav__third__block {
             display: none;
+            width: 0;
             .sidenav__third__block__menuContent{
                 display: none;
             }
@@ -959,6 +967,9 @@ footer {
         .footer__fullscreen__brackets > :first-child:before,
         .footer__fullscreen__brackets > :first-child:after {
             display: none;
+        }
+        .footer__fullscreen{
+            border: 1px solid ;
         }
     }
 }
