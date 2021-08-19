@@ -924,8 +924,6 @@ footer {
                 top: calc(119px + (40 - 119) * ((100vw - 360px) / (1920 - 360)));
                 nav{
                     left: calc(10px + (10 - 10px) * ((100vw - 360px) / (1920 - 360)));
-                    border: 1px solid blue;
-
                 }
                 .sidenav__second__block__menu{
                     display: none;
@@ -935,10 +933,9 @@ footer {
                     display: flex;
                 }     
         }
-            .sidenav__third__block, .tabcontent,#about {
+            .sidenav__third__block {
             display: none;
             .sidenav__third__block__menuContent{
-                border: 1px solid red;
                 display: none;
             }
         }
