@@ -966,7 +966,7 @@ footer {
 }
 
 
-@media all and (min-width:768px) {
+@media all and (min-width:769px) {
     .header{
         /*hidden menu*/
     .sidenav__main__block {
@@ -974,6 +974,7 @@ footer {
         .sidenav__second__block {
         /*copyRight hidden menu*/
         .sidenav__second__block__copyRight {
+            display:none;
              }     
     }
 }
