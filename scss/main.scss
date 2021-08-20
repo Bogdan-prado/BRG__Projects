@@ -224,10 +224,10 @@
                 flex-direction: column;
                 justify-content: space-between;
                 align-content:space-between;
-            h4 {
+            span {
                     position: absolute;
                     top: calc(14px + (30 - 14) * ((100vw - 360px) / (1920 - 360)));
-                    left: calc(10px + (65 - 10) * ((100vw - 768px) / (1920 - 768)));  
+                    left: calc(16px + (0 - 16) * ((100vw - 360px) / (1920 - 360)));
                     text-transform: uppercase;
                     @include fontStyle("SFProDisplay",normal,400,calc(16px + (8.8 - 16) * ((100vw - 360px) / (1920 - 360))),rgba(255, 255, 255, 1));
                     font-size: calc(8px + (11 - 8) * ((100vw - 360px) / (1920 - 360)));
