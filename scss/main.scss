@@ -281,7 +281,7 @@
                     flex-direction: row;
                     justify-content: space-between;
                     align-items:center;
-                    position: fixed;
+                    position: sticky;
                     left: calc(16px + (65 - 16) * ((100vw - 360px) / (1920 - 360)));
                     bottom: calc(13.5px + (40 - 13.5) * ((100vw - 360px) / (1920 - 360)));
                     width:  282px;
@@ -962,5 +962,20 @@ footer {
         .footer__fullscreen{
             border: 1px solid ;
         }
+    }
+}
+
+
+@media all and (min-width:768px) {
+    .header{
+        /*hidden menu*/
+    .sidenav__main__block {
+        /*Middle block of the menu*/
+        .sidenav__second__block {
+        /*copyRight hidden menu*/
+        .sidenav__second__block__copyRight {
+             }     
+    }
+}
     }
 }
