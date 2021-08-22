@@ -110,20 +110,24 @@ function openMenu(evt, tabname) {
 }
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click(openMenu(event, 'about'));
+document.getElementById("defaultOpen").onmouseover(openMenu(event, 'about'));
 // function for the mobile menu
 function openNav() {
   let sidenav__third__block, j;
   sidenav__third__block = document.querySelectorAll(".sidenav__third__block");
-  for (j = 0; j < sidenav__third__block.length; j++){
-    sidenav__third__block[j].style.width = "100%";
+  if (window.innerWidth <= 768) {
+    for (j = 0; j < sidenav__third__block.length; j++) {
+      sidenav__third__block[j].style.width = "100%";
+    }
   }
 }
 function closeNav() {
   let sidenav__third__block, j;
   sidenav__third__block = document.querySelectorAll(".sidenav__third__block");
-  for (j = 0; j < sidenav__third__block.length; j++){
-    sidenav__third__block[j].style.width = "0";
+  if (window.innerWidth <= 768) {
+    for (j = 0; j < sidenav__third__block.length; j++) {
+      sidenav__third__block[j].style.width = "0";
+    }
   }
 }
 
