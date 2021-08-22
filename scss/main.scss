@@ -955,14 +955,13 @@ footer {
                 left: 0;
                 top: 0;
                 overflow: hidden;
-                transition: 0.5s;
+                transition: 1s;
                 .sidenav__third__block__menuContent{
                 position: absolute;
                 width: calc(276px + (353 - 276) * ((100vw - 320px) / (768 - 320)));
                 height: 100%;
                 top: calc(119px + (40 - 119) * ((100vw - 320px) / (1920 - 320)));
                 background-color:rgba(14, 14, 14, 1);
-                transition: 0.5s;
             .menuContent__title{
                 width: 160px;
                 height: 16px;

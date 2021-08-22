@@ -120,7 +120,11 @@ function openNav() {
   }
 }
 function closeNav() {
-  document.querySelector(".sidenav__third__block").style.width = "0%";
+  let sidenav__third__block, j;
+  sidenav__third__block = document.querySelectorAll(".sidenav__third__block");
+  for (j = 0; j < sidenav__third__block.length; j++){
+    sidenav__third__block[j].style.width = "0";
+  }
 }
 
 /*Main section aside__menu function*/
