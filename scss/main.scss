@@ -926,9 +926,8 @@ footer {
             .sidenav__second__block {
                 /*Теst*/
                 display: none;
-                 /*Test*/
-
-                top: calc(119px + (40 - 119) * ((100vw - 360px) / (1920 - 360)));
+                  /*Test*/
+                top: calc(119px + (40 - 119) * ((100vw - 320px) / (1920 - 320)));
                 /*border: none;*/
             .sidenav__second__block__nav { 
                 .sidenav__second__block__menu{
@@ -952,6 +951,7 @@ footer {
                 .sidenav__third__block__menuContent{
                 position: absolute;
                 width: calc(271px + (353 - 271) * ((100vw - 320px) / (768 - 320)));
+                height: 100%;
                 top: calc(119px + (40 - 119) * ((100vw - 320px) / (1920 - 320)));
                 background-color:rgba(14, 14, 14, 1);
                 transition: 0.5s;
