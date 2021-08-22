@@ -111,6 +111,13 @@ function openMenu(evt, tabname) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+// function for the mobile menu
+function openNav() {
+  document.querySelector(".sidenav__third__block").style.width = "100%";
+}
+function closeNav() {
+  document.querySelector(".sidenav__third__block").style.width = "0%";
+}
 
 /*Main section aside__menu function*/
 function openAsideMenu(evt,aside__link){

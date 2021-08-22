@@ -941,12 +941,20 @@ footer {
         }
         /*third block menu links*/
             .sidenav__third__block {
-            .sidenav__third__block__menuContent{
+                height: 100%;
+                width: 0%;
                 position: absolute;
-                height: 100vh;
-                width: calc(291px + (353 - 291) * ((100vw - 320px) / (768 - 320)));
+                z-index: 1;
+                left: 0;
+                top: 0;
+                overflow: hidden;
+                transition: 0.5s;
+                .sidenav__third__block__menuContent{
+                position: absolute;
+                width: calc(271px + (353 - 271) * ((100vw - 320px) / (768 - 320)));
                 top: calc(119px + (40 - 119) * ((100vw - 320px) / (1920 - 320)));
-                border: 2px solid red;
+                background-color:rgba(14, 14, 14, 1);
+                transition: 0.5s;
             .menuContent__title{
                 width: 160px;
                 height: 16px;
@@ -965,7 +973,7 @@ footer {
                 height: 60%;
                 left: calc(20px + (35 - 20) * ((100vw - 320px) / (768 - 320)));
                 p{
-                width:calc(260px + (325 - 260) * ((100vw - 320px) / (768 - 320)));
+                width:calc(245px + (320 - 245) * ((100vw - 320px) / (768 - 320)));
                 font-size: calc(16px + (16 - 16) * ((100vw - 320px) / (768 - 320)));
                 }
             }
