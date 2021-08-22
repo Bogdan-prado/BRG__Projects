@@ -113,7 +113,11 @@ function openMenu(evt, tabname) {
 document.getElementById("defaultOpen").click(openMenu(event, 'about'));
 // function for the mobile menu
 function openNav() {
-  document.querySelector(".sidenav__third__block").style.width = "100%";
+  let sidenav__third__block, j;
+  sidenav__third__block = document.querySelectorAll(".sidenav__third__block");
+  for (j = 0; j < sidenav__third__block.length; j++){
+    sidenav__third__block[j].style.width = "100%";
+  }
 }
 function closeNav() {
   document.querySelector(".sidenav__third__block").style.width = "0%";
