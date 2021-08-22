@@ -110,7 +110,7 @@ function openMenu(evt, tabname) {
 }
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen").click(openMenu(event, 'about'));
 // function for the mobile menu
 function openNav() {
   document.querySelector(".sidenav__third__block").style.width = "100%";
