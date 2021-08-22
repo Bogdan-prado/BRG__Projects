@@ -213,7 +213,7 @@
             height: 100%;
             position: relative;
             border-left: 1px solid rgba(255, 255, 255, 1);
-            /*border: 4px solid red;*/
+            border: 4px solid red;
             .sidenav__second__block__nav {
                 position: relative;
                 margin-top: calc(0px + (40 - 0) * ((100vw - 360px) / (1920 - 360)));
@@ -890,7 +890,7 @@ footer {
     }
 }
 /*Media Queries*/
-@media all and(max-width:768px) {
+@media all and(max-width:769px) {
     /*Header*/
     .body{
         .shadow{
@@ -924,23 +924,59 @@ footer {
             }
             /*Second block*/
             .sidenav__second__block {
+                /*Теst*/
+                display: none;
+                 /*Test*/
+
                 top: calc(119px + (40 - 119) * ((100vw - 360px) / (1920 - 360)));
-                border: none;
+                /*border: none;*/
             .sidenav__second__block__nav { 
                 .sidenav__second__block__menu{
                     display: none;
                 }   
             }
             /*copyRight hidden menu*/
-            .sidenav__second__block__copyRight {
-                }     
+            /*.sidenav__second__block__copyRight {
+                }*/     
         }
         /*third block menu links*/
             .sidenav__third__block {
-            display: none;
-            width: 0;
             .sidenav__third__block__menuContent{
+                position: absolute;
+                height: 100vh;
+                width: calc(291px + (353 - 291) * ((100vw - 320px) / (768 - 320)));
+                top: calc(119px + (40 - 119) * ((100vw - 320px) / (1920 - 320)));
+                border: 2px solid red;
+            .menuContent__title{
+                width: 160px;
+                height: 16px;
+                left: calc(20px + (35 - 20) * ((100vw - 320px) / (768 - 320)));
+                font-size: calc(9px + (11 - 9) * ((100vw - 320px) / (768 - 320)));
+            }
+            .menuContent__heading{
+                width:242px;
+                height: 18px;
+                left: calc(20px + (35 - 20) * ((100vw - 320px) / (768 - 320)));
+                font-size: calc(16px + (16 - 16) * ((100vw - 320px) / (768 - 320)));
+                line-height: 16.09px;
+            }
+            .menuContent__description{
+                width:calc(260px + (325 - 260) * ((100vw - 320px) / (768 - 320)));
+                height: 60%;
+                left: calc(20px + (35 - 20) * ((100vw - 320px) / (768 - 320)));
+                p{
+                width:calc(260px + (325 - 260) * ((100vw - 320px) / (768 - 320)));
+                font-size: calc(16px + (16 - 16) * ((100vw - 320px) / (768 - 320)));
+                }
+            }
+            .menuContent__list{
+                width:calc(260px + (325 - 260) * ((100vw - 320px) / (768 - 320)));
+                left: calc(20px + (35 - 20) * ((100vw - 320px) / (768 - 320)));
+            }
+            
+            .menuContent__copyRight{
                 display: none;
+            }
             }
         }
     }
@@ -964,9 +1000,9 @@ footer {
         .footer__fullscreen__brackets > :first-child:after {
             display: none;
         }
-        .footer__fullscreen{
+       /* .footer__fullscreen{
             border: 1px solid ;
-        }
+        }*/
     }
 }
 
