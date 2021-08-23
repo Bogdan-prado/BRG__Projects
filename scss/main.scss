@@ -428,26 +428,35 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    border: 4px solid red ;
     height: 100vh;
     margin: 0 calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360))) auto;
     /*TEST*/
     .main__center{
-        border: 2px solid  red;
         position: absolute;
-        top: calc(121px + (0 - 121) * ((100vw - 360px) / (1920 - 360)));
+        top: calc(122px + (-4 - 122) * ((100vw - 360px) / (1920 - 360)));
         left: calc(42px + (594 - 42) * ((100vw - 360px) / (1920 - 360)));
         width: calc(253px + (603 - 253) * ((100vw - 360px) / (1920 - 360)));
-        height: calc(283px + (676 - 283) * ((100vw - 360px) / (1920 - 360)));
+        height: calc(337px + (738 - 337) * ((100vw - 360px) / (1920 - 360)));
         display: flex;
         justify-content: center;
+        .main__center__logo{
+            img{
+            position: relative;
+            top: calc(52px + (120 - 52) * ((100vw - 360px) / (1920 - 360)));
+            opacity: 0.3;
+            width:  calc(214px + (509 - 214) * ((100vw - 360px) / (1920 - 360)));
+            height:  calc(214px + (509 - 214) * ((100vw - 360px) / (1920 - 360)));
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
         .main__center__title{
             position: absolute;
             top: calc(127px + (301 - 127) * ((100vw - 360px) / (1920 - 360)));
             text-align:center;
             justify-content: center;
             margin: 0;
-            border: 2px solid  green;
             h1{
                 text-transform: uppercase;
                 margin: 0;
@@ -457,7 +466,7 @@ main {
             }
             h4{
                 text-align: center;
-                margin: 19px auto auto auto;
+                margin:  calc(13px + (12 - 13) * ((100vw - 360px) / (1920 - 360))) auto auto auto;
                 padding-top: 6px;
                 width: calc(108px + (194 - 108) * ((100vw - 360px) / (1920 - 360)));
                 height: calc(18px + (24 - 18) * ((100vw - 360px) / (1920 - 360)));
@@ -471,16 +480,25 @@ main {
         .main__center__button {
             display: flex;
             justify-content: center;
-            align-items: flex-end;
+            align-items: center;
             position: absolute;
-            bottom: -5%;
+            bottom: 0;
             width: calc(117px + (151 - 117) * ((100vw - 360px) / (1920 - 360)));
             height: calc(117px + (151 - 117) * ((100vw - 360px) / (1920 - 360)));
-            border: 2px solid red;
         button{
             position:absolute;
-            border: 1px solid pink;;
-            color: green;
+            background-color:transparent;
+            border: 1px solid rgba(255, 255, 255, 1);
+            width: calc(117px + (151 - 117) * ((100vw - 360px) / (1920 - 360)));
+            height: calc(117px + (151 - 117) * ((100vw - 360px) / (1920 - 360)));
+            border-radius: 50%;
+            text-transform: uppercase;
+            @include fontStyle("SFProDisplay", normal, 400, calc(9.6px + (8.8 - 9.6) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
+            font-size: calc(12px + (11 - 12) * ((100vw - 360px) / (1920 - 360)));
+            letter-spacing: 0.02em;
+            outline: none;
+            cursor: pointer;
+            margin-top:  calc(25px + (12 - 25) * ((100vw - 360px) / (1920 - 360)));
         }
     }
     }
@@ -1060,9 +1078,21 @@ footer {
     }
 }
     /*Main Section*/
-    main aside {
+    main{
+        /*.main__center{
+        border: 2px solid  pink;
+        position: absolute;
+        top: calc(121px + (0 - 121) * ((100vw - 360px) / (1920 - 360)));
+        left: calc(42px + (594 - 42) * ((100vw - 360px) / (1920 - 360)));
+        width: calc(253px + (603 - 253) * ((100vw - 360px) / (1920 - 360)));
+        height: calc(358px + (726 - 358) * ((100vw - 360px) / (1920 - 360)));
+        display: flex;
+        justify-content: center;
+        }*/
+    aside {
         display: none;
     }
+}
     /*Footer*/
     footer {
         justify-content: flex-end;
