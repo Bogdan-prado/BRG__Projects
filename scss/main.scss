@@ -975,6 +975,9 @@ footer {
         }
     }
 }
+
+
+
 /*Media Queries*/
 @media all and(max-width:769px) {
     /*Header*/
@@ -1079,16 +1082,6 @@ footer {
 }
     /*Main Section*/
     main{
-        /*.main__center{
-        border: 2px solid  pink;
-        position: absolute;
-        top: calc(121px + (0 - 121) * ((100vw - 360px) / (1920 - 360)));
-        left: calc(42px + (594 - 42) * ((100vw - 360px) / (1920 - 360)));
-        width: calc(253px + (603 - 253) * ((100vw - 360px) / (1920 - 360)));
-        height: calc(358px + (726 - 358) * ((100vw - 360px) / (1920 - 360)));
-        display: flex;
-        justify-content: center;
-        }*/
     aside {
         display: none;
     }
