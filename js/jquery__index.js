@@ -1,6 +1,19 @@
-$(document).ready(function(){
+ $(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 1) {
+             $(".main__center").slideUp(1000, function () {
+            $(".test").slideDown(1000);
+        })
+        }
+    })
+}) 
+
+
+
+/*$(document).ready(function(){
     $(".ellipse__label").click(function(){
-        let star = $(".main__center__logo");
-        star.toggle("slow");
+        $(".main__center").slideUp(1000, function () {
+            $(".test").slideDown(1000);
+        })
     });
-    });
+    });*/
