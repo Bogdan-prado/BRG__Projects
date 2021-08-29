@@ -19,7 +19,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    position: fixed;
+    position: absolute;
     width: calc(336px + (1793 - 336) * ((100vw - 360px) / (1920 - 360)));
     margin: calc(10px + (40 - 10) * ((100vw - 360px) / (1920 - 360)))
         calc(12px + (63 - 12) * ((100vw - 360px) / (1920 - 360))) 0;
