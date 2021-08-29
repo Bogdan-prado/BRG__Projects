@@ -428,11 +428,11 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 80vh;
+    height: 100vh;
     margin: 0 calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360))) auto;
     overflow-y: scroll;
     &::-webkit-scrollbar {
-    width: 1px;
+    width: 0px;
 }
 /* Track */
     &::-webkit-scrollbar-track {
@@ -452,8 +452,11 @@ main {
         display: none;
     }
     .main__center{
-        position: absolute;
-        top: calc(122px + (-4 - 122) * ((100vw - 360px) / (1920 - 360)));
+        position: sticky;
+        /*test*/
+        /*top: calc(165px + (104 - 165) * ((100vw - 360px) / (1920 - 360)));*/
+        /**/
+        top: calc(122px + (0 - 122) * ((100vw - 360px) / (1920 - 360))); 
         left: calc(42px + (594 - 42) * ((100vw - 360px) / (1920 - 360)));
         width: calc(253px + (603 - 253) * ((100vw - 360px) / (1920 - 360)));
         height: calc(337px + (738 - 337) * ((100vw - 360px) / (1920 - 360)));
