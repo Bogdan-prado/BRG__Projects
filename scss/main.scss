@@ -432,16 +432,17 @@ main {
     height: 100vh;
     margin: 0 calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360))) auto;
     /*TEST*/
-    .test{
+    .test1{
         position: fixed;
         top:10%;
         left: 0;
         color: white;
         font-size: 50px;
-        display: none;
-    }
+        transition: 1s;
+        opacity: 0;
+       }
     .main__center{
-        position: fixed;
+        position: absolute;
         /*test*/
         top: calc(165px + (104 - 165) * ((100vw - 360px) / (1920 - 360)));
         /**/
@@ -451,6 +452,8 @@ main {
         height: calc(337px + (738 - 337) * ((100vw - 360px) / (1920 - 360)));
         display: flex;
         justify-content: center;
+        transition:1s;
+
         .main__center__logo{
             img{
             position: relative;

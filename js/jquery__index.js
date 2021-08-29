@@ -1,6 +1,6 @@
  $(document).ready(function () {
     $(window).scroll(function () {
-        if ($(window).mouseWheel() > 0) {
+        if ($(window).onmousewheel() > 0) {
              $(".main__center").slideUp(1000, function () {
             $(".test").slideDown(1000);
         })

@@ -145,3 +145,40 @@ function openAsideMenu(evt,aside__link){
   document.getElementById(aside__link).style.visibility = "visible";
   evt.currentTarget.className += " active";
 }
+
+
+/*TEST*/
+/*
+function mainSlider(event) {
+  let answer = event.deltaY;
+  if (answer > 0) {
+    document.querySelector(".main__center").style.opacity = "0";
+    document.querySelector(".test").style.display = "block";
+    document.querySelector(".test").style.opacity = "1";
+  } else {
+    document.querySelector(".main__center").style.opacity = "1";
+    document.querySelector(".test").style.display = "none";
+    document.querySelector(".test").style.opacity = "0";
+  }
+}*/
+
+function mainSlider(event) {
+  let answer = event.deltaY;
+  let test = document.querySelectorAll(".test");
+  for (let i = 0; i < test.length; i++) {
+    if (answer > 0) {
+      test[0].style.opacity = "0";
+
+      test[i + 1].style.opacity = "1";
+  
+     } else {
+      test[i + 1].style.opacity = "0";
+            test[0].style.opacity = "1";
+
+
+    }
+  }
+}
+
+
+
