@@ -19,7 +19,8 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    width: calc(336px + (1793 - 336) * ((100vw - 360px) / (1920 - 360)));
     margin: calc(10px + (40 - 10) * ((100vw - 360px) / (1920 - 360)))
         calc(12px + (63 - 12) * ((100vw - 360px) / (1920 - 360))) 0;
     /*Header Logo*/
@@ -430,21 +431,9 @@ main {
     position: relative;
     height: 100vh;
     margin: 0 calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360))) auto;
-    overflow-y: scroll;
-    &::-webkit-scrollbar {
-    width: 0px;
-}
-/* Track */
-    &::-webkit-scrollbar-track {
-    background: #bb0707; 
-}
-/* Handle */
-    &::-webkit-scrollbar-thumb {
-    background: #888; 
-}
     /*TEST*/
     .test{
-        position: absolute;
+        position: fixed;
         top:10%;
         left: 0;
         color: white;
@@ -452,11 +441,11 @@ main {
         display: none;
     }
     .main__center{
-        position: sticky;
+        position: fixed;
         /*test*/
-        /*top: calc(165px + (104 - 165) * ((100vw - 360px) / (1920 - 360)));*/
+        top: calc(165px + (104 - 165) * ((100vw - 360px) / (1920 - 360)));
         /**/
-        top: calc(122px + (0 - 122) * ((100vw - 360px) / (1920 - 360))); 
+        /*top: calc(122px + (0 - 122) * ((100vw - 360px) / (1920 - 360))); */
         left: calc(42px + (594 - 42) * ((100vw - 360px) / (1920 - 360)));
         width: calc(253px + (603 - 253) * ((100vw - 360px) / (1920 - 360)));
         height: calc(337px + (738 - 337) * ((100vw - 360px) / (1920 - 360)));
