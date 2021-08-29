@@ -428,8 +428,20 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 100vh;
+    height: 80vh;
     margin: 0 calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360))) auto;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+    width: 1px;
+}
+/* Track */
+    &::-webkit-scrollbar-track {
+    background: #bb0707; 
+}
+/* Handle */
+    &::-webkit-scrollbar-thumb {
+    background: #888; 
+}
     /*TEST*/
     .test{
         position: absolute;
@@ -512,9 +524,9 @@ main {
     }
     /*TEST*/
     aside {
-        position: absolute;
-        right: 0px;
-        top: calc(150px + (220 - 150) * ((100vw - 768px) / (1920 - 768)));
+        position: fixed;
+        right:  calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360)));
+        top: calc(220px + (320 - 220) * ((100vw - 768px) / (1920 - 768)));
         width: 223px;
         height: 189px;
         .trident{

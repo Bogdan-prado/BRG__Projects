@@ -1,6 +1,6 @@
  $(document).ready(function () {
-    $(window).scroll(function () {
-        if ($(document).scrollTop() > 1) {
+    $(document).scroll(function () {
+        if ($("main").scrollTop > 0) {
              $(".main__center").slideUp(1000, function () {
             $(".test").slideDown(1000);
         })
