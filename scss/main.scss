@@ -440,7 +440,34 @@ main {
         color: white;
         font-size: 50px;
         transition: 1s;
-        opacity: 0;
+        opacity: 1;
+       }
+       .test2{
+        position: fixed;
+        top:30%;
+        left: 0;
+        color: red;
+        font-size: 50px;
+        transition: 1s;
+        opacity: 1;
+       }
+       .test3{
+        position: fixed;
+        top:50%;
+        left: 0;
+        color: green;
+        font-size: 50px;
+        transition: 1s;
+        opacity: 1;
+       }
+       .test4{
+        position: fixed;
+        top:70%;
+        left: 0;
+        color: pink;
+        font-size: 50px;
+        transition: 1s;
+        opacity: 1;
        }
     .main__center{
         position: absolute;
