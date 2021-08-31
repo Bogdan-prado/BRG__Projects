@@ -147,18 +147,45 @@ function openAsideMenu(evt,aside__link){
 }
 
 
+
+
 function mainSlider(event) {
   let answer = event.deltaY;
   let test = document.querySelectorAll(".test");
-     test.forEach(function(item,index,array){
-      if (answer < 0) {
-     alert(test.slice());
-      } else {
-         item.style.opacity = "1";
-       }
-      });
+  if (answer < 0) {
+    for(let i = 0; i < test.length; i++){
+      test[0].style.opacity = "0";
+
+    }
+    } else {
+            
+}
+
 }
 
 
 
+
+
+
+/*
+function mainSlider(event) {
+  let answer = event.deltaY;
+  let test = document.querySelectorAll(".test");
+  test.slice = [].slice;
+    for(let i = 0; i < test.length; i++){
+      if (answer < 0) {
+    let result = test.slice(i,i + 2);
+    for(let j = 0; j < result.length; j++){
+      let result2 = result.slice(j, j + 1);
+      result2[j].style.opacity = "0";
+      let result3 = result.slice(j + 1);
+      result3[j].style.opacity = "1"; 
+    }
+
+      } else {
+
+      }
+    }
+}*/
 

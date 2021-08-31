@@ -440,7 +440,7 @@ main {
         color: white;
         font-size: 50px;
         transition: 1s;
-        opacity: 1;
+        opacity: 0;
        }
        .test2{
         position: fixed;
@@ -449,7 +449,7 @@ main {
         color: red;
         font-size: 50px;
         transition: 1s;
-        opacity: 1;
+        opacity: 0;
        }
        .test3{
         position: fixed;
@@ -458,7 +458,7 @@ main {
         color: green;
         font-size: 50px;
         transition: 1s;
-        opacity: 1;
+        opacity: 0;
        }
        .test4{
         position: fixed;
@@ -467,8 +467,9 @@ main {
         color: pink;
         font-size: 50px;
         transition: 1s;
-        opacity: 1;
-       }
+        opacity: 0;
+    }
+
     .main__center{
         position: absolute;
         /*test*/
@@ -481,7 +482,7 @@ main {
         display: flex;
         justify-content: center;
         transition:1s;
-
+        opacity:0;
         .main__center__logo{
             img{
             position: relative;
