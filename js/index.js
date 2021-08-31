@@ -151,10 +151,11 @@ function openAsideMenu(evt,aside__link){
 
 function mainSlider(event) {
   let answer = event.deltaY;
+  let counter;
   let test = document.querySelectorAll(".test");
   if (answer < 0) {
     for(let i = 0; i < test.length; i++){
-      test[0].style.opacity = "0";
+      test[i].style.opacity = "0";
 
     }
     } else {

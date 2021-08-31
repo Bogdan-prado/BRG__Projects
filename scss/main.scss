@@ -433,6 +433,9 @@ main {
     height: 100vh;
     margin: 0 calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360))) auto;
     /*TEST*/
+    .actives{
+        opacity: 0;
+    }
     .test1{
         position: fixed;
         top:10%;
@@ -482,7 +485,6 @@ main {
         display: flex;
         justify-content: center;
         transition:1s;
-        opacity:0;
         .main__center__logo{
             img{
             position: relative;
