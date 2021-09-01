@@ -150,8 +150,9 @@ function openAsideMenu(evt,aside__link){
 
 
 function mainSlider(event) {
+  let onload = document.querySelector("body");
+  onload.onload = function(function(){
   let answer = event.deltaY;
-  let counter;
   let test = document.querySelectorAll(".test");
   if (answer < 0) {
     for(let i = 0; i < test.length; i++){
@@ -161,6 +162,8 @@ function mainSlider(event) {
     } else {
             
 }
+  })
+  
 
 }
 
