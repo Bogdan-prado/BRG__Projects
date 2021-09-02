@@ -147,31 +147,6 @@ function openAsideMenu(evt,aside__link){
 }
 
 
-
-
-function mainSlider(event) {
-  let onload = document.querySelector("body");
-  onload.onload = function(function(){
-  let answer = event.deltaY;
-  let test = document.querySelectorAll(".test");
-  if (answer < 0) {
-    for(let i = 0; i < test.length; i++){
-      test[i].style.opacity = "0";
-
-    }
-    } else {
-            
-}
-  })
-  
-
-}
-
-
-
-
-
-
 /*
 function mainSlider(event) {
   let answer = event.deltaY;
@@ -191,5 +166,5 @@ function mainSlider(event) {
 
       }
     }
-}*/
-
+}
+*/

@@ -19,7 +19,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
     width: calc(336px + (1793 - 336) * ((100vw - 360px) / (1920 - 360)));
     margin: calc(10px + (40 - 10) * ((100vw - 360px) / (1920 - 360)))
         calc(12px + (63 - 12) * ((100vw - 360px) / (1920 - 360))) 0;
@@ -433,46 +433,23 @@ main {
     height: 100vh;
     margin: 0 calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360))) auto;
     /*TEST*/
-    .actives{
-        opacity: 0;
-    }
+    .section{
+     }
     .test1{
-        position: fixed;
-        top:10%;
-        left: 0;
-        color: white;
-        font-size: 50px;
-        transition: 1s;
-        opacity: 0;
-       }
-       .test2{
-        position: fixed;
-        top:30%;
-        left: 0;
-        color: red;
-        font-size: 50px;
-        transition: 1s;
-        opacity: 0;
-       }
-       .test3{
-        position: fixed;
-        top:50%;
-        left: 0;
-        color: green;
-        font-size: 50px;
-        transition: 1s;
-        opacity: 0;
-       }
-       .test4{
-        position: fixed;
-        top:70%;
-        left: 0;
-        color: pink;
-        font-size: 50px;
-        transition: 1s;
-        opacity: 0;
+        
+        background-color: yellowgreen;
     }
-
+    .test2{
+         
+        background-color: rgb(205, 120, 50);
+        }
+    .test3{
+        
+        background-color: green;
+        }
+    .test4{
+        background-color: blue;
+        } 
     .main__center{
         position: absolute;
         /*test*/

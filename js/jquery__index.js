@@ -1,19 +1,32 @@
- $(document).ready(function () {
-    $(window).scroll(function () {
-        if ($(window).onmousewheel() > 0) {
-             $(".main__center").slideUp(1000, function () {
-            $(".test").slideDown(1000);
-        })
-        }
-    })
-}) 
+$(document).ready(function() {
+	$('#pagepiling').pagepiling({
+	    menu: null,
+        direction: 'vertical',
+        verticalCentered: false,
+        sectionsColor: [],
+        anchors: [],
+        scrollingSpeed: 100,
+        easing: 'swing',
+        loopBottom: false,
+        loopTop: false,
+        css3: true,
+        navigation: {
+            'textColor': '#000',
+            'bulletsColor': '#000',
+            'position': 'right',
+            'tooltips': ['section1', 'section2', 'section3', 'section4']
+        },
+       	normalScrollElements: null,
+        normalScrollElementTouchThreshold: 5,
+        touchSensitivity: 5,
+        keyboardScrolling: true,
+        sectionSelector: '.section',
+        animateAnchor: false,
 
+		//events
+		onLeave: function(index, nextIndex, direction){},
+		afterLoad: function(anchorLink, index){},
+		afterRender: function(){},
+	});
+});
 
-
-/*$(document).ready(function(){
-    $(".ellipse__label").click(function(){
-        $(".main__center").slideUp(1000, function () {
-            $(".test").slideDown(1000);
-        })
-    });
-    });*/
