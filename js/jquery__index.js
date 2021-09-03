@@ -1,13 +1,13 @@
 $(document).ready(function() {
 	$('#pagepiling').pagepiling({
 	    menu: null,
-        direction: 'vertical',
+        direction: 'horizontal',
         verticalCentered: false,
         sectionsColor: [],
         anchors: [],
         scrollingSpeed: 100,
         easing: 'swing',
-        loopBottom: false,
+        loopBottom: true,
         loopTop: false,
         css3: true,
         navigation: {

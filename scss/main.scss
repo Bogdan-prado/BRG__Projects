@@ -23,6 +23,7 @@
     width: calc(336px + (1793 - 336) * ((100vw - 360px) / (1920 - 360)));
     margin: calc(10px + (40 - 10) * ((100vw - 360px) / (1920 - 360)))
         calc(12px + (63 - 12) * ((100vw - 360px) / (1920 - 360))) 0;
+        z-index: 15;
     /*Header Logo*/
     .logo {
         display: flex;
@@ -194,7 +195,6 @@
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 1;
         top: 0;
         right: 0;
         background-color: black;
@@ -211,7 +211,6 @@
         /*Middle Block*/
         .sidenav__second__block {
             width: calc(300px + (673 - 300) * ((100vw - 360px) / (1920 - 360)));
-           /* height: calc(521px + (956 - 521) * ((100vw - 360px) / (1920 - 360)));*/
             height: 100%;
             position: relative;
             border-left: 1px solid rgba(255, 255, 255, 1);
@@ -316,6 +315,8 @@
     .sidenav__third__block {
         position: relative;
         width: calc(320px + (671 - 320) * ((100vw - 768px) / (1920 - 768)));
+        z-index: 152;
+
                 .sidenav__third__block__menuContent{
                 position: absolute;
                 height: 100vh;
@@ -426,105 +427,109 @@
 }
 /*Main*/
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100vh;
-    margin: 0 calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360))) auto;
-    /*TEST*/
     .section{
-     }
-    .test1{
-        
-        background-color: yellowgreen;
+    background-attachment: fixed; 
+    background: url("../img/main.png");
+    background-size: auto 80%;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
     }
-    .test2{
-         
-        background-color: rgb(205, 120, 50);
-        }
-    .test3{
-        
-        background-color: green;
-        }
-    .test4{
-        background-color: blue;
-        } 
-    .main__center{
-        position: absolute;
-        /*test*/
-        top: calc(165px + (104 - 165) * ((100vw - 360px) / (1920 - 360)));
-        /**/
-        /*top: calc(122px + (0 - 122) * ((100vw - 360px) / (1920 - 360))); */
-        left: calc(42px + (594 - 42) * ((100vw - 360px) / (1920 - 360)));
-        width: calc(253px + (603 - 253) * ((100vw - 360px) / (1920 - 360)));
-        height: calc(337px + (738 - 337) * ((100vw - 360px) / (1920 - 360)));
-        display: flex;
-        justify-content: center;
-        transition:1s;
-        .main__center__logo{
-            img{
-            position: relative;
-            top: calc(52px + (120 - 52) * ((100vw - 360px) / (1920 - 360)));
-            opacity: 0.3;
-            width:  calc(214px + (509 - 214) * ((100vw - 360px) / (1920 - 360)));
-            height:  calc(214px + (509 - 214) * ((100vw - 360px) / (1920 - 360)));
-                &:hover{
-                    opacity: 1;
-                }
-            }
-        }
-        .main__center__title{
+    .section1{
+        .main__center{
             position: absolute;
-            top: calc(127px + (301 - 127) * ((100vw - 360px) / (1920 - 360)));
-            text-align:center;
-            justify-content: center;
-            margin: 0;
-            h1{
-                text-transform: uppercase;
-                margin: 0;
-                @include fontStyle("SFProDisplay", normal, 700, calc(30.4px + (73.6 - 30.4) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
-                font-size: calc(38px + (92 - 38) * ((100vw - 360px) / (1920 - 360)));
-                letter-spacing: 0.04em;
-            }
-            h4{
-                text-align: center;
-                margin:  calc(13px + (12 - 13) * ((100vw - 360px) / (1920 - 360))) auto auto auto;
-                padding-top: 6px;
-                width: calc(108px + (194 - 108) * ((100vw - 360px) / (1920 - 360)));
-                height: calc(18px + (24 - 18) * ((100vw - 360px) / (1920 - 360)));
-                background-color: rgba(255, 255, 255, 1);
-                text-transform: uppercase;
-                @include fontStyle("SFProDisplay", normal, 700, calc(7.2px + (11.2 - 7.2) * ((100vw - 360px) / (1920 - 360))), rgba(0, 0, 0, 1));
-                font-size: calc(9px + (14 - 9) * ((100vw - 360px) / (1920 - 360)));
-                letter-spacing: 0.04em;
-            }
-        }
-        .main__center__button {
+            top: calc(165px + (104 - 165) * ((100vw - 360px) / (1920 - 360)));
+            left: calc(42px + (594 - 42) * ((100vw - 360px) / (1920 - 360)));
+            width: calc(253px + (603 - 253) * ((100vw - 360px) / (1920 - 360)));
+            height: calc(337px + (738 - 337) * ((100vw - 360px) / (1920 - 360)));
             display: flex;
             justify-content: center;
-            align-items: center;
-            position: absolute;
-            bottom: 0;
-            width: calc(117px + (151 - 117) * ((100vw - 360px) / (1920 - 360)));
-            height: calc(117px + (151 - 117) * ((100vw - 360px) / (1920 - 360)));
-        button{
-            position:absolute;
-            background-color:transparent;
-            border: 1px solid rgba(255, 255, 255, 1);
-            width: calc(117px + (151 - 117) * ((100vw - 360px) / (1920 - 360)));
-            height: calc(117px + (151 - 117) * ((100vw - 360px) / (1920 - 360)));
-            border-radius: 50%;
-            text-transform: uppercase;
-            @include fontStyle("SFProDisplay", normal, 400, calc(9.6px + (8.8 - 9.6) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
-            font-size: calc(12px + (11 - 12) * ((100vw - 360px) / (1920 - 360)));
-            letter-spacing: 0.02em;
-            outline: none;
-            cursor: pointer;
-            margin-top:  calc(25px + (12 - 25) * ((100vw - 360px) / (1920 - 360)));
+            transition:1s;
+            .main__center__logo{
+                img{
+                position: relative;
+                top: calc(52px + (120 - 52) * ((100vw - 360px) / (1920 - 360)));
+                opacity: 0.3;
+                width:  calc(214px + (509 - 214) * ((100vw - 360px) / (1920 - 360)));
+                height:  calc(214px + (509 - 214) * ((100vw - 360px) / (1920 - 360)));
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+            .main__center__title{
+                position: absolute;
+                top: calc(127px + (301 - 127) * ((100vw - 360px) / (1920 - 360)));
+                text-align:center;
+                justify-content: center;
+                margin: 0;
+                h1{
+                    text-transform: uppercase;
+                    margin: 0;
+                    @include fontStyle("SFProDisplay", normal, 700, calc(30.4px + (73.6 - 30.4) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
+                    font-size: calc(38px + (92 - 38) * ((100vw - 360px) / (1920 - 360)));
+                    letter-spacing: 0.04em;
+                }
+                h4{
+                    text-align: center;
+                    margin:  calc(13px + (12 - 13) * ((100vw - 360px) / (1920 - 360))) auto auto auto;
+                    padding-top: 6px;
+                    width: calc(108px + (194 - 108) * ((100vw - 360px) / (1920 - 360)));
+                    height: calc(18px + (24 - 18) * ((100vw - 360px) / (1920 - 360)));
+                    background-color: rgba(255, 255, 255, 1);
+                    text-transform: uppercase;
+                    @include fontStyle("SFProDisplay", normal, 700, calc(7.2px + (11.2 - 7.2) * ((100vw - 360px) / (1920 - 360))), rgba(0, 0, 0, 1));
+                    font-size: calc(9px + (14 - 9) * ((100vw - 360px) / (1920 - 360)));
+                    letter-spacing: 0.04em;
+                }
+            }
+            .main__center__button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                bottom: 0;
+                width: calc(117px + (151 - 117) * ((100vw - 360px) / (1920 - 360)));
+                height: calc(117px + (151 - 117) * ((100vw - 360px) / (1920 - 360)));
+            button{
+                position:absolute;
+                background-color:transparent;
+                border: 1px solid rgba(255, 255, 255, 1);
+                width: calc(117px + (151 - 117) * ((100vw - 360px) / (1920 - 360)));
+                height: calc(117px + (151 - 117) * ((100vw - 360px) / (1920 - 360)));
+                border-radius: 50%;
+                text-transform: uppercase;
+                @include fontStyle("SFProDisplay", normal, 400, calc(9.6px + (8.8 - 9.6) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
+                font-size: calc(12px + (11 - 12) * ((100vw - 360px) / (1920 - 360)));
+                letter-spacing: 0.02em;
+                outline: none;
+                cursor: pointer;
+                margin-top:  calc(25px + (12 - 25) * ((100vw - 360px) / (1920 - 360)));
+            }
         }
+        }     
     }
+    .section2{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+        margin: 0; 
+        color: blue;      
     }
+    .section3{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+        margin: 0; 
+        color: green;      
+    }
+    .section4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0; 
+        color: yellow;      
+    } 
+    
     /*TEST*/
     aside {
         position: fixed;
@@ -532,6 +537,7 @@ main {
         top: calc(220px + (320 - 220) * ((100vw - 768px) / (1920 - 768)));
         width: 223px;
         height: 189px;
+        z-index: 15;
         .trident{
         position: absolute;
         top: 9.5px;
@@ -836,6 +842,8 @@ footer {
     width: calc(336px + (1793 - 336) * ((100vw - 360px) / (1920 - 360)));
     margin: auto calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360)))
         calc(10px + (40 - 10) * ((100vw - 360px) / (1920 - 360)));
+        z-index: 15;
+
     /*footer__label*/
     .footer__label {
         display: flex;
