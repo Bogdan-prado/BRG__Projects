@@ -13,6 +13,9 @@
         height: 100vh;
         z-index: 0;
     }
+    .right{
+        display: none;
+    }
 }
 /*Header*/
 .header {
@@ -23,7 +26,7 @@
     width: calc(336px + (1793 - 336) * ((100vw - 360px) / (1920 - 360)));
     margin: calc(10px + (40 - 10) * ((100vw - 360px) / (1920 - 360)))
         calc(12px + (63 - 12) * ((100vw - 360px) / (1920 - 360))) 0;
-        z-index: 15;
+        z-index: 9999999;
     /*Header Logo*/
     .logo {
         display: flex;
@@ -427,6 +430,7 @@
 }
 /*Main*/
 main {
+
     .section{
     background-attachment: fixed; 
     background: url("../img/main.png");
@@ -438,16 +442,16 @@ main {
         .main__center{
             position: absolute;
             top: calc(165px + (104 - 165) * ((100vw - 360px) / (1920 - 360)));
-            left: calc(42px + (594 - 42) * ((100vw - 360px) / (1920 - 360)));
+            left: calc(54px + (594 - 54) * ((100vw - 360px) / (1920 - 360)));
             width: calc(253px + (603 - 253) * ((100vw - 360px) / (1920 - 360)));
-            height: calc(337px + (738 - 337) * ((100vw - 360px) / (1920 - 360)));
+            height: calc(283px + (676 - 283) * ((100vw - 360px) / (1920 - 360)));
             display: flex;
             justify-content: center;
             transition:1s;
             .main__center__logo{
                 img{
                 position: relative;
-                top: calc(52px + (120 - 52) * ((100vw - 360px) / (1920 - 360)));
+                top: calc(47px + (120 - 47) * ((100vw - 360px) / (1920 - 360)));
                 opacity: 0.3;
                 width:  calc(214px + (509 - 214) * ((100vw - 360px) / (1920 - 360)));
                 height:  calc(214px + (509 - 214) * ((100vw - 360px) / (1920 - 360)));
@@ -487,7 +491,7 @@ main {
                 justify-content: center;
                 align-items: center;
                 position: absolute;
-                bottom: 0;
+                top: calc(220px + (587 - 220) * ((100vw - 360px) / (1920 - 360)));
                 width: calc(117px + (151 - 117) * ((100vw - 360px) / (1920 - 360)));
                 height: calc(117px + (151 - 117) * ((100vw - 360px) / (1920 - 360)));
             button{
@@ -537,7 +541,7 @@ main {
         top: calc(220px + (320 - 220) * ((100vw - 768px) / (1920 - 768)));
         width: 223px;
         height: 189px;
-        z-index: 15;
+        z-index: 999999;
         .trident{
         position: absolute;
         top: 9.5px;
@@ -842,7 +846,7 @@ footer {
     width: calc(336px + (1793 - 336) * ((100vw - 360px) / (1920 - 360)));
     margin: auto calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360)))
         calc(10px + (40 - 10) * ((100vw - 360px) / (1920 - 360)));
-        z-index: 15;
+        z-index: 99999;
 
     /*footer__label*/
     .footer__label {
