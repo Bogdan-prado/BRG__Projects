@@ -4,6 +4,8 @@
     background: url("../img/main.png");
     height: calc(640px + (956 - 640) * ((100vw - 360px) / (1920 - 360)));
     background-repeat: no-repeat;
+    scroll-behavior: smooth;
+
     .shadow{
         position: absolute;
         top: 0;
@@ -26,8 +28,8 @@
     width: calc(336px + (1793 - 336) * ((100vw - 360px) / (1920 - 360)));
     margin: calc(10px + (40 - 10) * ((100vw - 360px) / (1920 - 360)))
         calc(12px + (63 - 12) * ((100vw - 360px) / (1920 - 360))) 0;
-        z-index: 9999999;
-    /*Header Logo*/
+        z-index: 3;
+     /*Header Logo*/
     .logo {
         display: flex;
         flex-direction: row;
@@ -72,7 +74,7 @@
         right: 0;
         width: calc(184px + (295 - 184) * ((100vw - 360px) / (1920 - 360)));
         height: calc(90px + (189 - 90) * ((100vw - 360px) / (1920 - 360)));
-        z-index: 1;
+        z-index: 2;
         .menu__title {
             display: flex;
             flex-flow: row wrap;
@@ -437,8 +439,28 @@ main {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     .back__link{
+        border-bottom: 2px solid #FFFFFF;
+        display: inline-flex;
+        justify-content: space-between;
         position: relative;
-        top: 50%;
+        top: calc(67px + (239 - 67) * ((100vw - 360px) / (1920 - 360)));;
+        left: calc(12px + (63 - 12) * ((100vw - 360px) / (1920 - 360)));
+        width: 88px;
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            li{
+                a{
+                    color: white;
+                    text-align: center;
+                    padding: 14px 0;
+                    text-decoration: none;
+                    @include fontStyle("SFProDisplay", normal, 700, 16.7px, rgba(255, 255, 255, 1));
+                    font-size: 14px;
+                }
+            }
+        }
     }
     }
     .section1{
@@ -541,7 +563,7 @@ main {
         top: calc(220px + (320 - 220) * ((100vw - 768px) / (1920 - 768)));
         width: 223px;
         height: 189px;
-        z-index: 999999;
+        z-index: 3;
         .trident{
         position: absolute;
         top: 9.5px;
@@ -846,7 +868,7 @@ footer {
     width: calc(336px + (1793 - 336) * ((100vw - 360px) / (1920 - 360)));
     margin: auto calc(12px + (64 - 12) * ((100vw - 360px) / (1920 - 360)))
         calc(10px + (40 - 10) * ((100vw - 360px) / (1920 - 360)));
-        z-index: 99999;
+        z-index: 3;
 
     /*footer__label*/
     .footer__label {

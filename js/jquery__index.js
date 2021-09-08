@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('#pagepiling').pagepiling({
-	    menu: "#myMenu",
+	    menu: ".myMenu",
         direction: 'horizontal',
         verticalCentered: false,
         sectionsColor: [],
