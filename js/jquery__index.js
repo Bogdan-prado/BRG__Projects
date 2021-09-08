@@ -4,7 +4,7 @@ $(document).ready(function() {
         direction: 'horizontal',
         verticalCentered: false,
         sectionsColor: [],
-        anchors: ["firstPage",],
+        anchors: ["firstPage","secondPage"],
         scrollingSpeed: 100,
         easing: 'swing',
         loopBottom: true,
