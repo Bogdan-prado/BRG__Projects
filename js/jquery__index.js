@@ -1,10 +1,10 @@
 $(document).ready(function() {
 	$('#pagepiling').pagepiling({
-	    menu: null,
+	    menu: "#myMenu",
         direction: 'horizontal',
         verticalCentered: false,
         sectionsColor: [],
-        anchors: [],
+        anchors: ["firstPage",],
         scrollingSpeed: 100,
         easing: 'swing',
         loopBottom: true,
