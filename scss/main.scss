@@ -569,14 +569,86 @@ main {
             width: calc(326px + (453 - 326) * ((100vw - 360px) / (1920 - 360)));
             height: 80px;
             p{
-            @include fontStyle("SFProDisplay", normal, 400, 19.6, rgba(255, 255, 255, 1));
+            @include fontStyle("SFProDisplay", normal, 400, 19.6px, rgba(255, 255, 255, 1));
             font-size:14px;
             text-transform: uppercase;
             letter-spacing: 0.06em;
-            line-height: 19.6px;
             opacity: 0.9;
             
             }
+        }
+        .section__ButtonNav{
+            position: absolute;
+            bottom: 80px;
+            left: 673px;
+             button{
+                background-color: transparent;
+                border:none;
+                outline: none;
+                @include fontStyle("SFProDisplay", normal, 700, 0, rgba(255, 255, 255, 1));
+                font-size:13px;
+                text-transform: uppercase;
+                letter-spacing: 0.02em;
+                height: 31px;
+                opacity: 0.4;
+                cursor: pointer;
+                &:hover{
+                    border-bottom: 1px solid rgba(255, 255, 255, 1);
+                    opacity: 1;
+                }
+            }
+             
+        }
+        .section__ButtonNav2{
+            @extend .section__ButtonNav;
+            left: 758px;
+        }
+        .section__radioBtns{
+            position: absolute;
+            border:1px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            left:calc(16px + (288 - 16) * ((100vw - 360px) / (1920 - 360)));
+            top: 527px;
+            p{
+                @include fontStyle("SFProDisplay", normal, 400, 19.6px, rgba(255, 255, 255, 1));
+                font-size:14px;
+                text-transform: uppercase;
+                letter-spacing: 0.06em;
+                opacity: 0.9;
+            }
+             .slider1 {
+                -webkit-appearance: none;
+                width: 80%;
+                height: 2px;
+                background: #d3d3d3;
+                outline: none;
+                opacity: 0.7;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+              }
+              
+             .slider1:hover {
+                opacity: 1;
+              }
+              
+              .slider1::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 25px;
+                height: 25px;
+                background: #04AA6D;
+                cursor: pointer;
+              }
+              
+              .slider::-moz-range-thumb {
+                width: 25px;
+                height: 25px;
+                background: #04AA6D;
+                cursor: pointer;
+              
+            } 
         }
     }
     .section3{
