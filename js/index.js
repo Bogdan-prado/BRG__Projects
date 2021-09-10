@@ -147,24 +147,13 @@ function openAsideMenu(evt,aside__link){
 }
 
 
-/*
-function mainSlider(event) {
-  let answer = event.deltaY;
-  let test = document.querySelectorAll(".test");
-  test.slice = [].slice;
-    for(let i = 0; i < test.length; i++){
-      if (answer < 0) {
-    let result = test.slice(i,i + 2);
-    for(let j = 0; j < result.length; j++){
-      let result2 = result.slice(j, j + 1);
-      result2[j].style.opacity = "0";
-      let result3 = result.slice(j + 1);
-      result3[j].style.opacity = "1"; 
-    }
+function zhopa() {
+  document.querySelector("#bar2").style.background = "transparent";
+   document.querySelector("#bar1").style.background = "#d3d3d3";
 
-      } else {
-
-      }
-    }
 }
-*/
+
+function zhopa1() {
+  document.querySelector("#bar2").style.background = "#d3d3d3";
+  document.querySelector("#bar1").style.background = "transparent";
+}
