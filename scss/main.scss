@@ -515,7 +515,7 @@ main {
         .back__link{
             border-bottom: 2px solid #FFFFFF;
             display: flex;
-            position: relative;
+            position: absolute;
             top: calc(67px + (239 - 67) * ((100vw - 360px) / (1920 - 360)));;
             left: calc(12px + (63 - 12) * ((100vw - 360px) / (1920 - 360)));
             width: 88px;
@@ -541,8 +541,8 @@ main {
             }
         }
         .section__title{
-            position: relative;
-            top: calc(363px + (366 - 363) * ((100vw - 360px) / (1920 - 360)));
+            position: absolute;
+            top: calc(385px + (376 - 385) * ((100vw - 360px) / (1920 - 360)));
             left: calc(16px + (64 - 16) * ((100vw - 360px) / (1920 - 360)));
             width: calc(259px + (746 - 259) * ((100vw - 360px) / (1920 - 360)));
             h4{
@@ -561,8 +561,8 @@ main {
             }
         }
         .section__titleDescription{
-            position: relative;
-            top: calc(406px + (335 - 406) * ((100vw - 360px) / (1920 - 360)));
+            position: absolute;
+            top: calc(555px + (532 - 555) * ((100vw - 360px) / (1920 - 360)));
             left: calc(17px + (513 - 17) * ((100vw - 360px) / (1920 - 360)));
             width: calc(326px + (453 - 326) * ((100vw - 360px) / (1920 - 360)));
             height: calc(100px + (80 - 100) * ((100vw - 360px) / (1920 - 360)));
@@ -618,41 +618,13 @@ main {
             }
         }
         }
-        .section__ButtonNav {
-            display: flex;
-            flex-direction: row;
-            position: absolute;
-            /*top: calc(598px + (883 - 598) * ((100vw - 360px) / (1920 - 360)));*/
-             bottom: calc(11px + (40 - 11) * ((100vw - 360px) / (1920 - 360)));
-            left: calc(17px + (737 - 17) * ((100vw - 360px) / (1920 - 360)));
-            button{                
-                background-color: transparent;
-                border:none;
-                outline: none;
-                @include fontStyle("SFProDisplay", normal, 700, 0, rgba(255, 255, 255, 1));
-                font-size:13px;
-                text-transform: uppercase;
-                letter-spacing: 0.02em;
-                height: 31px;
-                opacity: 0.4;
-                cursor: pointer;
-                &:hover{
-                    border-bottom: 1px solid rgba(255, 255, 255, 1);
-                    opacity: 1;
-                }
-        }
-        }
-        .section__ButtonNav2 button{
-            @extend .section__ButtonNav;
-            left: 758px;
-        }
         .section__radioBtns{
             position: absolute;
             display: flex;
             align-items: center;
             justify-content: space-between;
             left:calc(16px + (288 - 16) * ((100vw - 360px) / (1920 - 360)));
-            top: 547px;
+            top: calc(516px + (527 - 516) * ((100vw - 360px) / (1920 - 360)));
             width:115px;
             p{
                 @include fontStyle("SFProDisplay", normal, 400,calc(15.4px + (19.6 - 15.4) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
@@ -1036,6 +1008,35 @@ footer {
             margin: 0 0 13px 17px;
         }
     }
+    /*Mars/Moon*/
+    .section__ButtonNav {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            bottom: 0;
+            left: calc(8px + (737 - 8) * ((100vw - 360px) / (1920 - 360)));
+            button{                
+                background-color: transparent;
+                border:none;
+                outline: none;
+                @include fontStyle("SFProDisplay", normal, 700, 0, rgba(255, 255, 255, 1));
+                font-size:13px;
+                text-transform: uppercase;
+                letter-spacing: 0.02em;
+                height: 31px;
+                opacity: 0.4;
+                cursor: pointer;
+                &:hover{
+                    border-bottom: 1px solid rgba(255, 255, 255, 1);
+                     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1));
+
+                }
+        }
+        }
+        .section__ButtonNav2 button{
+            @extend .section__ButtonNav;
+            left: 758px;
+        }
     /*fullscreen*/
     .footer__fullscreen {
         display: flex;
@@ -1292,6 +1293,7 @@ footer {
         }
         /*TEST*/
         .section__titleDescription{
+            background-image: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1));
             opacity: 0.2;
         }
     }
