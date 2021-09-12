@@ -516,7 +516,7 @@ main {
     .section2{
         .back__link{
             border-bottom: 2px solid #FFFFFF;
-            display: inline-flex;
+            display: flex;
             position: relative;
             top: calc(67px + (239 - 67) * ((100vw - 360px) / (1920 - 360)));;
             left: calc(12px + (63 - 12) * ((100vw - 360px) / (1920 - 360)));
@@ -544,8 +544,8 @@ main {
         }
         .section__title{
             position: relative;
-            top: calc(363px + (316 - 363) * ((100vw - 360px) / (1920 - 360)));
-            left: calc(12px + (63 - 12) * ((100vw - 360px) / (1920 - 360)));
+            top: calc(363px + (366 - 363) * ((100vw - 360px) / (1920 - 360)));
+            left: calc(16px + (64 - 16) * ((100vw - 360px) / (1920 - 360)));
             width: calc(259px + (746 - 259) * ((100vw - 360px) / (1920 - 360)));
             h4{
             @include fontStyle("SFProDisplay", normal, 700, calc(10.74px + (19.09 - 10.74) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
@@ -564,10 +564,10 @@ main {
         }
         .section__titleDescription{
             position: relative;
-            top: calc(386px + (301 - 386) * ((100vw - 360px) / (1920 - 360)));
+            top: calc(406px + (335 - 406) * ((100vw - 360px) / (1920 - 360)));
             left: calc(17px + (513 - 17) * ((100vw - 360px) / (1920 - 360)));
             width: calc(326px + (453 - 326) * ((100vw - 360px) / (1920 - 360)));
-            height: 80px;
+            height: calc(100px + (80 - 100) * ((100vw - 360px) / (1920 - 360)));
             p{
             @include fontStyle("SFProDisplay", normal, 400, 19.6px, rgba(255, 255, 255, 1));
             font-size:14px;
@@ -579,7 +579,7 @@ main {
         }
         .section__ButtonNav{
             position: absolute;
-            bottom: 80px;
+            bottom: 40px;
             left: 673px;
             button{
                 background-color: transparent;
@@ -608,26 +608,26 @@ main {
             align-items: center;
             justify-content: space-between;
             left:calc(16px + (288 - 16) * ((100vw - 360px) / (1920 - 360)));
-            top: 527px;
-            width:115px;        
+            top: 547px;
+            width:115px;   
             p{
-                @include fontStyle("SFProDisplay", normal, 400, 19.6px, rgba(255, 255, 255, 1));
-                font-size:14px;
+                @include fontStyle("SFProDisplay", normal, 400,calc(15.4px + (19.6 - 15.4) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
+                font-size:calc(11px + (14 - 11) * ((100vw - 360px) / (1920 - 360)));
                 text-transform: uppercase;
                 letter-spacing: 0.06em;
                 opacity: 0.9;
             }
                 #bar1{
                 position: absolute;
-                margin-left: 10px;
-                width: 40%;
-                height: 2px;
+                margin-left: 25px;
+                width: 35px;
+                height: 1px;
                 background-color: #d3d3d3;
             }
             #bar2{
                 @extend #bar1;
                 background-color: transparent;
-                margin-left: 55px;
+                left:30px;
             }
         }
     }
@@ -1229,6 +1229,30 @@ footer {
 }
     /*Main Section*/
     main{
+        .section2{
+        .back__link{
+            border:none;
+            height: 25px;
+            width: 28px;
+            margin: auto;            
+            ul{
+                li{
+                    a{
+                        span:nth-child(1){
+                        font-size: 28px;                        
+                        }
+                        span:nth-child(2){
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        /*TEST*/
+        .section__titleDescription{
+            display: none;
+        }
+    }
     aside {
         display: none;
     }
@@ -1269,3 +1293,36 @@ footer {
 }
     }
 }
+
+
+/*
+ .section2{
+        .back__link{
+            border-bottom: 2px solid #FFFFFF;
+            display: flex;
+            position: relative;
+            top: calc(67px + (239 - 67) * ((100vw - 360px) / (1920 - 360)));;
+            left: calc(12px + (63 - 12) * ((100vw - 360px) / (1920 - 360)));
+            width: 88px;
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                li{
+                    a{
+                        color: white;
+                        text-align: center;
+                        padding: 14px 0;
+                        text-decoration: none;
+                        @include fontStyle("SFProDisplay", normal, 700, 16.7px, rgba(255, 255, 255, 1));
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.1em;
+                        span:nth-child(2){
+                            margin-left: 32px;
+                        }
+                    }
+                }
+            }
+        }
+*/
