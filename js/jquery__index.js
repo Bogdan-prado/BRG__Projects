@@ -4,10 +4,10 @@ $(document).ready(function() {
         direction: 'horizontal',
         verticalCentered: false,
         sectionsColor: [],
-        anchors: ["firstPage","secondPage"],
+        anchors: ["firstPage","secondPage","thirdPage"],
         scrollingSpeed: 100,
         easing: 'swing',
-        loopBottom: true,
+        loopBottom: false,
         loopTop: false,
         css3: true,
         navigation: {
