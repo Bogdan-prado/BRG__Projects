@@ -25,7 +25,15 @@ $(document).ready(function() {
 
 		//events
 		onLeave: function(index, nextIndex, direction){},
-		afterLoad: function(anchorLink, index){},
+		afterLoad: function(anchorLink, index){
+			//using index
+			if(index == 1){
+                document.querySelector(".section__ButtonNav").style.display = "none";
+			} else{
+                document.querySelector(".section__ButtonNav").style.display = "block";
+            }
+            
+		},
 		afterRender: function(){},
 	});
 });

@@ -94,7 +94,7 @@ document.querySelector('.menu__title__opener').onclick = toggleNav;
 document.querySelector('.menu__title__blocks').addEventListener("touchstart", toggleNav);
 
 
-/*TEST*/
+/*opening the tabs of the hidden menu*/
 function openMenu(evt, tabname) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
