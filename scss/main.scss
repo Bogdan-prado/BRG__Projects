@@ -1304,6 +1304,7 @@ footer {
             background-image: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1));
             p{
             opacity: 0.3;
+            width: 100%;
             }
         }
         .section__planetButton{
@@ -1331,9 +1332,10 @@ footer {
     footer {
         justify-content: flex-end;
         background-color: transparent; /* For browsers that do not support gradients */
-        background-image: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1));
-        margin-bottom: 0;
-        padding-bottom: 10px;
+        background-image: linear-gradient(rgba(255,255,255,0), rgba(27,17,29,1));
+        margin: auto;
+        width: 100%;
+        padding-bottom: 30px;
         .footer__label,
         .footer__fullscreen__title,
         .footer__fullscreen__icons,
@@ -1349,6 +1351,8 @@ footer {
         .section__ButtonNav {
             top: 0;
             margin-bottom: calc(8px + (10 - 8) * ((100vw - 360px) / (1920 - 360)));
+            left: calc(17px + (28 - 17) * ((100vw - 360px) / (768 - 360)));
+
             button{
                 opacity: 1;
                 width: 38px;
@@ -1362,6 +1366,10 @@ footer {
                     padding-left:0;
                 }
             }
+        }
+        .footer__fullscreen__diagramm {
+            position: absolute;
+            right: calc(12px + (25.6 - 12) * ((100vw - 360px) / (768 - 360)));
         }
     }
 }

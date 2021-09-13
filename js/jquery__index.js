@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('#pagepiling').pagepiling({
-	    menu: ".myMenu",
+	menu: ".myMenu",
         direction: 'horizontal',
         verticalCentered: false,
         sectionsColor: [],
@@ -16,7 +16,7 @@ $(document).ready(function() {
             'position': 'right',
             'tooltips': ['section1', 'section2', 'section3', 'section4']
         },
-       	normalScrollElements: null,
+    normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
         touchSensitivity: 5,
         keyboardScrolling: true,
@@ -26,11 +26,12 @@ $(document).ready(function() {
 		//events
 		onLeave: function(index, nextIndex, direction){},
 		afterLoad: function(anchorLink, index){
-			//using index
 			if(index == 1){
                 document.querySelector(".section__ButtonNav").style.display = "none";
+                document.querySelector("footer").style.backgroundImage = "none";
 			} else{
                 document.querySelector(".section__ButtonNav").style.display = "block";
+                document.querySelector("footer").style.backgroundImage = "linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1))";
             }
             
 		},
