@@ -1017,8 +1017,8 @@ footer {
             display: flex;
             flex-direction: row;
             position: absolute;
-            bottom: 0;
-            left: calc(8px + (737 - 8) * ((100vw - 360px) / (1920 - 360)));
+            bottom: calc(8px + (0 - 8) * ((100vw - 360px) / (1920 - 360)));
+            left: calc(7px + (737 - 7) * ((100vw - 360px) / (1920 - 360)));
             button{                
                 background-color: transparent;
                 border:none;
@@ -1030,9 +1030,16 @@ footer {
                 height: 31px;
                 opacity: 0.4;
                 cursor: pointer;
+                padding-bottom: 18px;
+                &:nth-child(1){
+                margin-right: 47px;
+                 }
+                &:nth-child(2){
+ 
+                }
                 &:hover{
                     border-bottom: 1px solid rgba(255, 255, 255, 1);
-                     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1));
+                    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1));
 
                 }
         }
@@ -1295,8 +1302,11 @@ footer {
         }
         /*TEST*/
         .section__titleDescription{
-             background-color: transparent; /* For browsers that do not support gradients */
-             background-image: linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,1));            opacity: 1;
+            background-color: transparent; /* For browsers that do not support gradients */
+            background-image: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1));
+            p{
+            opacity: 0.3;
+            }
         }
         .section__planetButton{
             display: flex;
@@ -1322,6 +1332,10 @@ footer {
     /*Footer*/
     footer {
         justify-content: flex-end;
+        background-color: transparent; /* For browsers that do not support gradients */
+        background-image: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1));
+        margin-bottom: 0;
+        padding-bottom: 10px;
         .footer__label,
         .footer__fullscreen__title,
         .footer__fullscreen__icons,
@@ -1335,9 +1349,21 @@ footer {
             display: none;
         }
         .section__ButtonNav {
+            top: 0;
+            margin-bottom: calc(8px + (10 - 8) * ((100vw - 360px) / (1920 - 360)));
             button{
                 opacity: 1;
-             }
+                width: 38px;
+                &:nth-child(1){
+                    padding-left: 0;
+                    margin-right: 18px;
+                    margin-bottom: 11px;
+                }
+                &:nth-child(2){
+                    margin-left: 18px;
+                    padding-left:0;
+                }
+            }
         }
     }
 }
