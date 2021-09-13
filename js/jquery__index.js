@@ -31,11 +31,9 @@ $(document).ready(function() {
                 document.querySelector("footer").style.backgroundImage = "none";
 			} else{
                 document.querySelector(".section__ButtonNav").style.display = "block";
-                document.querySelector("footer").style.backgroundImage = "linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1))";
             }
-            
-		},
-		afterRender: function(){},
-	});
+        },
+        afterRender: function () {},
+    });
 });
 
