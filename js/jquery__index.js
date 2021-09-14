@@ -28,9 +28,9 @@ $(document).ready(function() {
 		afterLoad: function(anchorLink, index){
 			if(index == 1){
                 document.querySelector(".section__ButtonNav").style.display = "none";
-                document.querySelector("footer").style.backgroundImage = "none";
 			} else{
                 document.querySelector(".section__ButtonNav").style.display = "block";
+                document.querySelector("footer").style.backgroundImage = "linear-gradient(rgba(255,255,255,0), rgba(0,0,255,1));";
             }
         },
         afterRender: function () {},
