@@ -541,41 +541,6 @@ main {
                 }
             }
         }
-        .section__title{
-            position: absolute;
-            top: calc(385px + (376 - 385) * ((100vw - 360px) / (1920 - 360)));
-            left: calc(16px + (64 - 16) * ((100vw - 360px) / (1920 - 360)));
-            width: calc(259px + (746 - 259) * ((100vw - 360px) / (1920 - 360)));
-            h4{
-            @include fontStyle("SFProDisplay", normal, 700, calc(10.74px + (19.09 - 10.74) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
-            font-size: calc(9px + (16 - 9) * ((100vw - 360px) / (1920 - 360)));
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            margin: 0;
-            margin-bottom:  calc(4px + (25 - 4) * ((100vw - 360px) / (1920 - 360)));
-            }
-            h2{
-            @include fontStyle("SFProDisplay", normal, 700, calc(38px + (60.08 - 38) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
-            font-size: calc(38px + (76 - 38) * ((100vw - 360px) / (1920 - 360)));
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-            }
-        }
-        .section__titleDescription{
-            position: absolute;
-            top: calc(555px + (532 - 555) * ((100vw - 360px) / (1920 - 360)));
-            left: calc(17px + (513 - 17) * ((100vw - 360px) / (1920 - 360)));
-            width: calc(326px + (453 - 326) * ((100vw - 360px) / (1920 - 360)));
-            height: calc(100px + (80 - 100) * ((100vw - 360px) / (1920 - 360)));
-            p{
-            @include fontStyle("SFProDisplay", normal, 400, 19.6px, rgba(255, 255, 255, 1));
-            font-size:14px;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            opacity: 0.9;
-            
-            }
-        }
         .section__planetButton{
             display: flex;
             position: absolute;
@@ -621,6 +586,44 @@ main {
                 }
             }
         }
+        }
+        .scrollable{
+            overflow-x:auto;
+        }
+        .section__title{
+            position: absolute;
+            top: calc(385px + (376 - 385) * ((100vw - 360px) / (1920 - 360)));
+            left: calc(16px + (64 - 16) * ((100vw - 360px) / (1920 - 360)));
+            width: calc(259px + (746 - 259) * ((100vw - 360px) / (1920 - 360)));
+            h4{
+            @include fontStyle("SFProDisplay", normal, 700, calc(10.74px + (19.09 - 10.74) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
+            font-size: calc(9px + (16 - 9) * ((100vw - 360px) / (1920 - 360)));
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin: 0;
+            margin-bottom:  calc(4px + (25 - 4) * ((100vw - 360px) / (1920 - 360)));
+            }
+            h2{
+            @include fontStyle("SFProDisplay", normal, 700, calc(38px + (60.08 - 38) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
+            font-size: calc(38px + (76 - 38) * ((100vw - 360px) / (1920 - 360)));
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            }
+        }
+        .section__titleDescription{
+            position: absolute;
+            top: calc(555px + (532 - 555) * ((100vw - 360px) / (1920 - 360)));
+            left: calc(17px + (513 - 17) * ((100vw - 360px) / (1920 - 360)));
+            width: calc(326px + (453 - 326) * ((100vw - 360px) / (1920 - 360)));
+            height: calc(100px + (80 - 100) * ((100vw - 360px) / (1920 - 360)));
+            p{
+            @include fontStyle("SFProDisplay", normal, 400, 19.6px, rgba(255, 255, 255, 1));
+            font-size:14px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            opacity: 0.9;
+            
+            }
         }
         .section__radioBtns{
             position: absolute;
@@ -1303,7 +1306,7 @@ footer {
         }
         /*TEST*/
         .section__titleDescription{
-            top: calc(555px + (560 - 555) * ((100vw - 360px) / (768 - 360)));
+            top: calc(560px + (560 - 555) * ((100vw - 360px) / (768 - 360)));
             left: calc(17px + (28 - 17) * ((100vw - 360px) / (768 - 360)));
             p{
             opacity: 0.3;
@@ -1340,7 +1343,7 @@ footer {
         margin: auto;
         justify-content: flex-end;
         background-color: transparent; /* For browsers that do not support gradients */
-        background-image: linear-gradient(rgba(255,255,255,0), rgba(0,0,255,1));
+        background-image: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1));
         margin-bottom: 0;
         padding-bottom: 10px;
         .footer__label,
