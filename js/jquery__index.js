@@ -31,6 +31,11 @@ $(document).ready(function() {
  			} else{
                 document.querySelector(".section__ButtonNav").style.display = "block";
             }
+            if(index == 2){
+                $(".section2").scroll(function(){
+                    $("div").remove(".section__planetButton");
+                });
+            }
         },
         afterRender: function () {},
     });

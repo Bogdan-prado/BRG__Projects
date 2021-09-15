@@ -146,10 +146,10 @@ function openAsideMenu(evt,aside__link){
   evt.currentTarget.className += " active";
 }
 
- 
+/*Mars/MoonS*/
 function zhopa() {
   document.querySelector("#bar2").style.background = "transparent";
-   document.querySelector("#bar1").style.background = "#d3d3d3";
+  document.querySelector("#bar1").style.background = "#d3d3d3";
 
 }
 
