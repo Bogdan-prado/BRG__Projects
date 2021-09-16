@@ -513,6 +513,7 @@ main {
     }
     .section2{
         display: flex;
+        height: 100%;
         .back__link{
             border-bottom: 2px solid #FFFFFF;
             display: flex;
@@ -586,9 +587,6 @@ main {
                 }
             }
         }
-        }
-        .scrollable{
-            overflow-x:auto;
         }
         .section__title{
             position: absolute;
@@ -1284,6 +1282,7 @@ footer {
             border:none;
             height: 25px;
             width:25px;
+            position: fixed;
             top:calc(67px + (100 - 67) * ((100vw - 360px) / (768 - 360)));    
             left:calc(170px + (369 - 170) * ((100vw - 360px) / (768 - 360)));
             z-index: 50;        

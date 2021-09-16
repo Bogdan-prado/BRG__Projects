@@ -33,7 +33,13 @@ $(document).ready(function() {
             }
             if(index == 2){
                 $(".section2").scroll(function(){
-                    $("div").remove(".section__planetButton");
+                    if($(".section2").scrollTop() > 2){
+                    $(".section__planetButton").fadeOut();
+                    $(".back__link").css({"position": "sticky", "top": "calc(67px + (100 - 67) * ((100vw - 360px) / (768 - 360)))",
+                "left": "calc(170px + (369 - 170) * ((100vw - 360px) / (768 - 360)))"});
+                    }else{
+                        $(".section__planetButton").fadeIn();
+                    }
                 });
             }
         },
