@@ -43,7 +43,7 @@ $(document).ready(function() {
                             $(".section__titleDescription p").css({ "opacity": "1", "transition": "2s"});
                         } else {
                             $(".section__planetButton").fadeIn();
-                            $(".section__titleDescription p").css({ "opacity": "0.4", "transition": "2s"});
+                            $(".section__titleDescription p").css({ "opacity": "0.2", "transition": "2s"});
                         }
                     }
                 });
