@@ -32,13 +32,19 @@ $(document).ready(function() {
                 document.querySelector(".section__ButtonNav").style.display = "block";
             }
             if(index == 2){
-                $(".section2").scroll(function(){
-                    if($(".section2").scrollTop() > 5){
-                    $(".section__planetButton").fadeOut();
-                    $(".back__link").css({"position": "sticky", "top": "calc(67px + (100 - 67) * ((100vw - 360px) / (768 - 360)))",
-                "left": "calc(170px + (369 - 170) * ((100vw - 360px) / (768 - 360)))"});
-                    }else{
-                        $(".section__planetButton").fadeIn();
+                $(".section2").scroll(function () {
+                    if ($(window).width() <= 768) {
+                        if ($(".section2").scrollTop() > 5) {
+                            $(".section__planetButton").fadeOut();
+                            $(".back__link").css({
+                                "position": "sticky", "top": "calc(67px + (100 - 67) * ((100vw - 360px) / (768 - 360)))",
+                                "left": "calc(170px + (369 - 170) * ((100vw - 360px) / (768 - 360)))"
+                            });
+                            $(".section__titleDescription p").css({ "opacity": "1", "transition": "2s"});
+                        } else {
+                            $(".section__planetButton").fadeIn();
+                            $(".section__titleDescription p").css({ "opacity": "0.4", "transition": "2s"});
+                        }
                     }
                 });
             }
