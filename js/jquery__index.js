@@ -37,7 +37,6 @@ $(document).ready(function() {
                     $(".section__planetButton").fadeOut();
                     $(".back__link").css({"position": "sticky", "top": "calc(67px + (100 - 67) * ((100vw - 360px) / (768 - 360)))",
                 "left": "calc(170px + (369 - 170) * ((100vw - 360px) / (768 - 360)))"});
-                $(".pp-scrollable").css({"top": "-100px"});
                     }else{
                         $(".section__planetButton").fadeIn();
                     }
