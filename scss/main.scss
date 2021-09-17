@@ -1305,7 +1305,7 @@ footer {
         }
         /*TEST*/
         .section__titleDescription{
-            top:560px; /*calc(560px + (560 - 560) * ((100vw - 360px) / (768 - 360)));*/
+            top:calc(555px + (560 - 555) * ((100vw - 360px) / (768 - 360)));
             left: calc(17px + (28 - 17) * ((100vw - 360px) / (768 - 360)));
             p{
             opacity: 0.3;
