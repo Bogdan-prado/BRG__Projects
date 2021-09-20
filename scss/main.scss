@@ -653,12 +653,35 @@ main {
         }
     }
     .section3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0; 
-    color: green;      
-    }
+        .back__link3{
+                border-bottom: 2px solid #FFFFFF;
+                display: flex;
+                position: absolute;
+                top: calc(132px + (245 - 132) * ((100vw - 768px) / (1920 - 768)));
+                left: calc(25px + (65 - 25) * ((100vw - 768px) / (1920 - 768)));
+                width: 88px;
+                ul{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        a{
+                            color: white;
+                            text-align: center;
+                            padding: 14px 0;
+                            text-decoration: none;
+                            @include fontStyle("SFProDisplay", normal, 700, 16.7px, rgba(255, 255, 255, 1));
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            letter-spacing: 0.1em;
+                            span:nth-child(2){
+                                margin-left: 32px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     /*.section4{
         display: flex;
         justify-content: center;
