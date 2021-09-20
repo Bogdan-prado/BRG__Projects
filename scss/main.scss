@@ -653,6 +653,8 @@ main {
         }
     }
     .section3{
+        display: flex;
+        height: 100%;
         .back__link3{
                 border-bottom: 2px solid #FFFFFF;
                 display: flex;
@@ -681,6 +683,36 @@ main {
                     }
                 }
             }
+            .section__title3{
+                position: absolute;
+                top: calc(471px + (374 - 471) * ((100vw - 360px) / (1920 - 360)));
+                left: calc(16px + (64 - 16) * ((100vw - 360px) / (1920 - 360)));
+                width: calc(328px + (559 - 328) * ((100vw - 360px) / (1920 - 360)));
+                height: calc(228px + (108 - 228) * ((100vw - 360px) / (1920 - 360)));
+                h2{
+                @include fontStyle("SFProDisplay", normal, 700, calc(38px + (36 - 38) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
+                font-size: calc(38px + (36 - 38) * ((100vw - 360px) / (1920 - 360)));
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+                margin: 0;
+                }
+            }
+            .section__titleDescription3{
+                position: absolute;
+                top: calc(471px + (502 - 471) * ((100vw - 360px) / (1920 - 360)));
+                left: calc(16px + (289 - 16) * ((100vw - 360px) / (1920 - 360)));
+                width: 335px;
+                height: 60px;
+                p{
+                @include fontStyle("SFProDisplay", normal, 400, 19.6px, rgba(255, 255, 255, 1));
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 0.06em;
+                opacity: 0.9;
+                margin: 0;
+                }
+            }
+
         }
     /*.section4{
         display: flex;
@@ -1299,6 +1331,7 @@ footer {
 }
     /*Main Section*/
     main{
+        /*Section 2*/
         .section2{
         .back__link{
             border:none;
@@ -1307,7 +1340,6 @@ footer {
             position: fixed;
             top:calc(110px + (100 - 110) * ((100vw - 360px) / (768 - 360)));    
             left:calc(170px + (369 - 170) * ((100vw - 360px) / (768 - 360)));
-            z-index: 50;        
             ul{
                 li{
                     a{
@@ -1353,6 +1385,30 @@ footer {
         .section__radioBtns{
             top: calc(516px + (532 - 516) * ((100vw - 360px) / (768 - 360)));
             left:calc(16px + (28 - 16) * ((100vw - 360px) / (768 - 360)));
+        }
+    }
+    /*Section 3*/
+    .section3{
+        .back__link3{
+            border:none;
+            height: 25px;
+            width:25px;
+            position: fixed;
+            top:calc(110px + (100 - 110) * ((100vw - 360px) / (768 - 360)));    
+            left:calc(170px + (369 - 170) * ((100vw - 360px) / (768 - 360)));
+            ul{
+                li{
+                    a{
+                        span:nth-child(1){
+                        font-size: 28px;
+                        width:25px;                     
+                        }
+                        span:nth-child(2){
+                            display: none;
+                        }
+                    }
+                }
+            }
         }
     }
     aside {
