@@ -518,8 +518,8 @@ main {
             border-bottom: 2px solid #FFFFFF;
             display: flex;
             position: absolute;
-            top: calc(67px + (239 - 67) * ((100vw - 768px) / (1920 - 768)));
-            left: calc(12px + (65 - 12) * ((100vw - 768px) / (1920 - 768)));
+            top: calc(132px + (245 - 132) * ((100vw - 768px) / (1920 - 768)));
+            left: calc(25px + (65 - 25) * ((100vw - 768px) / (1920 - 768)));
             width: 88px;
             ul{
                 list-style-type: none;
@@ -1037,7 +1037,7 @@ footer {
                 margin-right: 47px;
                  }
                 &:hover{
-                    border-bottom: 1px solid rgba(255, 255, 255, 1);
+                    border-bottom: 2px solid rgba(255, 255, 255, 1);
                     opacity: 1;
                 }
         }
@@ -1197,7 +1197,7 @@ footer {
         /*Header menu section*/
         .menu {
             justify-content: flex-start;
-             .social__media {
+            .social__media {
                 margin-top: 32px;
                 display: none;
             }
@@ -1282,7 +1282,7 @@ footer {
             height: 25px;
             width:25px;
             position: fixed;
-            top:calc(67px + (100 - 67) * ((100vw - 360px) / (768 - 360)));    
+            top:calc(110px + (100 - 110) * ((100vw - 360px) / (768 - 360)));    
             left:calc(170px + (369 - 170) * ((100vw - 360px) / (768 - 360)));
             z-index: 50;        
             ul{
@@ -1361,7 +1361,7 @@ footer {
             top: 0;
             margin-bottom: calc(8px + (10 - 8) * ((100vw - 360px) / (1920 - 360)));
             left: calc(16px + (28 - 16) * ((100vw - 360px) / (768 - 360)));
-             button{
+            button{
                 opacity: 1;
                 width: 38px;
                 &:nth-child(1){
