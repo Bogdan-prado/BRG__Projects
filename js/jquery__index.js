@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
 	$('#pagepiling').pagepiling({
 	menu: ".myMenu",
         direction: 'horizontal',
@@ -52,4 +52,57 @@ $(document).ready(function() {
         afterRender: function () {},
     });
 });
+*/
 
+/*
+$(document).ready(function() {
+          $(document).onWheel(function(){
+              $(".section1").fadeOut(1000,function(){
+                $(".section2").fadeIn(1000,function(){
+                    $(".back__link").click(function(){
+                        $(".section2").fadeOut(1000);
+                        $(".section1").fadeIn(1000);
+                        $(".section__ButtonNav").fadeOut(1000);
+                    })
+                });
+                $(".section__ButtonNav").fadeIn(1000)
+
+                });
+          })
+        });*/
+
+        $(document).ready(function() {
+        $(window).bind('mousewheel DOMMouseScroll', function(event){
+            if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+               // scroll Up          
+                } else {
+                    /*section1 FadeOut*/
+                    $(".section1").fadeOut(1000,function(){
+                        /*Section2 FadeIn*/
+                        $(".section2").fadeIn(1000,function(){
+                        $(".section__ButtonNav").fadeIn(1000);
+                        $(".back__link").click(function(){
+                            $(".section2").fadeOut(1000,function(){
+                                $(".section1").fadeIn(1000);
+                                $(".section__ButtonNav").fadeOut(1000);
+                            })
+                        });
+                        $(".section__planetButton").click(function(){
+                            $(".section2").fadeOut(1000,function(){
+                            /*section3 FadeIn*/
+                                $(".section3").fadeIn(1000,function(){
+                                    $(".back__link3").click(function(){
+                                        $(".section3").fadeOut(1000,function(){
+                                            $(".section2").fadeIn(1000);
+                                        })
+                                    })
+                                });
+                            })
+                        })
+                    });
+                    /*section3 FadeIn*/
+
+                        });
+                    }
+        });
+    });
