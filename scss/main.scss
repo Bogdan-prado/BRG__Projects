@@ -5,7 +5,6 @@
     height: calc(640px + (956 - 640) * ((100vw - 360px) / (1920 - 360)));
     background-repeat: no-repeat;
     scroll-behavior: smooth;
-    overflow-y: scroll;
     .shadow{
         position: absolute;
         top: 0;
@@ -439,7 +438,7 @@ main {
     background-repeat: no-repeat;
     }
     .section1{
-        transition:2s;
+            display: none;
         .main__center{
             position: absolute;
             top: calc(165px + (104 - 165) * ((100vw - 360px) / (1920 - 360)));
@@ -448,7 +447,6 @@ main {
             height: calc(283px + (676 - 283) * ((100vw - 360px) / (1920 - 360)));
             display: flex;
             justify-content: center;
-            transition:2s;
             .main__center__logo{
                 img{
                 position: relative;
@@ -657,8 +655,32 @@ main {
     }
     .section3{
         display: flex;
-        height: 100%;
-        display: none;
+        height: 150%;
+        overflow-y:auto;
+        /*display: none;*/
+        .section__mainTitle{
+                position: absolute;
+                top: calc(38px + (40 - 38) * ((100vw - 360px) / (1920 - 360)));
+                left: calc(25px + (705 - 25) * ((100vw - 360px) / (1920 - 360)));
+                width: 510px;
+            h4{
+                @include fontStyle("SFProDisplay", normal, 700, calc(16px + (19.09 - 16) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
+                font-size: calc(16px + (16 - 16) * ((100vw - 360px) / (1920 - 360)));
+                text-transform: uppercase;
+                letter-spacing: calc(0.1em + (0.2 - 0.1) * ((100vw - 360px) / (1920 - 360)));
+                margin: 0;
+                text-align: center;
+                margin: 0 0 calc(4px + (11 - 4) * ((100vw - 360px) / (1920 - 360))) 0;
+            }
+            h2{
+               @include fontStyle("SFProDisplay", normal, 700, calc(10.4px + (28.8 - 10.4) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
+                font-size: calc(9px + (36 - 9) * ((100vw - 360px) / (1920 - 360)));
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+                margin: 0;
+                text-align: center;
+            }
+        }
         .back__link3{
                 border-bottom: 2px solid #FFFFFF;
                 display: flex;
@@ -689,7 +711,7 @@ main {
             }
             .section__title3{
                 position: absolute;
-                top: calc(471px + (374 - 471) * ((100vw - 360px) / (1920 - 360)));
+                top: calc(513px + (374 - 513) * ((100vw - 360px) / (1920 - 360)));
                 left: calc(16px + (64 - 16) * ((100vw - 360px) / (1920 - 360)));
                 width: calc(328px + (559 - 328) * ((100vw - 360px) / (1920 - 360)));
                 height: calc(228px + (108 - 228) * ((100vw - 360px) / (1920 - 360)));
@@ -703,7 +725,7 @@ main {
             }
             .section__titleDescription3{
                 position: absolute;
-                top: calc(471px + (502 - 471) * ((100vw - 360px) / (1920 - 360)));
+                top: calc(801px + (502 - 801) * ((100vw - 360px) / (1920 - 360)));
                 left: calc(16px + (289 - 16) * ((100vw - 360px) / (1920 - 360)));
                 width: 335px;
                 height: 60px;
@@ -716,8 +738,60 @@ main {
                 margin: 0;
                 }
             }
-
+            .section__planetDescription{
+            position: absolute;
+            top: calc(462px + (504 - 462) * ((100vw - 360px) / (1920 - 360)));
+            left: calc(16px + (666 - 16) * ((100vw - 360px) / (1920 - 360)));
+            h4{
+                @include fontStyle("SFProDisplay", normal, 400, 19.6px, rgba(255, 255, 255, 1));
+                font-size: 14px;
+                text-transform: uppercase;
+                opacity: 0.9;
+                margin: 0;
+            }
+            h2{
+                @include fontStyle("SFProDisplay", normal, 500, 19.6px, rgba(255, 255, 255, 1));
+                font-size: 20px;
+                text-transform: uppercase;
+                letter-spacing: 0.06em;
+                opacity: 0.9;
+                margin: 0;
+                span{
+                @include fontStyle("SFProDisplay", normal, 700, calc(30.4px + (36.8 - 30.4) * ((100vw - 360px) / (1920 - 360))), rgba(255, 255, 255, 1));
+                font-size: calc(38px + (46 - 38) * ((100vw - 360px) / (1920 - 360)));
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+                opacity: 0.9;
+                margin: 11px 0 0 0;
+                text-transform: uppercase;
+                }
+            }
         }
+        .section__planetRotation{
+                position: absolute;
+                bottom: calc(135px + (51 - 135) * ((100vw - 360px) / (1920 - 360)));
+                left: calc(123px + (904 - 123) * ((100vw - 360px) / (1920 - 360)));
+                .section__rotation{
+                    .rotation__icons{
+                        width: calc(19px + (15 - 19) * ((100vw - 360px) / (1920 - 360)));
+                        height: calc(19px + (18 - 19) * ((100vw - 360px) / (1920 - 360)));
+                        border: 2px solid #FFFFFF;
+                        border-radius: 6px;
+                        margin: 0 auto calc(13px + (20 - 13) * ((100vw - 360px) / (1920 - 360)));
+                    }
+                }
+
+            p{
+                @include fontStyle("SFProDisplay", normal, 400, 11px, rgba(255, 255, 255, 1));
+                font-size: 11px;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
     /*.section4{
         display: flex;
         justify-content: center;
@@ -1393,6 +1467,7 @@ footer {
     }
     /*Section 3*/
     .section3{
+        overflow-y: scroll;
         .back__link3{
             border:none;
             height: 25px;
