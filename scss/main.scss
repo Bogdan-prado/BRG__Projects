@@ -773,14 +773,18 @@ main {
                 left: calc(123px + (904 - 123) * ((100vw - 360px) / (1920 - 360)));
                 .section__rotation{
                     .rotation__icons{
+                        display: flex;
+                        justify-content: center;
+                    button{
                         width: calc(19px + (15 - 19) * ((100vw - 360px) / (1920 - 360)));
                         height: calc(19px + (18 - 19) * ((100vw - 360px) / (1920 - 360)));
                         border: 2px solid #FFFFFF;
                         border-radius: 6px;
+                        background-color: transparent;
                         margin: 0 auto calc(13px + (20 - 13) * ((100vw - 360px) / (1920 - 360)));
                     }
                 }
-
+                }
             p{
                 @include fontStyle("SFProDisplay", normal, 400, 11px, rgba(255, 255, 255, 1));
                 font-size: 11px;
@@ -789,6 +793,65 @@ main {
                 text-transform: uppercase;
                 text-align: center;
                 margin: 0;
+            }
+        }
+        .location__description{
+            width: 300px;
+            height: calc(404px + (366 - 404) * ((100vw - 360px) / (1920 - 360)));
+            position: absolute;
+            left: calc(30px + (1113 - 30) * ((100vw - 360px) / (1920 - 360)));
+            top: calc(114px + (362 - 114) * ((100vw - 360px) / (1920 - 360)));
+            background-color:#0E0E0E;
+            .location__descriptionMain{
+                position: absolute;
+                left: 20px;
+                top:calc(50px + (12 - 50) * ((100vw - 360px) / (1920 - 360)));
+                width: 260px;
+                height: calc(392px + (344 - 392) * ((100vw - 360px) / (1920 - 360)));
+                .location__descriptionHeader{
+                    position: absolute;
+                    height: 25px;
+                    width: 260px;
+                    display: flex;
+                    border-bottom: 1px solid white;
+                    .location__descriptionHeader__title{
+                        @include fontStyle("SFProDisplay", normal, 400, 16px, rgba(255, 255, 255, 1));
+                        font-size: 11px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.2em;
+                        text-transform: uppercase;
+                        text-align: center;
+                        margin: 0 0 8px 0;
+                        text-align: left;
+                        .location__descriptionHeader__title2{
+                            @extend .location__descriptionHeader__title;
+                            text-align: right;
+                            position: absolute;
+                            right: 0;
+                        }
+                    }
+                }
+                .location__descriptionBody{
+                    .location__descriptionBodyHeader{
+                        position: absolute;
+                        top:calc(109px + (71 - 109) * ((100vw - 360px) / (1920 - 360)));
+                        margin: 0 ;
+                        @include fontStyle("SFProDisplay", normal, 700, 19.06px, rgba(255, 255, 255, 1));
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                        text-align: left;
+                }
+            }
+            .location__descriptionBody2{
+                @include fontStyle("SFProDisplay", normal, 400, 19.6px, rgba(255, 255, 255, 1));
+                font-size: 14px;
+                letter-spacing: 0.06em;
+                opacity: 0.9;
+                position: absolute;
+                top:calc(174px + (136 - 174) * ((100vw - 360px) / (1920 - 360)));
+            }
             }
         }
     }
