@@ -437,8 +437,11 @@ main {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     }
+    #firstPage{
+        /*display: none;*/
+    }
     .section1{
-            display: none;
+            /*display: none;*/
         .main__center{
             position: absolute;
             top: calc(165px + (104 - 165) * ((100vw - 360px) / (1920 - 360)));
@@ -511,10 +514,12 @@ main {
         }
         }     
     }
+    #secondPage{
+        display: none;
+    }
     .section2{
         display: flex;
         height: 100%;
-        display: none;
         .back__link{
             border-bottom: 2px solid #FFFFFF;
             display: flex;
@@ -653,10 +658,12 @@ main {
             }
         }
     }
+    #thirdPage{
+        display: none;
+    }
     .section3{
         display: flex;
-        height: 150%;
-        overflow-y:auto;
+        height: 100%;
         /*display: none;*/
         .section__mainTitle{
                 position: absolute;
@@ -797,7 +804,7 @@ main {
         }
         .location__description{
             width: 300px;
-            height: calc(404px + (366 - 404) * ((100vw - 360px) / (1920 - 360)));
+            height: calc(404px + (376 - 404) * ((100vw - 360px) / (1920 - 360)));
             position: absolute;
             left: calc(30px + (1113 - 30) * ((100vw - 360px) / (1920 - 360)));
             top: calc(114px + (362 - 114) * ((100vw - 360px) / (1920 - 360)));
@@ -851,6 +858,21 @@ main {
                 opacity: 0.9;
                 position: absolute;
                 top:calc(174px + (136 - 174) * ((100vw - 360px) / (1920 - 360)));
+            }
+            .mapCoordinatesImage{
+                position: absolute;
+                top: calc(320px + (282 - 320) * ((100vw - 360px) / (1920 - 360)));
+                left: 0;
+                .mapCoordinates{
+                @include fontStyle("SFProDisplay", normal, 400, 19.6px, rgba(255, 255, 255, 1));
+                font-size: 14px;
+                letter-spacing: 0.06em;
+                opacity: 0.9;
+                width: 238px;
+                height: 40px;
+                position: absolute;
+                top:8px;
+                }
             }
             }
         }

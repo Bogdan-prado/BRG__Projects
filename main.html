@@ -13,7 +13,7 @@
     <title>Star Track</title>
 </head>
 <!--ZHOPA 4-->
-<body class="body" onmousemove="showCoordsX(event), showCoordsY(event),showCoordsZ(event)">
+<body class="body" onload="firstPage()"  onmousewheel="myFunction(event)" onmousemove="showCoordsX(event), showCoordsY(event),showCoordsZ(event)">
 <div class="shadow"></div> 
     <!--Header Section-->
     <header class="header">
@@ -343,7 +343,7 @@
                 </div>
                 <div class="section__planetButton">
                     <div class="wrapper">
-                    <button class="fuck" type="button"><a href="#thirdPage">посмотреть</a></button>
+                    <button type="button"><a href="#thirdPage">посмотреть</a></button>
                     </div>
                 </div>
                 <!--The start of the scrollable section-->
@@ -420,12 +420,18 @@
                         </h2>
                         <p class="location__descriptionBody2">
                             This property is located 001 Square South and 003 Square East<br>
-                            of the extreme Northwest corner of the recognized Martian chart.<br>
+                            of the extreme Northwest corner of the recognized Martian chart.<br><br>
                             <span>Lot Number: 3/1436 – 3/1440</span>
                         </p>
                         
                         </div>
-
+                        <div class="mapCoordinatesImage">
+                            <img src="./img/si-glyph_satellite.png">
+                            <div class="mapCoordinates">
+                            <h4>Latitude: 090 – 100 North<br>
+                                Longitude: 1590 – 1600 West</h4>
+                                </div>
+                        </div>
                     </div>
                 </div>
             </section>
